@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaryav Jewels - Luxury Jewelry Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <div class="navbar__brand">
+                <h1>Aaryav Jewels</h1>
+            </div>
+            <ul class="navbar__menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="navbar__mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <section class="hero">
+                <div class="hero__content container">
+                    <h2 class="hero__title">Discover Timeless Elegance</h2>
+                    <p class="hero__subtitle">Exquisite jewelry crafted with precision and passion</p>
+                    <a href="#shop" class="btn btn--primary btn--lg">Explore Collection</a>
+                </div>
+            </section>
+
+            <section class="featured-products py-16">
+                <div class="container">
+                    <h2 class="section-title">Featured Products</h2>
+                    <div class="products-grid" id="featured-products-grid">
+                        <!-- Featured products will be loaded dynamically -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Shop Page -->
+        <div id="shop-page" class="page">
+            <section class="shop-header py-16">
+                <div class="container">
+                    <h2 class="section-title">Our Collection</h2>
+                    <div class="shop-filters">
+                        <div class="filter-group">
+                            <label class="form-label">Category</label>
+                            <select id="category-filter" class="form-control">
+                                <option value="all">All Categories</option>
+                                <option value="necklaces">Necklaces</option>
+                                <option value="rings">Rings</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="form-label">Gender</label>
+                            <select id="gender-filter" class="form-control">
+                                <option value="all">All</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="form-label">Price Range</label>
+                            <select id="price-filter" class="form-control">
+                                <option value="all">All Prices</option>
+                                <option value="0-300">Under $300</option>
+                                <option value="300-600">$300 - $600</option>
+                                <option value="600+">Above $600</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shop-products">
+                <div class="container">
+                    <div class="products-grid" id="shop-products-grid">
+                        <!-- Products will be loaded dynamically -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Product Detail Page -->
+        <div id="product-page" class="page">
+            <section class="product-detail py-16">
+                <div class="container">
+                    <nav class="breadcrumb" id="breadcrumb">
+                        <!-- Breadcrumb will be loaded dynamically -->
+                    </nav>
+                    
+                    <div class="product-detail__content">
+                        <div class="product-gallery">
+                            <div class="gallery-main">
+                                <img id="main-product-image" src="" alt="" class="main-image">
+                                <button class="zoom-btn" id="zoom-btn">🔍</button>
+                            </div>
+                            <div class="gallery-thumbnails" id="gallery-thumbnails">
+                                <!-- Thumbnails will be loaded dynamically -->
+                            </div>
+                        </div>
+
+                        <div class="product-info">
+                            <h1 class="product-title" id="product-title"></h1>
+                            <div class="product-price" id="product-price"></div>
+                            <div class="product-tags" id="product-tags"></div>
+                            
+                            <div class="product-description">
+                                <h3>Description</h3>
+                                <p id="product-description-text"></p>
+                            </div>
+
+                            <div class="product-specifications">
+                                <h3>Specifications</h3>
+                                <div class="specs-list" id="specs-list">
+                                    <!-- Specifications will be loaded dynamically -->
+                                </div>
+                            </div>
+
+                            <div class="product-actions">
+                                <button class="btn btn--primary btn--lg btn--full-width" id="whatsapp-order-btn">
+                                    Order via WhatsApp
+                                </button>
+                                <button class="btn btn--secondary mt-8" id="back-to-shop">
+                                    ← Back to Shop
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="related-products mt-32">
+                        <h3>Related Products</h3>
+                        <div class="products-grid" id="related-products-grid">
+                            <!-- Related products will be loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" class="page">
+            <section class="about py-16">
+                <div class="container">
+                    <h2 class="section-title">About Aaryav Jewels</h2>
+                    <div class="about-content">
+                        <p>Welcome to Aaryav Jewels, where timeless elegance meets contemporary design. We are passionate about creating exquisite jewelry pieces that celebrate life's most precious moments.</p>
+                        
+                        <h3>Our Story</h3>
+                        <p>Founded with a vision to bring luxury and sophistication to jewelry lovers, Aaryav Jewels has been crafting stunning pieces that combine traditional artistry with modern aesthetics. Each piece in our collection is carefully designed and meticulously crafted to ensure the highest quality and beauty.</p>
+                        
+                        <h3>Our Commitment</h3>
+                        <p>We are committed to using only the finest materials and employing skilled artisans who share our passion for excellence. From engagement rings to everyday elegance, we create jewelry that tells your unique story.</p>
+                        
+                        <div class="business-hours">
+                            <h3>Business Hours</h3>
+                            <ul>
+                                <li>Monday - Friday: 9:00 AM - 7:00 PM</li>
+                                <li>Saturday: 10:00 AM - 6:00 PM</li>
+                                <li>Sunday: 12:00 PM - 5:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+            <section class="contact py-16">
+                <div class="container">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+                            <div class="contact-item">
+                                <strong>Address:</strong>
+                                <p>F-1308, Aditya Urban Casa, Sector - 78, Noida, 201301</p>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Email:</strong>
+                                <p><a href="mailto:sagarporwalofficial@gmail.com">sagarporwalofficial@gmail.com</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <strong>WhatsApp:</strong>
+                                <p><a href="https://wa.me/917011317729" target="_blank">+91 7011317729</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <h3>Send us a Message</h3>
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn--primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Image Zoom Modal -->
+    <div id="zoom-modal" class="zoom-modal">
+        <div class="zoom-modal__content">
+            <span class="zoom-modal__close">&times;</span>
+            <img id="zoom-image" src="" alt="">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aaryav Jewels</h3>
+                    <p>Timeless elegance crafted with passion</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>F-1308, Aditya Urban Casa<br>Sector - 78, Noida, 201301</p>
+                    <p>Phone: +91 7011317729</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aaryav Jewels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
