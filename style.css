@@ -1298,3 +1298,24 @@ select.form-control {
   content: "💬";
   font-size: var(--font-size-lg);
 }
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  border-color: #d4af37; /* gold */
+}
