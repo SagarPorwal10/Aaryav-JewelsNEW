@@ -533,7 +533,7 @@ class Router {
     const grid = document.getElementById('featured-products-grid');
     if (!grid) return;
     
-    const featuredProducts = products.slice(0, 4);
+    const featuredProducts = products.filter(p => [0, 2, 4, 16].includes(p.id));
     grid.innerHTML = featuredProducts.map(product => this.createProductCard(product)).join('');
   }
   
