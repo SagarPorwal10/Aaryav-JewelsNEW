@@ -37,8 +37,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
       images: 
-    [ "assets/generated-image-30.png",
-      "assets/generated-image-35.png"]
+    [ "assets/generated-image-1.png",
+      "assets/generated-image-2.png"]
 
   },
 
