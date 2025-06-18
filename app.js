@@ -24,556 +24,556 @@ const products = [
 
   },
 
-  {
-    id: 2,
-    name: "Elegant Gold Chain Female",
-    price: 299,
-    category: "bracelets",
-    gender: "male",
-    description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from silver.",
-    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
-    specifications: {
-      "Material": "Silver",
-      "Length": "8 inches (adjustable)",
-      "Weight": "10g",
-      "Clasp": "Secure lobster clasp",
-      "Care": "Avoid water and perfume contact"
-    },
-    images: [
-      "assets/generated-image-3.png",
-      "assets/generated-image-4.png"
-    ]
-  },
+//   {
+//     id: 2,
+//     name: "Elegant Gold Chain Female",
+//     price: 299,
+//     category: "bracelets",
+//     gender: "male",
+//     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from silver.",
+//     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Length": "8 inches (adjustable)",
+//       "Weight": "10g",
+//       "Clasp": "Secure lobster clasp",
+//       "Care": "Avoid water and perfume contact"
+//     },
+//     images: [
+//       "assets/generated-image-3.png",
+//       "assets/generated-image-4.png"
+//     ]
+//   },
 
-  {
-    id: 3,
-    name: "Elegant Gold Chain Female",
-    price: 299,
-    category: "bracelets",
-    gender: "female",
-    description: "A refined silver bracelet adorned with brilliant-cut diamonds set in square links. Crafted for elegant evenings and timeless sophistication.",
-    detailedDescription: "Elevate your jewelry collection with this stunning silver bracelet featuring five dazzling square-shaped links, each encrusted with radiant-cut diamonds. Meticulously set in sterling silver, the bracelet strikes a perfect balance between contemporary design and classic luxury. Its adjustable length and secure clasp offer both comfort and beauty, ideal for formal occasions or as a statement accessory.",
-    specifications: {
-      "Material": "Sterling Silver with Diamond Simulants",
-      "Length": "7 inches + 1-inch extender",
-      "Weight": "14g",
-      "Clasp": "Lobster clasp with extender chain",
-      "Care": "Store separately in a jewelry pouch. Avoid exposure to moisture and chemicals."
-    },
-    images: [
-      "assets/generated-image-5.png",
-      "assets/generated-image-6.png"
-    ]
-  },
+//   {
+//     id: 3,
+//     name: "Elegant Gold Chain Female",
+//     price: 299,
+//     category: "bracelets",
+//     gender: "female",
+//     description: "A refined silver bracelet adorned with brilliant-cut diamonds set in square links. Crafted for elegant evenings and timeless sophistication.",
+//     detailedDescription: "Elevate your jewelry collection with this stunning silver bracelet featuring five dazzling square-shaped links, each encrusted with radiant-cut diamonds. Meticulously set in sterling silver, the bracelet strikes a perfect balance between contemporary design and classic luxury. Its adjustable length and secure clasp offer both comfort and beauty, ideal for formal occasions or as a statement accessory.",
+//     specifications: {
+//       "Material": "Sterling Silver with Diamond Simulants",
+//       "Length": "7 inches + 1-inch extender",
+//       "Weight": "14g",
+//       "Clasp": "Lobster clasp with extender chain",
+//       "Care": "Store separately in a jewelry pouch. Avoid exposure to moisture and chemicals."
+//     },
+//     images: [
+//       "assets/generated-image-5.png",
+//       "assets/generated-image-6.png"
+//     ]
+//   },
 
-  {
-    id: 4,
-    name: "Elegant Pink Sapphire Marquise Bracelet",
-    price: 299,
-    category: "bracelets",
-    gender: "female",
-    description: "A delicate silver bracelet featuring alternating marquise links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
-    detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
-    specifications: {
-      "Material": "Silver with Pink Sapphire Simulants and CZ Accents",
-      "Length": "7 inches + 1-inch extender",
-      "Weight": "12g",
-      "Clasp": "Lobster clasp with extender chain",
-      "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents."
-    },
-    images: [
-      "assets/generated-image-7.png",
-      "assets/generated-image-8.png"
-    ]
-  },
+//   {
+//     id: 4,
+//     name: "Elegant Pink Sapphire Marquise Bracelet",
+//     price: 299,
+//     category: "bracelets",
+//     gender: "female",
+//     description: "A delicate silver bracelet featuring alternating marquise links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
+//     detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
+//     specifications: {
+//       "Material": "Silver with Pink Sapphire Simulants and CZ Accents",
+//       "Length": "7 inches + 1-inch extender",
+//       "Weight": "12g",
+//       "Clasp": "Lobster clasp with extender chain",
+//       "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents."
+//     },
+//     images: [
+//       "assets/generated-image-7.png",
+//       "assets/generated-image-8.png"
+//     ]
+//   },
 
-  {
-    id: 5,
-    name: "Lustrous Marquise-Link Diamond Bracelet",
-    price: 299,
-    category: "bracelets",
-    gender: "female",
-    description: "A luminous silver bracelet featuring a continuous design of diamond-studded marquise links. Pure elegance with a modern silhouette.",
-    detailedDescription: "Radiating refined sophistication, this sterling silver bracelet showcases an elegant chain of open marquise-shaped links, each delicately encrusted with sparkling cubic zirconia. The design flows gracefully across the wrist, offering timeless charm with a hint of modern luxury. Its adjustable extension and secure lobster clasp ensure a flawless fit for any occasion—from casual elegance to formal glamour.",
-    specifications: {
-      "Material": "Sterling Silver with Cubic Zirconia",
-      "Length": "7 inches + 1-inch extender",
-      "Weight": "10g",
-      "Clasp": "Lobster clasp with extender chain",
-      "Care": "Keep in a soft-lined box. Avoid direct contact with water, perfumes, and chemicals."
-    },
-    images: [
-      "assets/generated-image-9.png",
-      "assets/generated-image-10.png"
-    ]
-  },
+//   {
+//     id: 5,
+//     name: "Lustrous Marquise-Link Diamond Bracelet",
+//     price: 299,
+//     category: "bracelets",
+//     gender: "female",
+//     description: "A luminous silver bracelet featuring a continuous design of diamond-studded marquise links. Pure elegance with a modern silhouette.",
+//     detailedDescription: "Radiating refined sophistication, this sterling silver bracelet showcases an elegant chain of open marquise-shaped links, each delicately encrusted with sparkling cubic zirconia. The design flows gracefully across the wrist, offering timeless charm with a hint of modern luxury. Its adjustable extension and secure lobster clasp ensure a flawless fit for any occasion—from casual elegance to formal glamour.",
+//     specifications: {
+//       "Material": "Sterling Silver with Cubic Zirconia",
+//       "Length": "7 inches + 1-inch extender",
+//       "Weight": "10g",
+//       "Clasp": "Lobster clasp with extender chain",
+//       "Care": "Keep in a soft-lined box. Avoid direct contact with water, perfumes, and chemicals."
+//     },
+//     images: [
+//       "assets/generated-image-9.png",
+//       "assets/generated-image-10.png"
+//     ]
+//   },
 
-  {
-    id: 6,
-    name: "Om(ॐ) Diamond-Bar Spiritual Bracelet",
-    price: 299,
-    category: "bracelets",
-    gender: "female",
-    description: "A bold and spiritual bracelet featuring an 'Om' symbol at the center of a shimmering pavé diamond bar. Perfect harmony of style and meaning.",
-    detailedDescription: "Channel spiritual energy and sophisticated style with this refined bracelet featuring a sleek bar design paved with rows of dazzling cubic zirconia. At the center lies a black enamel 'Om' symbol, symbolizing peace, protection, and cosmic power. The polished sterling silver frame is matched with an adjustable drawstring chain, ensuring comfort and a secure fit. A meaningful accessory that blends tradition with contemporary fashion—ideal for personal wear or a thoughtful gift.",
-    specifications: {
-      "Material": "Sterling Silver with Black Enamel and Cubic Zirconia",
-      "Length": "Adjustable – fits most wrist sizes",
-      "Weight": "16g",
-      "Clasp": "Adjustable sliding clasp with bead ends",
-      "Care": "Polish with a soft cloth. Avoid water and chemicals to maintain finish and shine."
-    },
-    images: [
-      "assets/generated-image-11.png",
-      "assets/generated-image-12.png"
-    ]
-  },
-
-
-  {
-    id: 7,
-    name: "Titan Classic Curb Chain Bracelet",
-    price: 299,
-    category: "bracelets",
-    gender: "male",
-    description: "A timeless silver curb chain bracelet that speaks of strength and subtle style. A staple accessory for the modern man.",
-    detailedDescription: "Engineered for everyday elegance, this masculine bracelet features a bold, polished curb chain crafted from durable stainless steel. The sleek interlocking links provide a strong yet flexible feel, while the triangular-end clasp detail adds a distinctive modern touch. Whether worn solo or layered with a watch, the Titan Classic bracelet is a statement in simplicity and style—perfect for casual and formal ensembles alike.",
-    specifications: {
-      "Material": "Silver",
-      "Length": "8.5 inches",
-      "Weight": "12g",
-      "Clasp": "Fold-over clasp with triangle cap accent",
-      "Care": "Clean with a soft cloth. Avoid exposure to saltwater and harsh chemicals."
-    },
-    images: [
-      "assets/generated-image-13.png",
-      "assets/generated-image-14.png"
-    ]
-  },
+//   {
+//     id: 6,
+//     name: "Om(ॐ) Diamond-Bar Spiritual Bracelet",
+//     price: 299,
+//     category: "bracelets",
+//     gender: "female",
+//     description: "A bold and spiritual bracelet featuring an 'Om' symbol at the center of a shimmering pavé diamond bar. Perfect harmony of style and meaning.",
+//     detailedDescription: "Channel spiritual energy and sophisticated style with this refined bracelet featuring a sleek bar design paved with rows of dazzling cubic zirconia. At the center lies a black enamel 'Om' symbol, symbolizing peace, protection, and cosmic power. The polished sterling silver frame is matched with an adjustable drawstring chain, ensuring comfort and a secure fit. A meaningful accessory that blends tradition with contemporary fashion—ideal for personal wear or a thoughtful gift.",
+//     specifications: {
+//       "Material": "Sterling Silver with Black Enamel and Cubic Zirconia",
+//       "Length": "Adjustable – fits most wrist sizes",
+//       "Weight": "16g",
+//       "Clasp": "Adjustable sliding clasp with bead ends",
+//       "Care": "Polish with a soft cloth. Avoid water and chemicals to maintain finish and shine."
+//     },
+//     images: [
+//       "assets/generated-image-11.png",
+//       "assets/generated-image-12.png"
+//     ]
+//   },
 
 
-  {
-    id: 8,
-    name: "Midnight Evil Eye Beaded Bracelet",
-    price: 299,
-    category: "bracelets",
-    gender: "female",
-    description: "A symbolic beaded bracelet featuring a deep blue evil eye charm flanked by glossy black and silver-tone beads. Designed for everyday wear and protection.",
-    detailedDescription: "Rooted in tradition and styled for the modern spirit, the Midnight Evil Eye Bracelet is a perfect blend of symbolism and simplicity. At its center lies a glass evil eye bead in rich navy blue, believed to ward off negativity and attract good energy. The bracelet is meticulously hand-strung with alternating black and silver-toned cube beads that exude a minimal yet bold look. Adjustable in length, this unisex bracelet is perfect for layering or wearing solo, offering both meaning and style in one sleek accessory.",
-    specifications: {
-      "Material": "Glass and Silver beads with stainless steel findingsg",
-      "Charm": "Evil Eye (navy blue glass)",
-      "Length": "6.5 to 8 inches (adjustable)",
-      "Weight": "16g",
-      "Clasp": "Lobster claw with extender chain",
-      "Care": "Keep dry; avoid direct contact with perfumes and sprays"
-    },
-    images: [
-      "assets/generated-image-15.png",
-      "assets/generated-image-16.png"
-    ]
-  },
+//   {
+//     id: 7,
+//     name: "Titan Classic Curb Chain Bracelet",
+//     price: 299,
+//     category: "bracelets",
+//     gender: "male",
+//     description: "A timeless silver curb chain bracelet that speaks of strength and subtle style. A staple accessory for the modern man.",
+//     detailedDescription: "Engineered for everyday elegance, this masculine bracelet features a bold, polished curb chain crafted from durable stainless steel. The sleek interlocking links provide a strong yet flexible feel, while the triangular-end clasp detail adds a distinctive modern touch. Whether worn solo or layered with a watch, the Titan Classic bracelet is a statement in simplicity and style—perfect for casual and formal ensembles alike.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Length": "8.5 inches",
+//       "Weight": "12g",
+//       "Clasp": "Fold-over clasp with triangle cap accent",
+//       "Care": "Clean with a soft cloth. Avoid exposure to saltwater and harsh chemicals."
+//     },
+//     images: [
+//       "assets/generated-image-13.png",
+//       "assets/generated-image-14.png"
+//     ]
+//   },
 
 
-  {
-    id: 9,
-    name: "Elegant Pink Sapphire floral Bracelet",
-    price: 299,
-    category: "bracelets",
-    gender: "female",
-    description: "A delicate silver bracelet featuring floral links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
-    detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
-    specifications: {
-      "Material": "Sterling Silver with Pink Sapphire Simulants and CZ Accents",
-      "Length": "7 inches + 1-inch extender",
-      "Weight": "12g",
-      "Clasp": "Lobster clasp with extender chain",
-      "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents"
-    },
-    images: [
-      "assets/generated-image-17.png",
-      "assets/generated-image-18.png"
-    ]
-  },
+//   {
+//     id: 8,
+//     name: "Midnight Evil Eye Beaded Bracelet",
+//     price: 299,
+//     category: "bracelets",
+//     gender: "female",
+//     description: "A symbolic beaded bracelet featuring a deep blue evil eye charm flanked by glossy black and silver-tone beads. Designed for everyday wear and protection.",
+//     detailedDescription: "Rooted in tradition and styled for the modern spirit, the Midnight Evil Eye Bracelet is a perfect blend of symbolism and simplicity. At its center lies a glass evil eye bead in rich navy blue, believed to ward off negativity and attract good energy. The bracelet is meticulously hand-strung with alternating black and silver-toned cube beads that exude a minimal yet bold look. Adjustable in length, this unisex bracelet is perfect for layering or wearing solo, offering both meaning and style in one sleek accessory.",
+//     specifications: {
+//       "Material": "Glass and Silver beads with stainless steel findingsg",
+//       "Charm": "Evil Eye (navy blue glass)",
+//       "Length": "6.5 to 8 inches (adjustable)",
+//       "Weight": "16g",
+//       "Clasp": "Lobster claw with extender chain",
+//       "Care": "Keep dry; avoid direct contact with perfumes and sprays"
+//     },
+//     images: [
+//       "assets/generated-image-15.png",
+//       "assets/generated-image-16.png"
+//     ]
+//   },
 
 
-  {
-    id: 10,
-    name: "Sculpted Stippling Pavé Band",
-    price: 299,
-    category: "rings",
-    gender: "unisex",
-    description: "A sleek silver band featuring geometric grids. Designed for bold elegance and modern refinement.",
-    detailedDescription: "This stunning silver ring showcases a contemporary band design. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality 777 silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
-    specifications: {
-      "Material": "Silver",
-      "Width": "6 mm",
-      "Weight": "3g",
-      "Finish": "High-polish with matte contrast in grooves",
-      "Care": "Avoid water and perfume contact"
-    },
-    images: [
-      "assets/generated-image-19.png",
-      "assets/generated-image-21.png"
-    ]
-  },
+//   {
+//     id: 9,
+//     name: "Elegant Pink Sapphire floral Bracelet",
+//     price: 299,
+//     category: "bracelets",
+//     gender: "female",
+//     description: "A delicate silver bracelet featuring floral links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
+//     detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
+//     specifications: {
+//       "Material": "Sterling Silver with Pink Sapphire Simulants and CZ Accents",
+//       "Length": "7 inches + 1-inch extender",
+//       "Weight": "12g",
+//       "Clasp": "Lobster clasp with extender chain",
+//       "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents"
+//     },
+//     images: [
+//       "assets/generated-image-17.png",
+//       "assets/generated-image-18.png"
+//     ]
+//   },
 
 
-  {
-    id: 11,
-    name: "Celestial Blue & White Gemstone Ring",
-    price: 299,
-    category: "rings",
-    gender: "female",
-    description: "A graceful silver ring featuring alternating vivid blue and white stones. A symbol of elegance with a celestial touch.",
-    detailedDescription: "Capture the night sky's allure with this delicate silver ring, showcasing a captivating sequence of alternating royal blue and brilliant white gemstones. The round-cut stones are prong-set for maximum sparkle, each one carefully selected for clarity and color balance. Ideal as a promise ring, anniversary gift, or stackable statement piece, this band embodies refined femininity and timeless charm.",
-    specifications: {
-      "Material": "Sterling Silver with Diamond Simulants",
-      "Stone Size": "3 mm each (approx.)",
-      "Weight": "12g",
-      "Setting": "Prong setting",
-      "Care": "Clean with a soft cloth. Avoid direct heat, chemicals, and water immersion."
-    },
-    images: [
-      "assets/generated-image-20.png",
-      "assets/generated-image-22.png"
-    ]
-  },
+//   {
+//     id: 10,
+//     name: "Sculpted Stippling Pavé Band",
+//     price: 299,
+//     category: "rings",
+//     gender: "unisex",
+//     description: "A sleek silver band featuring geometric grids. Designed for bold elegance and modern refinement.",
+//     detailedDescription: "This stunning silver ring showcases a contemporary band design. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality 777 silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Width": "6 mm",
+//       "Weight": "3g",
+//       "Finish": "High-polish with matte contrast in grooves",
+//       "Care": "Avoid water and perfume contact"
+//     },
+//     images: [
+//       "assets/generated-image-19.png",
+//       "assets/generated-image-21.png"
+//     ]
+//   },
 
-  {
-    id: 12,
-    name: "Sculpted Culture Pavé Band",
-    price: 299,
-    category: "rings",
-    gender: "female",
-    description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
-    detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
-    specifications: {
-      "Material": "Silver",
-      "Width": "6 mm",
-      "Weight": "6g",
-      "Finish": "High-polish with matte contrast in grooves",
-      "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
-    },
-    images: [
-      "assets/generated-image-23.png",
-      "assets/generated-image-24.png"
-    ]
-  },
 
-  {
-    id: 13,
-    name: "Sculpted Band",
-    price: 299,
-    category: "rings",
-    gender: "female",
-    description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
-    detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
-    specifications: {
-      "Material": "Silver",
-      "Width": "6 mm",
-      "Weight": "6g",
-      "Finish": "High-polish with matte contrast in grooves",
-      "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
-    },
-    images: [
-      "assets/generated-image-25.png",
-      "assets/generated-image-26.png",
-      "assets/generated-image-31.png"
-    ]
-  },
+//   {
+//     id: 11,
+//     name: "Celestial Blue & White Gemstone Ring",
+//     price: 299,
+//     category: "rings",
+//     gender: "female",
+//     description: "A graceful silver ring featuring alternating vivid blue and white stones. A symbol of elegance with a celestial touch.",
+//     detailedDescription: "Capture the night sky's allure with this delicate silver ring, showcasing a captivating sequence of alternating royal blue and brilliant white gemstones. The round-cut stones are prong-set for maximum sparkle, each one carefully selected for clarity and color balance. Ideal as a promise ring, anniversary gift, or stackable statement piece, this band embodies refined femininity and timeless charm.",
+//     specifications: {
+//       "Material": "Sterling Silver with Diamond Simulants",
+//       "Stone Size": "3 mm each (approx.)",
+//       "Weight": "12g",
+//       "Setting": "Prong setting",
+//       "Care": "Clean with a soft cloth. Avoid direct heat, chemicals, and water immersion."
+//     },
+//     images: [
+//       "assets/generated-image-20.png",
+//       "assets/generated-image-22.png"
+//     ]
+//   },
 
-  {
-    id: 14,
-    name: "Textured Rope-Link Silver Chain",
-    price: 349,
-    category: "bracelets",
-    gender: "unisex",
-    description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
-    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
-    specifications: {
-      "Material": "Sterling Silver",
-      "Length": "8 inches",
-      "Weight": "13g",
-      "Clasp": "Heavy-duty lobster clasp",
-      "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
-  },
-    images: [
-      "assets/generated-image-27.png",
-    ]
-  },
+//   {
+//     id: 12,
+//     name: "Sculpted Culture Pavé Band",
+//     price: 299,
+//     category: "rings",
+//     gender: "female",
+//     description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
+//     detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Width": "6 mm",
+//       "Weight": "6g",
+//       "Finish": "High-polish with matte contrast in grooves",
+//       "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
+//     },
+//     images: [
+//       "assets/generated-image-23.png",
+//       "assets/generated-image-24.png"
+//     ]
+//   },
 
-  {
-    id: 15,
-    name: "Textured Oval-Link Silver Chain",
-    price: 349,
-    category: "bracelets",
-    gender: "unisex",
-    description: "Distinctive silver chain featuring Oval-style links for a bold and intricate look. Made from 777 silver.",
-    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
-    specifications: {
-      "Material": "Sterling Silver",
-      "Length": "8 inches",
-      "Weight": "13g",
-      "Clasp": "Heavy-duty lobster clasp",
-      "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
-  },
-    images: [
-      "assets/generated-image-28.png",
-      "assets/generated-image-29.png",
-      "assets/generated-image-30.png"
-    ]
-  },
-  {
-    id: 16,
-    name: "Minimalist Silver Chain",
-    price: 399,
-    category: "necklaces",
-    gender: "female",
-    description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
-    detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
-    specifications: {
-      "Material": "Silver",
-      "Length": "18 inches",
-      "Weight": "6g",
-      "Clasp": "Lobster clasp",
-      "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
-    },
-    images: [
-      "assets/generated-image-32.png",
-      "assets/generated-image-35.png",
-      "assets/generated-image-36.png"
-    ]
-  },
+//   {
+//     id: 13,
+//     name: "Sculpted Band",
+//     price: 299,
+//     category: "rings",
+//     gender: "female",
+//     description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
+//     detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Width": "6 mm",
+//       "Weight": "6g",
+//       "Finish": "High-polish with matte contrast in grooves",
+//       "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
+//     },
+//     images: [
+//       "assets/generated-image-25.png",
+//       "assets/generated-image-26.png",
+//       "assets/generated-image-31.png"
+//     ]
+//   },
 
-  },
-  {
-    id: 17,
-    name: "Eternal Sparkle Slim Diamond Band",
-    price: 289,
-    category: "rings",
-    gender: "female",
-    description: "A sleek silver band featuring a single row of shimmering artificial diamonds at its center. Elegant, minimal, and radiant.",
-    detailedDescription: "Add a touch of refined brilliance to your everyday look with this slender sterling silver ring. At the heart of the design lies a continuous line of high-grade artificial diamonds, precisely set to create a seamless circle of sparkle. Perfect as a promise ring, stacking band, or solo statement, this ring combines timeless style with modern simplicity. Lightweight yet dazzling, it’s crafted for lasting comfort and shine.",
-    specifications: {
-      "Material": "Sterling Silver with Diamond Simulants",
-      "Width": "2 mm",
-      "Weight": "2.5g",
-      "Setting": "Channel-set",
-      "Care": "Avoid direct contact with water or perfumes. Clean gently with a soft jewelry cloth."
-    },
-    images: [
-       "assets/generated-image-33.png",
-       "assets/generated-image-34.png"
-    ]
-  },
-  {
-    id: 18,
-    name: "GeoPulse Unisex Patterned Band",
-    price: 199,
-    category: "rings",
-    gender: "unisex",
-    description: "A bold unisex ring featuring a continuous pattern engraved around a brushed silver band. Built for those who move with rhythm and intention.",
-    detailedDescription: "The GeoPulse Band redefines minimalism with a modern industrial edge. Crafted from durable sterling silver, this unisex ring showcases a repeating motif, precision-etched along the center of a matte-finished surface. The clean, structured design evokes balance, rhythm, and purpose—making it a standout piece for everyday wear or meaningful gifting. Designed for comfort with a slightly curved inner edge.",
-    specifications: {
-      "Material": "Silver",
-      "Width": "5mm",
-      "Weight": "5.8g",
-      "Finish": "Matte with engraved pattern",
-      "Care": "Polish gently with a dry cloth. Store in a fabric-lined box. Avoid abrasive surfaces."
-    },
-    images: [
-      "assets/generated-image-37.png"
-    ]
-  },
-  {
-    id: 19,
-    name: "Heart of Grace Slim Diamond Band",
-    price: 899,
-    category: "rings",
-    gender: "female",
-    description: "A delicate sterling silver ring adorned with a line of white artificial diamonds and a single red heart centerpiece—symbolizing love, strength, and elegance.",
-    detailedDescription: "Celebrate timeless beauty and heartfelt sentiment with this finely crafted slim band. Designed in sterling silver, the ring features a continuous line of sparkling white diamond simulants, accented by a single radiant red heart-shaped stone at the center. The contrast of color draws the eye and adds emotional depth—perfect as a promise ring, anniversary token, or elegant daily wear. Lightweight, feminine, and full of meaning.",
-    specifications: {
-      "Material": "Silver with Diamond Simulants and Red Cubic Zirconia",
-      "Diamond Cut": "Round Brilliant",
-      "Band Width": "2mm",
-      "Setting": "Micro pavé and prong setting",
-      "Care": "Avoid chemicals and impact. Clean gently with a soft cloth. Store in a velvet pouch."
+//   {
+//     id: 14,
+//     name: "Textured Rope-Link Silver Chain",
+//     price: 349,
+//     category: "bracelets",
+//     gender: "unisex",
+//     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
+//     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+//     specifications: {
+//       "Material": "Sterling Silver",
+//       "Length": "8 inches",
+//       "Weight": "13g",
+//       "Clasp": "Heavy-duty lobster clasp",
+//       "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
+//   },
+//     images: [
+//       "assets/generated-image-27.png",
+//     ]
+//   },
+
+//   {
+//     id: 15,
+//     name: "Textured Oval-Link Silver Chain",
+//     price: 349,
+//     category: "bracelets",
+//     gender: "unisex",
+//     description: "Distinctive silver chain featuring Oval-style links for a bold and intricate look. Made from 777 silver.",
+//     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+//     specifications: {
+//       "Material": "Sterling Silver",
+//       "Length": "8 inches",
+//       "Weight": "13g",
+//       "Clasp": "Heavy-duty lobster clasp",
+//       "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
+//   },
+//     images: [
+//       "assets/generated-image-28.png",
+//       "assets/generated-image-29.png",
+//       "assets/generated-image-30.png"
+//     ]
+//   },
+//   {
+//     id: 16,
+//     name: "Minimalist Silver Chain",
+//     price: 399,
+//     category: "necklaces",
+//     gender: "female",
+//     description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
+//     detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Length": "18 inches",
+//       "Weight": "6g",
+//       "Clasp": "Lobster clasp",
+//       "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
+//     },
+//     images: [
+//       "assets/generated-image-32.png",
+//       "assets/generated-image-35.png",
+//       "assets/generated-image-36.png"
+//     ]
+//   },
+
+//   },
+//   {
+//     id: 17,
+//     name: "Eternal Sparkle Slim Diamond Band",
+//     price: 289,
+//     category: "rings",
+//     gender: "female",
+//     description: "A sleek silver band featuring a single row of shimmering artificial diamonds at its center. Elegant, minimal, and radiant.",
+//     detailedDescription: "Add a touch of refined brilliance to your everyday look with this slender sterling silver ring. At the heart of the design lies a continuous line of high-grade artificial diamonds, precisely set to create a seamless circle of sparkle. Perfect as a promise ring, stacking band, or solo statement, this ring combines timeless style with modern simplicity. Lightweight yet dazzling, it’s crafted for lasting comfort and shine.",
+//     specifications: {
+//       "Material": "Sterling Silver with Diamond Simulants",
+//       "Width": "2 mm",
+//       "Weight": "2.5g",
+//       "Setting": "Channel-set",
+//       "Care": "Avoid direct contact with water or perfumes. Clean gently with a soft jewelry cloth."
+//     },
+//     images: [
+//        "assets/generated-image-33.png",
+//        "assets/generated-image-34.png"
+//     ]
+//   },
+//   {
+//     id: 18,
+//     name: "GeoPulse Unisex Patterned Band",
+//     price: 199,
+//     category: "rings",
+//     gender: "unisex",
+//     description: "A bold unisex ring featuring a continuous pattern engraved around a brushed silver band. Built for those who move with rhythm and intention.",
+//     detailedDescription: "The GeoPulse Band redefines minimalism with a modern industrial edge. Crafted from durable sterling silver, this unisex ring showcases a repeating motif, precision-etched along the center of a matte-finished surface. The clean, structured design evokes balance, rhythm, and purpose—making it a standout piece for everyday wear or meaningful gifting. Designed for comfort with a slightly curved inner edge.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Width": "5mm",
+//       "Weight": "5.8g",
+//       "Finish": "Matte with engraved pattern",
+//       "Care": "Polish gently with a dry cloth. Store in a fabric-lined box. Avoid abrasive surfaces."
+//     },
+//     images: [
+//       "assets/generated-image-37.png"
+//     ]
+//   },
+//   {
+//     id: 19,
+//     name: "Heart of Grace Slim Diamond Band",
+//     price: 899,
+//     category: "rings",
+//     gender: "female",
+//     description: "A delicate sterling silver ring adorned with a line of white artificial diamonds and a single red heart centerpiece—symbolizing love, strength, and elegance.",
+//     detailedDescription: "Celebrate timeless beauty and heartfelt sentiment with this finely crafted slim band. Designed in sterling silver, the ring features a continuous line of sparkling white diamond simulants, accented by a single radiant red heart-shaped stone at the center. The contrast of color draws the eye and adds emotional depth—perfect as a promise ring, anniversary token, or elegant daily wear. Lightweight, feminine, and full of meaning.",
+//     specifications: {
+//       "Material": "Silver with Diamond Simulants and Red Cubic Zirconia",
+//       "Diamond Cut": "Round Brilliant",
+//       "Band Width": "2mm",
+//       "Setting": "Micro pavé and prong setting",
+//       "Care": "Avoid chemicals and impact. Clean gently with a soft cloth. Store in a velvet pouch."
       
-    },
-    images: [
-      "assets/generated-image-38.png",
-      "assets/generated-image-40.png"
-    ]
-  },
-  // {
-  //   id: 20,
-  //   name: "Vintage Style Ring Female",
-  //   price: 349,
-  //   category: "rings",
-  //   gender: "female",
-  //   description: "Ornate vintage-inspired design with intricate details",
-  //   detailedDescription: "Transport yourself to a bygone era with this vintage-inspired ring featuring intricate filigree work and delicate details. The ornate design showcases exceptional craftsmanship and attention to detail.",
-  //   specifications: {
-  //     "Material": "Sterling Silver with Antique Finish",
-  //     "Style": "Vintage Art Deco",
-  //     "Stone": "Cubic Zirconia",
-  //     "Ring Size": "Adjustable 6-8",
-  //     "Width": "15mm"
-  //   },
-  //   images: [
-  //     "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRkZENzAwIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxYTFhMWEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIwLjNlbSI+VmludGFnZSBSaW5nPC90ZXh0Pgo8L3N2Zz4="
-  //   ]
-  // },
-  {
-    id: 21,
-    name: "Textured Rope-Link Silver Chain",
-    price: 349,
-    category: "bracelets",
-    gender: "unisex",
-    description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
-    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
-    specifications: {
-      "Material": "Sterling Silver",
-      "Length": "8 inches",
-      "Weight": "13g",
-      "Clasp": "Heavy-duty lobster clasp",
-      "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
-  },
-    images: [
-      "assets/generated-image-39.png"
-    ]
-  },
- {
-    id: 22,
-    name: "Ram Silver Ring",
-    price: 499,
-    category: "rings",
-    gender: "unisex",
-    description: "A bold sterling silver Ram Challa ring engraved with sacred symbolism. A timeless expression of strength, devotion, and tradition.",
-    detailedDescription: "Rooted in tradition and crafted with precision, the Ram Challa ring carries a powerful message of faith and inner strength. Made from solid sterling silver, the ring features a clean, polished surface with intricate engravings of the word 'राम' (Ram) across its band. Revered for its spiritual significance, this unisex ring is a tribute to the divine and a reflection of unwavering resolve. Perfect for daily wear, rituals, or as a meaningful gift.",
-    specifications": {
-       "Material": "Silver",
-       "Width": "6 mm",
-       "Weight": "7g",
-       "Engraving": "राम (Ram) in Devanagari script",
-       "Finish": "High-polish with oxidized accents",
-       "Care": "Clean with a silver cloth. Avoid water and strong chemicals. Store wrapped separately."
-  },
-    images: [
-      "assets/generated-image-41.png",
-      "assets/generated-image-42.png"
-    ]
-  },
-  {
-    id: 23,
-    name: "Minimalist Silver Chain",
-    price: 399,
-    category: "necklaces",
-    gender: "Male",
-    description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
-    detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
-    specifications: {
-      "Material": "Silver",
-      "Length": "18 inches",
-      "Weight": "15g",
-      "Clasp": "Lobster clasp",
-      "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
-    },
-    images: [
-      "assets/generated-image-44.png",
-      "assets/generated-image-45.png"
-]
-  },
- {
-    id: 24,
-    name: "Pure Form Minimalist Silver Band",
-    price: 199,
-    category: "rings",
-    gender: "unisex",
-    description: "A sleek and minimal sterling silver ring designed for everyday elegance. Understated. Timeless. Essential.",
-    detailedDescription: "Celebrate the beauty of simplicity with the Pure Form Minimalist Band. Crafted from high-quality 925 sterling silver, this ultra-slim ring features a smooth, polished surface with a low-profile silhouette. Whether worn solo, stacked, or paired with statement pieces, it effortlessly complements any style. Perfect for those who appreciate clean lines and quiet sophistication.",
-    specifications: {
-      "Material": "Silver",
-      "Width": "1.5 mm",
-      "Weight": "1.8g",
-      "Finish": "High-polish mirror finish",
-      "Care": "Avoid harsh chemicals. Clean with a soft dry cloth. Store separately to prevent scratches."
-    },
-    images: [
-      "assets/generated-image-48.png",
-      "assets/generated-image-49.png"
-    ]
-  },
- {
-  id: 25,
-  name: "Urban Edge Flat Silver Chain",
-  price: 379,
-  category: "necklaces",
-  gender: "male",
-  description: "A bold, short flat sterling silver chain with a strong profile and smooth finish. Designed for urban minimalism.",
-  detailedDescription: "Refined yet powerful, the Urban Edge Flat Chain is crafted for the modern man. Made from high-quality 925 sterling silver, this short-length necklace features flat, interlocking links that lie flush against the skin, delivering both comfort and contemporary style. With a sturdy clasp and sleek polish, it’s perfect as a solo statement or layered with other pieces for a bolder look.",
-  specifications: {
-    "Material": "925 Sterling Silver",
-    "Length": "18 inches",
-    "Width": "5 mm",
-    "Weight": "15g",
-    "Clasp": "Lobster clasp",
-    "Finish": "High-polish flat links",
-    "Care": "Wipe with a soft cloth after use. Avoid direct contact with moisture and perfume."
-  },
-  "images": [
-    "assets/generated-image-53.png",
-    "assets/generated-image-54.png"
-  ]
-},
-{
-  id: 26,
-  name: "Legacy Flat-Link Silver Chain",
-  price: 449,
-  category: "necklaces",
-  gender: "male",
-  description: "A long flat-link chain crafted from silver. Bold, sleek, and designed for timeless confidence.",
-  detailedDescription: "Crafted for those who appreciate understated luxury, the Legacy Flat-Link Chain combines length, weight, and clean design in one powerful accessory. Made from 777 silver, this long chain features flat, close-set links that drape comfortably across the chest. The smooth reflective surface and substantial feel make it a perfect standalone piece or ideal layering base. Built to last, made to stand out.",
-  specifications: {
-    "Material": "Silver",
-    "Length": "24 inches",
-    "Width": "5.5 mm",
-    "Weight": "21g",
-    "Clasp": "Heavy-duty lobster clasp",
-    "Finish": "Mirror-polished flat links",
-    "Care": "Wipe gently after use. Store separately to prevent scratches. Avoid water and chemicals."
-  },
-  "images": [
-    "assets/generated-image-63.png",
-    "assets/generated-image-64.png",
-    "assets/generated-image-55.png",
-    "assets/generated-image-65.png",
-    "assets/generated-image-66.png",
-    "assets/generated-image-67.png"
-  ]
-},
- {
-    id: 27,
-    name: "Dominion Cuban Link Bracelet",
-    price: 349,
-    category: "bracelets",
-    gender: "unisex",
-    description: "A bold Cuban link bracelet crafted from 777 silver. Rugged elegance with undeniable street style influence.",
-    detailedDescription: "The Dominion Cuban Link Bracelet brings classic strength and style together in one iconic piece. Handcrafted from solid 777 silver, its tightly interlocked links offer a thick, heavy feel and unmistakable shine. The bracelet is finished with a secure box clasp, ensuring durability for everyday wear. Whether worn solo or stacked, this Cuban link delivers presence, power, and polish—ideal for men who move with confidence.",
-    specifications: {
-      "Material": "Silver",
-      "Length": "8.5 inches",
-      "Weight": "3.4g",
-      "Clasp": "High-gloss polished links",
-      "Care": "Polish with a dry cloth. Avoid chemical contact and moisture. Store flat in a pouch."
-  },
-    images: [
-      "assets/generated-image-68.png",
-      "assets/generated-image-69.png"
-    ]
-  },
+//     },
+//     images: [
+//       "assets/generated-image-38.png",
+//       "assets/generated-image-40.png"
+//     ]
+//   },
+//   // {
+//   //   id: 20,
+//   //   name: "Vintage Style Ring Female",
+//   //   price: 349,
+//   //   category: "rings",
+//   //   gender: "female",
+//   //   description: "Ornate vintage-inspired design with intricate details",
+//   //   detailedDescription: "Transport yourself to a bygone era with this vintage-inspired ring featuring intricate filigree work and delicate details. The ornate design showcases exceptional craftsmanship and attention to detail.",
+//   //   specifications: {
+//   //     "Material": "Sterling Silver with Antique Finish",
+//   //     "Style": "Vintage Art Deco",
+//   //     "Stone": "Cubic Zirconia",
+//   //     "Ring Size": "Adjustable 6-8",
+//   //     "Width": "15mm"
+//   //   },
+//   //   images: [
+//   //     "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRkZENzAwIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxYTFhMWEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIwLjNlbSI+VmludGFnZSBSaW5nPC90ZXh0Pgo8L3N2Zz4="
+//   //   ]
+//   // },
+//   {
+//     id: 21,
+//     name: "Textured Rope-Link Silver Chain",
+//     price: 349,
+//     category: "bracelets",
+//     gender: "unisex",
+//     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
+//     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+//     specifications: {
+//       "Material": "Sterling Silver",
+//       "Length": "8 inches",
+//       "Weight": "13g",
+//       "Clasp": "Heavy-duty lobster clasp",
+//       "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
+//   },
+//     images: [
+//       "assets/generated-image-39.png"
+//     ]
+//   },
+//  {
+//     id: 22,
+//     name: "Ram Silver Ring",
+//     price: 499,
+//     category: "rings",
+//     gender: "unisex",
+//     description: "A bold sterling silver Ram Challa ring engraved with sacred symbolism. A timeless expression of strength, devotion, and tradition.",
+//     detailedDescription: "Rooted in tradition and crafted with precision, the Ram Challa ring carries a powerful message of faith and inner strength. Made from solid sterling silver, the ring features a clean, polished surface with intricate engravings of the word 'राम' (Ram) across its band. Revered for its spiritual significance, this unisex ring is a tribute to the divine and a reflection of unwavering resolve. Perfect for daily wear, rituals, or as a meaningful gift.",
+//     specifications": {
+//        "Material": "Silver",
+//        "Width": "6 mm",
+//        "Weight": "7g",
+//        "Engraving": "राम (Ram) in Devanagari script",
+//        "Finish": "High-polish with oxidized accents",
+//        "Care": "Clean with a silver cloth. Avoid water and strong chemicals. Store wrapped separately."
+//   },
+//     images: [
+//       "assets/generated-image-41.png",
+//       "assets/generated-image-42.png"
+//     ]
+//   },
+//   {
+//     id: 23,
+//     name: "Minimalist Silver Chain",
+//     price: 399,
+//     category: "necklaces",
+//     gender: "Male",
+//     description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
+//     detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Length": "18 inches",
+//       "Weight": "15g",
+//       "Clasp": "Lobster clasp",
+//       "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
+//     },
+//     images: [
+//       "assets/generated-image-44.png",
+//       "assets/generated-image-45.png"
+// ]
+//   },
+//  {
+//     id: 24,
+//     name: "Pure Form Minimalist Silver Band",
+//     price: 199,
+//     category: "rings",
+//     gender: "unisex",
+//     description: "A sleek and minimal sterling silver ring designed for everyday elegance. Understated. Timeless. Essential.",
+//     detailedDescription: "Celebrate the beauty of simplicity with the Pure Form Minimalist Band. Crafted from high-quality 925 sterling silver, this ultra-slim ring features a smooth, polished surface with a low-profile silhouette. Whether worn solo, stacked, or paired with statement pieces, it effortlessly complements any style. Perfect for those who appreciate clean lines and quiet sophistication.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Width": "1.5 mm",
+//       "Weight": "1.8g",
+//       "Finish": "High-polish mirror finish",
+//       "Care": "Avoid harsh chemicals. Clean with a soft dry cloth. Store separately to prevent scratches."
+//     },
+//     images: [
+//       "assets/generated-image-48.png",
+//       "assets/generated-image-49.png"
+//     ]
+//   },
+//  {
+//   id: 25,
+//   name: "Urban Edge Flat Silver Chain",
+//   price: 379,
+//   category: "necklaces",
+//   gender: "male",
+//   description: "A bold, short flat sterling silver chain with a strong profile and smooth finish. Designed for urban minimalism.",
+//   detailedDescription: "Refined yet powerful, the Urban Edge Flat Chain is crafted for the modern man. Made from high-quality 925 sterling silver, this short-length necklace features flat, interlocking links that lie flush against the skin, delivering both comfort and contemporary style. With a sturdy clasp and sleek polish, it’s perfect as a solo statement or layered with other pieces for a bolder look.",
+//   specifications: {
+//     "Material": "925 Sterling Silver",
+//     "Length": "18 inches",
+//     "Width": "5 mm",
+//     "Weight": "15g",
+//     "Clasp": "Lobster clasp",
+//     "Finish": "High-polish flat links",
+//     "Care": "Wipe with a soft cloth after use. Avoid direct contact with moisture and perfume."
+//   },
+//   "images": [
+//     "assets/generated-image-53.png",
+//     "assets/generated-image-54.png"
+//   ]
+// },
+// {
+//   id: 26,
+//   name: "Legacy Flat-Link Silver Chain",
+//   price: 449,
+//   category: "necklaces",
+//   gender: "male",
+//   description: "A long flat-link chain crafted from silver. Bold, sleek, and designed for timeless confidence.",
+//   detailedDescription: "Crafted for those who appreciate understated luxury, the Legacy Flat-Link Chain combines length, weight, and clean design in one powerful accessory. Made from 777 silver, this long chain features flat, close-set links that drape comfortably across the chest. The smooth reflective surface and substantial feel make it a perfect standalone piece or ideal layering base. Built to last, made to stand out.",
+//   specifications: {
+//     "Material": "Silver",
+//     "Length": "24 inches",
+//     "Width": "5.5 mm",
+//     "Weight": "21g",
+//     "Clasp": "Heavy-duty lobster clasp",
+//     "Finish": "Mirror-polished flat links",
+//     "Care": "Wipe gently after use. Store separately to prevent scratches. Avoid water and chemicals."
+//   },
+//   "images": [
+//     "assets/generated-image-63.png",
+//     "assets/generated-image-64.png",
+//     "assets/generated-image-55.png",
+//     "assets/generated-image-65.png",
+//     "assets/generated-image-66.png",
+//     "assets/generated-image-67.png"
+//   ]
+// },
+//  {
+//     id: 27,
+//     name: "Dominion Cuban Link Bracelet",
+//     price: 349,
+//     category: "bracelets",
+//     gender: "unisex",
+//     description: "A bold Cuban link bracelet crafted from 777 silver. Rugged elegance with undeniable street style influence.",
+//     detailedDescription: "The Dominion Cuban Link Bracelet brings classic strength and style together in one iconic piece. Handcrafted from solid 777 silver, its tightly interlocked links offer a thick, heavy feel and unmistakable shine. The bracelet is finished with a secure box clasp, ensuring durability for everyday wear. Whether worn solo or stacked, this Cuban link delivers presence, power, and polish—ideal for men who move with confidence.",
+//     specifications: {
+//       "Material": "Silver",
+//       "Length": "8.5 inches",
+//       "Weight": "3.4g",
+//       "Clasp": "High-gloss polished links",
+//       "Care": "Polish with a dry cloth. Avoid chemical contact and moisture. Store flat in a pouch."
+//   },
+//     images: [
+//       "assets/generated-image-68.png",
+//       "assets/generated-image-69.png"
+//     ]
+//   },
 ];
 
 
