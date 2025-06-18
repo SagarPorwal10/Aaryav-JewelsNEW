@@ -152,27 +152,27 @@ const products = [
   },
 
 
-  {
-    id: 8,
-    name: "Midnight Evil Eye Beaded Bracelet",
-    price: 299,
-    category: "bracelets",
-    gender: "female",
-    description: "A symbolic beaded bracelet featuring a deep blue evil eye charm flanked by glossy black and silver-tone beads. Designed for everyday wear and protection.",
-    detailedDescription: "Rooted in tradition and styled for the modern spirit, the Midnight Evil Eye Bracelet is a perfect blend of symbolism and simplicity. At its center lies a glass evil eye bead in rich navy blue, believed to ward off negativity and attract good energy. The bracelet is meticulously hand-strung with alternating black and silver-toned cube beads that exude a minimal yet bold look. Adjustable in length, this unisex bracelet is perfect for layering or wearing solo, offering both meaning and style in one sleek accessory.",
-    specifications: {
-      "Material": "Glass and Silver beads with stainless steel findingsg",
-      "Charm": "Evil Eye (navy blue glass)",
-      "Length": "6.5 to 8 inches (adjustable)",
-      "Weight": "16g",
-      "Clasp": "Lobster claw with extender chain",
-      "Care": "Keep dry; avoid direct contact with perfumes and sprays"
-    },
-    images: [
-      "assets/generated-image-15.png",
-      "assets/generated-image-16.png"
-    ]
-  },
+  // {
+  //   id: 8,
+  //   name: "Midnight Evil Eye Beaded Bracelet",
+  //   price: 299,
+  //   category: "bracelets",
+  //   gender: "female",
+  //   description: "A symbolic beaded bracelet featuring a deep blue evil eye charm flanked by glossy black and silver-tone beads. Designed for everyday wear and protection.",
+  //   detailedDescription: "Rooted in tradition and styled for the modern spirit, the Midnight Evil Eye Bracelet is a perfect blend of symbolism and simplicity. At its center lies a glass evil eye bead in rich navy blue, believed to ward off negativity and attract good energy. The bracelet is meticulously hand-strung with alternating black and silver-toned cube beads that exude a minimal yet bold look. Adjustable in length, this unisex bracelet is perfect for layering or wearing solo, offering both meaning and style in one sleek accessory.",
+  //   specifications: {
+  //     "Material": "Glass and Silver beads with stainless steel findingsg",
+  //     "Charm": "Evil Eye (navy blue glass)",
+  //     "Length": "6.5 to 8 inches (adjustable)",
+  //     "Weight": "16g",
+  //     "Clasp": "Lobster claw with extender chain",
+  //     "Care": "Keep dry; avoid direct contact with perfumes and sprays"
+  //   },
+  //   images: [
+  //     "assets/generated-image-15.png",
+  //     "assets/generated-image-16.png"
+  //   ]
+  // },
 
 
   {
@@ -197,48 +197,48 @@ const products = [
   },
 
 
-  {
-    id: 10,
-    name: "Sculpted Stippling Pavé Band",
+  // {
+  //   id: 10,
+  //   name: "Sculpted Stippling Pavé Band",
+  //   price: 299,
+  //   category: "rings",
+  //   gender: "unisex",
+  //   description: "A sleek silver band featuring geometric grids. Designed for bold elegance and modern refinement.",
+  //   detailedDescription: "This stunning silver ring showcases a contemporary band design. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality 777 silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+  //   specifications: {
+  //     "Material": "Silver",
+  //     "Width": "6 mm",
+  //     "Weight": "3g",
+  //     "Finish": "High-polish with matte contrast in grooves",
+  //     "Care": "Avoid water and perfume contact"
+  //   },
+  //   images: [
+  //     "assets/generated-image-19.png",
+  //     "assets/generated-image-21.png"
+  //   ]
+  // },
+
+
+   {
+    id: 11,
+    name: "Celestial Blue & White Gemstone Ring",
     price: 299,
     category: "rings",
-    gender: "unisex",
-    description: "A sleek silver band featuring geometric grids. Designed for bold elegance and modern refinement.",
-    detailedDescription: "This stunning silver ring showcases a contemporary band design. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality 777 silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+    gender: "female",
+    description: "A graceful silver ring featuring alternating vivid blue and white stones. A symbol of elegance with a celestial touch.",
+    detailedDescription: "Capture the night sky's allure with this delicate silver ring, showcasing a captivating sequence of alternating royal blue and brilliant white gemstones. The round-cut stones are prong-set for maximum sparkle, each one carefully selected for clarity and color balance. Ideal as a promise ring, anniversary gift, or stackable statement piece, this band embodies refined femininity and timeless charm.",
     specifications: {
-      "Material": "Silver",
-      "Width": "6 mm",
-      "Weight": "3g",
-      "Finish": "High-polish with matte contrast in grooves",
-      "Care": "Avoid water and perfume contact"
+      "Material": "Sterling Silver with Diamond Simulants",
+      "Stone Size": "3 mm each (approx.)",
+      "Weight": "12g",
+      "Setting": "Prong setting",
+      "Care": "Clean with a soft cloth. Avoid direct heat, chemicals, and water immersion."
     },
     images: [
-      "assets/generated-image-19.png",
-      "assets/generated-image-21.png"
+      "assets/generated-image-20.png",
+      "assets/generated-image-22.png"
     ]
-  },
-
-
-//   {
-//     id: 11,
-//     name: "Celestial Blue & White Gemstone Ring",
-//     price: 299,
-//     category: "rings",
-//     gender: "female",
-//     description: "A graceful silver ring featuring alternating vivid blue and white stones. A symbol of elegance with a celestial touch.",
-//     detailedDescription: "Capture the night sky's allure with this delicate silver ring, showcasing a captivating sequence of alternating royal blue and brilliant white gemstones. The round-cut stones are prong-set for maximum sparkle, each one carefully selected for clarity and color balance. Ideal as a promise ring, anniversary gift, or stackable statement piece, this band embodies refined femininity and timeless charm.",
-//     specifications: {
-//       "Material": "Sterling Silver with Diamond Simulants",
-//       "Stone Size": "3 mm each (approx.)",
-//       "Weight": "12g",
-//       "Setting": "Prong setting",
-//       "Care": "Clean with a soft cloth. Avoid direct heat, chemicals, and water immersion."
-//     },
-//     images: [
-//       "assets/generated-image-20.png",
-//       "assets/generated-image-22.png"
-//     ]
-//   },
+   },
 
 //   {
 //     id: 12,
