@@ -522,37 +522,37 @@ const products = [
     "Finish": "High-polish flat links",
     "Care": "Wipe with a soft cloth after use. Avoid direct contact with moisture and perfume."
   },
-  "images": [
+  images: [
     "assets/generated-image-53.png",
     "assets/generated-image-54.png"
   ]
 },
-// {
-//   id: 26,
-//   name: "Legacy Flat-Link Silver Chain",
-//   price: 449,
-//   category: "necklaces",
-//   gender: "male",
-//   description: "A long flat-link chain crafted from silver. Bold, sleek, and designed for timeless confidence.",
-//   detailedDescription: "Crafted for those who appreciate understated luxury, the Legacy Flat-Link Chain combines length, weight, and clean design in one powerful accessory. Made from 777 silver, this long chain features flat, close-set links that drape comfortably across the chest. The smooth reflective surface and substantial feel make it a perfect standalone piece or ideal layering base. Built to last, made to stand out.",
-//   specifications: {
-//     "Material": "Silver",
-//     "Length": "24 inches",
-//     "Width": "5.5 mm",
-//     "Weight": "21g",
-//     "Clasp": "Heavy-duty lobster clasp",
-//     "Finish": "Mirror-polished flat links",
-//     "Care": "Wipe gently after use. Store separately to prevent scratches. Avoid water and chemicals."
-//   },
-//   "images": [
-//     "assets/generated-image-63.png",
-//     "assets/generated-image-64.png",
-//     "assets/generated-image-55.png",
-//     "assets/generated-image-65.png",
-//     "assets/generated-image-66.png",
-//     "assets/generated-image-67.png"
-//   ]
-// },
+{
+  id: 26,
+  name: "Legacy Flat-Link Silver Chain",
+  price: 449,
+  category: "necklaces",
+  gender: "male",
+  description: "A long flat-link chain crafted from silver. Bold, sleek, and designed for timeless confidence.",
+  detailedDescription: "Crafted for those who appreciate understated luxury, the Legacy Flat-Link Chain combines length, weight, and clean design in one powerful accessory. Made from 777 silver, this long chain features flat, close-set links that drape comfortably across the chest. The smooth reflective surface and substantial feel make it a perfect standalone piece or ideal layering base. Built to last, made to stand out.",
+  specifications: {
+    "Material": "Silver",
+    "Length": "24 inches",
+    "Width": "5.5 mm",
+    "Weight": "21g",
+    "Clasp": "Heavy-duty lobster clasp",
+    "Finish": "Mirror-polished flat links",
+    "Care": "Wipe gently after use. Store separately to prevent scratches. Avoid water and chemicals."
+  },
+  images: [
+    "assets/generated-image-63.png",
+    "assets/generated-image-64.png",
+    "assets/generated-image-55.png",
+    "assets/generated-image-65.png",
+    "assets/generated-image-66.png",
+    "assets/generated-image-67.png"
+  ]
+},
 //  {
 //     id: 27,
 //     name: "Dominion Cuban Link Bracelet",
