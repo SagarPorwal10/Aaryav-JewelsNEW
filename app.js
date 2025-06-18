@@ -6,7 +6,7 @@ const products = [
     id: 1,
     name: "Elegant Gold Chain Female",
     price: 299,
-    category: "necklaces",
+    category: "bracelets",
     gender: "male",
     description: "Sleek and minimal silver chain designed for everyday sophistication. Crafted from high-quality sterling silver with a modern oval-link pattern.",
     detailedDescription: "This elegant silver chain blends timeless design with contemporary style. Meticulously crafted from 777 silver, the chain features polished oval links and a secure lobster clasp, making it perfect for both casual wear and formal occasions. Its unisex design ensures it complements any outfit, for any gender.",
@@ -28,7 +28,7 @@ const products = [
     id: 2,
     name: "Elegant Gold Chain Female",
     price: 299,
-    category: "necklaces",
+    category: "bracelets",
     gender: "male",
     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from silver.",
     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
@@ -45,47 +45,47 @@ const products = [
     ]
   },
 
-//   {
-//     id: 3,
-//     name: "Elegant Gold Chain Female",
-//     price: 299,
-//     category: "necklaces",
-//     gender: "female",
-//     description: "Delicate feminine gold chain perfect for everyday elegance. Crafted with high-quality sterling silver and finished in lustrous gold plating.",
-//     detailedDescription: "This exquisite gold chain represents the perfect blend of elegance and versatility. Meticulously crafted with premium sterling silver and finished with a lustrous gold plating, this piece is designed for the modern woman who appreciates timeless beauty. The delicate links create a flowing silhouette that complements both casual and formal attire.",
-//     specifications: {
-//       "Material": "Sterling Silver with Gold Plating",
-//       "Length": "18 inches (adjustable)",
-//       "Weight": "12g",
-//       "Clasp": "Secure lobster clasp",
-//       "Care": "Avoid water and perfume contact"
-//     },
-//     images: [
-//       "assets/generated-image3.png",
-//       "assets/generated-image-4.png"
-//     ]
-//   },
+  {
+    id: 3,
+    name: "Elegant Gold Chain Female",
+    price: 299,
+    category: "bracelets",
+    gender: "female",
+    description: "A refined silver bracelet adorned with brilliant-cut diamonds set in square links. Crafted for elegant evenings and timeless sophistication.",
+    detailedDescription: "Elevate your jewelry collection with this stunning silver bracelet featuring five dazzling square-shaped links, each encrusted with radiant-cut diamonds. Meticulously set in sterling silver, the bracelet strikes a perfect balance between contemporary design and classic luxury. Its adjustable length and secure clasp offer both comfort and beauty, ideal for formal occasions or as a statement accessory.",
+    specifications: {
+      "Material": "Sterling Silver with Diamond Simulants",
+      "Length": "7 inches + 1-inch extender",
+      "Weight": "14g",
+      "Clasp": "Lobster clasp with extender chain",
+      "Care": "Store separately in a jewelry pouch. Avoid exposure to moisture and chemicals."
+    },
+    images: [
+      "assets/generated-image-5.png",
+      "assets/generated-image-6.png"
+    ]
+  },
 
-//   {
-//     id: 4,
-//     name: "Elegant Gold Chain Female",
-//     price: 299,
-//     category: "necklaces",
-//     gender: "female",
-//     description: "Delicate feminine gold chain perfect for everyday elegance. Crafted with high-quality sterling silver and finished in lustrous gold plating.",
-//     detailedDescription: "This exquisite gold chain represents the perfect blend of elegance and versatility. Meticulously crafted with premium sterling silver and finished with a lustrous gold plating, this piece is designed for the modern woman who appreciates timeless beauty. The delicate links create a flowing silhouette that complements both casual and formal attire.",
-//     specifications: {
-//       "Material": "Sterling Silver with Gold Plating",
-//       "Length": "18 inches (adjustable)",
-//       "Weight": "12g",
-//       "Clasp": "Secure lobster clasp",
-//       "Care": "Avoid water and perfume contact"
-//     },
-//     images: [
-//       "assets/generated-image-5.png",
-//       "assets/generated-image-6.png"
-//     ]
-//   },
+  {
+    id: 4,
+    name: "Elegant Gold Chain Female",
+    price: 299,
+    category: "necklaces",
+    gender: "female",
+    description: "Delicate feminine gold chain perfect for everyday elegance. Crafted with high-quality sterling silver and finished in lustrous gold plating.",
+    detailedDescription: "This exquisite gold chain represents the perfect blend of elegance and versatility. Meticulously crafted with premium sterling silver and finished with a lustrous gold plating, this piece is designed for the modern woman who appreciates timeless beauty. The delicate links create a flowing silhouette that complements both casual and formal attire.",
+    specifications: {
+      "Material": "Sterling Silver with Gold Plating",
+      "Length": "18 inches (adjustable)",
+      "Weight": "12g",
+      "Clasp": "Secure lobster clasp",
+      "Care": "Avoid water and perfume contact"
+    },
+    images: [
+      "assets/generated-image-5.png",
+      "assets/generated-image-6.png"
+    ]
+  },
 
 //   {
 //     id: 5,
