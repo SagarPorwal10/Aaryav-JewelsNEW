@@ -24,89 +24,89 @@ const products = [
 
   },
 
-//   {
-//     id: 2,
-//     name: "Elegant Gold Chain Female",
-//     price: 299,
-//     category: "bracelets",
-//     gender: "male",
-//     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from silver.",
-//     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Length": "8 inches (adjustable)",
-//       "Weight": "10g",
-//       "Clasp": "Secure lobster clasp",
-//       "Care": "Avoid water and perfume contact"
-//     },
-//     images: [
-//       "assets/generated-image-3.png",
-//       "assets/generated-image-4.png"
-//     ]
-//   },
+  {
+    id: 2,
+    name: "Elegant Gold Chain Female",
+    price: 299,
+    category: "bracelets",
+    gender: "male",
+    description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from silver.",
+    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "8 inches (adjustable)",
+      "Weight": "10g",
+      "Clasp": "Secure lobster clasp",
+      "Care": "Avoid water and perfume contact"
+    },
+    images: [
+      "assets/generated-image-3.png",
+      "assets/generated-image-4.png"
+    ]
+  },
 
-//   {
-//     id: 3,
-//     name: "Elegant Gold Chain Female",
-//     price: 299,
-//     category: "bracelets",
-//     gender: "female",
-//     description: "A refined silver bracelet adorned with brilliant-cut diamonds set in square links. Crafted for elegant evenings and timeless sophistication.",
-//     detailedDescription: "Elevate your jewelry collection with this stunning silver bracelet featuring five dazzling square-shaped links, each encrusted with radiant-cut diamonds. Meticulously set in sterling silver, the bracelet strikes a perfect balance between contemporary design and classic luxury. Its adjustable length and secure clasp offer both comfort and beauty, ideal for formal occasions or as a statement accessory.",
-//     specifications: {
-//       "Material": "Sterling Silver with Diamond Simulants",
-//       "Length": "7 inches + 1-inch extender",
-//       "Weight": "14g",
-//       "Clasp": "Lobster clasp with extender chain",
-//       "Care": "Store separately in a jewelry pouch. Avoid exposure to moisture and chemicals."
-//     },
-//     images: [
-//       "assets/generated-image-5.png",
-//       "assets/generated-image-6.png"
-//     ]
-//   },
+  {
+    id: 3,
+    name: "Elegant Gold Chain Female",
+    price: 299,
+    category: "bracelets",
+    gender: "female",
+    description: "A refined silver bracelet adorned with brilliant-cut diamonds set in square links. Crafted for elegant evenings and timeless sophistication.",
+    detailedDescription: "Elevate your jewelry collection with this stunning silver bracelet featuring five dazzling square-shaped links, each encrusted with radiant-cut diamonds. Meticulously set in sterling silver, the bracelet strikes a perfect balance between contemporary design and classic luxury. Its adjustable length and secure clasp offer both comfort and beauty, ideal for formal occasions or as a statement accessory.",
+    specifications: {
+      "Material": "Sterling Silver with Diamond Simulants",
+      "Length": "7 inches + 1-inch extender",
+      "Weight": "14g",
+      "Clasp": "Lobster clasp with extender chain",
+      "Care": "Store separately in a jewelry pouch. Avoid exposure to moisture and chemicals."
+    },
+    images: [
+      "assets/generated-image-5.png",
+      "assets/generated-image-6.png"
+    ]
+  },
 
-//   {
-//     id: 4,
-//     name: "Elegant Pink Sapphire Marquise Bracelet",
-//     price: 299,
-//     category: "bracelets",
-//     gender: "female",
-//     description: "A delicate silver bracelet featuring alternating marquise links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
-//     detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
-//     specifications: {
-//       "Material": "Silver with Pink Sapphire Simulants and CZ Accents",
-//       "Length": "7 inches + 1-inch extender",
-//       "Weight": "12g",
-//       "Clasp": "Lobster clasp with extender chain",
-//       "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents."
-//     },
-//     images: [
-//       "assets/generated-image-7.png",
-//       "assets/generated-image-8.png"
-//     ]
-//   },
+  {
+    id: 4,
+    name: "Elegant Pink Sapphire Marquise Bracelet",
+    price: 299,
+    category: "bracelets",
+    gender: "female",
+    description: "A delicate silver bracelet featuring alternating marquise links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
+    detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
+    specifications: {
+      "Material": "Silver with Pink Sapphire Simulants and CZ Accents",
+      "Length": "7 inches + 1-inch extender",
+      "Weight": "12g",
+      "Clasp": "Lobster clasp with extender chain",
+      "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents."
+    },
+    images: [
+      "assets/generated-image-7.png",
+      "assets/generated-image-8.png"
+    ]
+  },
 
-//   {
-//     id: 5,
-//     name: "Lustrous Marquise-Link Diamond Bracelet",
-//     price: 299,
-//     category: "bracelets",
-//     gender: "female",
-//     description: "A luminous silver bracelet featuring a continuous design of diamond-studded marquise links. Pure elegance with a modern silhouette.",
-//     detailedDescription: "Radiating refined sophistication, this sterling silver bracelet showcases an elegant chain of open marquise-shaped links, each delicately encrusted with sparkling cubic zirconia. The design flows gracefully across the wrist, offering timeless charm with a hint of modern luxury. Its adjustable extension and secure lobster clasp ensure a flawless fit for any occasion—from casual elegance to formal glamour.",
-//     specifications: {
-//       "Material": "Sterling Silver with Cubic Zirconia",
-//       "Length": "7 inches + 1-inch extender",
-//       "Weight": "10g",
-//       "Clasp": "Lobster clasp with extender chain",
-//       "Care": "Keep in a soft-lined box. Avoid direct contact with water, perfumes, and chemicals."
-//     },
-//     images: [
-//       "assets/generated-image-9.png",
-//       "assets/generated-image-10.png"
-//     ]
-//   },
+  {
+    id: 5,
+    name: "Lustrous Marquise-Link Diamond Bracelet",
+    price: 299,
+    category: "bracelets",
+    gender: "female",
+    description: "A luminous silver bracelet featuring a continuous design of diamond-studded marquise links. Pure elegance with a modern silhouette.",
+    detailedDescription: "Radiating refined sophistication, this sterling silver bracelet showcases an elegant chain of open marquise-shaped links, each delicately encrusted with sparkling cubic zirconia. The design flows gracefully across the wrist, offering timeless charm with a hint of modern luxury. Its adjustable extension and secure lobster clasp ensure a flawless fit for any occasion—from casual elegance to formal glamour.",
+    specifications: {
+      "Material": "Sterling Silver with Cubic Zirconia",
+      "Length": "7 inches + 1-inch extender",
+      "Weight": "10g",
+      "Clasp": "Lobster clasp with extender chain",
+      "Care": "Keep in a soft-lined box. Avoid direct contact with water, perfumes, and chemicals."
+    },
+    images: [
+      "assets/generated-image-9.png",
+      "assets/generated-image-10.png"
+    ]
+  },
 
 //   {
 //     id: 6,
