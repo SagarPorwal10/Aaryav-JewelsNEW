@@ -108,115 +108,115 @@ const products = [
     ]
   },
 
-//   {
-//     id: 6,
-//     name: "Om(ॐ) Diamond-Bar Spiritual Bracelet",
-//     price: 299,
-//     category: "bracelets",
-//     gender: "female",
-//     description: "A bold and spiritual bracelet featuring an 'Om' symbol at the center of a shimmering pavé diamond bar. Perfect harmony of style and meaning.",
-//     detailedDescription: "Channel spiritual energy and sophisticated style with this refined bracelet featuring a sleek bar design paved with rows of dazzling cubic zirconia. At the center lies a black enamel 'Om' symbol, symbolizing peace, protection, and cosmic power. The polished sterling silver frame is matched with an adjustable drawstring chain, ensuring comfort and a secure fit. A meaningful accessory that blends tradition with contemporary fashion—ideal for personal wear or a thoughtful gift.",
-//     specifications: {
-//       "Material": "Sterling Silver with Black Enamel and Cubic Zirconia",
-//       "Length": "Adjustable – fits most wrist sizes",
-//       "Weight": "16g",
-//       "Clasp": "Adjustable sliding clasp with bead ends",
-//       "Care": "Polish with a soft cloth. Avoid water and chemicals to maintain finish and shine."
-//     },
-//     images: [
-//       "assets/generated-image-11.png",
-//       "assets/generated-image-12.png"
-//     ]
-//   },
+  {
+    id: 6,
+    name: "Om(ॐ) Diamond-Bar Spiritual Bracelet",
+    price: 299,
+    category: "bracelets",
+    gender: "female",
+    description: "A bold and spiritual bracelet featuring an 'Om' symbol at the center of a shimmering pavé diamond bar. Perfect harmony of style and meaning.",
+    detailedDescription: "Channel spiritual energy and sophisticated style with this refined bracelet featuring a sleek bar design paved with rows of dazzling cubic zirconia. At the center lies a black enamel 'Om' symbol, symbolizing peace, protection, and cosmic power. The polished sterling silver frame is matched with an adjustable drawstring chain, ensuring comfort and a secure fit. A meaningful accessory that blends tradition with contemporary fashion—ideal for personal wear or a thoughtful gift.",
+    specifications: {
+      "Material": "Sterling Silver with Black Enamel and Cubic Zirconia",
+      "Length": "Adjustable – fits most wrist sizes",
+      "Weight": "16g",
+      "Clasp": "Adjustable sliding clasp with bead ends",
+      "Care": "Polish with a soft cloth. Avoid water and chemicals to maintain finish and shine."
+    },
+    images: [
+      "assets/generated-image-11.png",
+      "assets/generated-image-12.png"
+    ]
+  },
 
 
-//   {
-//     id: 7,
-//     name: "Titan Classic Curb Chain Bracelet",
-//     price: 299,
-//     category: "bracelets",
-//     gender: "male",
-//     description: "A timeless silver curb chain bracelet that speaks of strength and subtle style. A staple accessory for the modern man.",
-//     detailedDescription: "Engineered for everyday elegance, this masculine bracelet features a bold, polished curb chain crafted from durable stainless steel. The sleek interlocking links provide a strong yet flexible feel, while the triangular-end clasp detail adds a distinctive modern touch. Whether worn solo or layered with a watch, the Titan Classic bracelet is a statement in simplicity and style—perfect for casual and formal ensembles alike.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Length": "8.5 inches",
-//       "Weight": "12g",
-//       "Clasp": "Fold-over clasp with triangle cap accent",
-//       "Care": "Clean with a soft cloth. Avoid exposure to saltwater and harsh chemicals."
-//     },
-//     images: [
-//       "assets/generated-image-13.png",
-//       "assets/generated-image-14.png"
-//     ]
-//   },
+  {
+    id: 7,
+    name: "Titan Classic Curb Chain Bracelet",
+    price: 299,
+    category: "bracelets",
+    gender: "male",
+    description: "A timeless silver curb chain bracelet that speaks of strength and subtle style. A staple accessory for the modern man.",
+    detailedDescription: "Engineered for everyday elegance, this masculine bracelet features a bold, polished curb chain crafted from durable stainless steel. The sleek interlocking links provide a strong yet flexible feel, while the triangular-end clasp detail adds a distinctive modern touch. Whether worn solo or layered with a watch, the Titan Classic bracelet is a statement in simplicity and style—perfect for casual and formal ensembles alike.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "8.5 inches",
+      "Weight": "12g",
+      "Clasp": "Fold-over clasp with triangle cap accent",
+      "Care": "Clean with a soft cloth. Avoid exposure to saltwater and harsh chemicals."
+    },
+    images: [
+      "assets/generated-image-13.png",
+      "assets/generated-image-14.png"
+    ]
+  },
 
 
-//   {
-//     id: 8,
-//     name: "Midnight Evil Eye Beaded Bracelet",
-//     price: 299,
-//     category: "bracelets",
-//     gender: "female",
-//     description: "A symbolic beaded bracelet featuring a deep blue evil eye charm flanked by glossy black and silver-tone beads. Designed for everyday wear and protection.",
-//     detailedDescription: "Rooted in tradition and styled for the modern spirit, the Midnight Evil Eye Bracelet is a perfect blend of symbolism and simplicity. At its center lies a glass evil eye bead in rich navy blue, believed to ward off negativity and attract good energy. The bracelet is meticulously hand-strung with alternating black and silver-toned cube beads that exude a minimal yet bold look. Adjustable in length, this unisex bracelet is perfect for layering or wearing solo, offering both meaning and style in one sleek accessory.",
-//     specifications: {
-//       "Material": "Glass and Silver beads with stainless steel findingsg",
-//       "Charm": "Evil Eye (navy blue glass)",
-//       "Length": "6.5 to 8 inches (adjustable)",
-//       "Weight": "16g",
-//       "Clasp": "Lobster claw with extender chain",
-//       "Care": "Keep dry; avoid direct contact with perfumes and sprays"
-//     },
-//     images: [
-//       "assets/generated-image-15.png",
-//       "assets/generated-image-16.png"
-//     ]
-//   },
+  {
+    id: 8,
+    name: "Midnight Evil Eye Beaded Bracelet",
+    price: 299,
+    category: "bracelets",
+    gender: "female",
+    description: "A symbolic beaded bracelet featuring a deep blue evil eye charm flanked by glossy black and silver-tone beads. Designed for everyday wear and protection.",
+    detailedDescription: "Rooted in tradition and styled for the modern spirit, the Midnight Evil Eye Bracelet is a perfect blend of symbolism and simplicity. At its center lies a glass evil eye bead in rich navy blue, believed to ward off negativity and attract good energy. The bracelet is meticulously hand-strung with alternating black and silver-toned cube beads that exude a minimal yet bold look. Adjustable in length, this unisex bracelet is perfect for layering or wearing solo, offering both meaning and style in one sleek accessory.",
+    specifications: {
+      "Material": "Glass and Silver beads with stainless steel findingsg",
+      "Charm": "Evil Eye (navy blue glass)",
+      "Length": "6.5 to 8 inches (adjustable)",
+      "Weight": "16g",
+      "Clasp": "Lobster claw with extender chain",
+      "Care": "Keep dry; avoid direct contact with perfumes and sprays"
+    },
+    images: [
+      "assets/generated-image-15.png",
+      "assets/generated-image-16.png"
+    ]
+  },
 
 
-//   {
-//     id: 9,
-//     name: "Elegant Pink Sapphire floral Bracelet",
-//     price: 299,
-//     category: "bracelets",
-//     gender: "female",
-//     description: "A delicate silver bracelet featuring floral links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
-//     detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
-//     specifications: {
-//       "Material": "Sterling Silver with Pink Sapphire Simulants and CZ Accents",
-//       "Length": "7 inches + 1-inch extender",
-//       "Weight": "12g",
-//       "Clasp": "Lobster clasp with extender chain",
-//       "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents"
-//     },
-//     images: [
-//       "assets/generated-image-17.png",
-//       "assets/generated-image-18.png"
-//     ]
-//   },
+  {
+    id: 9,
+    name: "Elegant Pink Sapphire floral Bracelet",
+    price: 299,
+    category: "bracelets",
+    gender: "female",
+    description: "A delicate silver bracelet featuring floral links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
+    detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
+    specifications: {
+      "Material": "Sterling Silver with Pink Sapphire Simulants and CZ Accents",
+      "Length": "7 inches + 1-inch extender",
+      "Weight": "12g",
+      "Clasp": "Lobster clasp with extender chain",
+      "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents"
+    },
+    images: [
+      "assets/generated-image-17.png",
+      "assets/generated-image-18.png"
+    ]
+  },
 
 
-//   {
-//     id: 10,
-//     name: "Sculpted Stippling Pavé Band",
-//     price: 299,
-//     category: "rings",
-//     gender: "unisex",
-//     description: "A sleek silver band featuring geometric grids. Designed for bold elegance and modern refinement.",
-//     detailedDescription: "This stunning silver ring showcases a contemporary band design. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality 777 silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Width": "6 mm",
-//       "Weight": "3g",
-//       "Finish": "High-polish with matte contrast in grooves",
-//       "Care": "Avoid water and perfume contact"
-//     },
-//     images: [
-//       "assets/generated-image-19.png",
-//       "assets/generated-image-21.png"
-//     ]
-//   },
+  {
+    id: 10,
+    name: "Sculpted Stippling Pavé Band",
+    price: 299,
+    category: "rings",
+    gender: "unisex",
+    description: "A sleek silver band featuring geometric grids. Designed for bold elegance and modern refinement.",
+    detailedDescription: "This stunning silver ring showcases a contemporary band design. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality 777 silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "6 mm",
+      "Weight": "3g",
+      "Finish": "High-polish with matte contrast in grooves",
+      "Care": "Avoid water and perfume contact"
+    },
+    images: [
+      "assets/generated-image-19.png",
+      "assets/generated-image-21.png"
+    ]
+  },
 
 
 //   {
