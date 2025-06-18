@@ -35,7 +35,7 @@ const products = [
     "Clasp": "Hook Clasp",
     "Care": "Avoid exposure to water and chemicals"
   },
-  images: [ "assets/generated-image30.png" ]
+  images: [ "assets/generated-image-30.png" ]
 }
 
   {
