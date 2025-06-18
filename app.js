@@ -343,7 +343,9 @@ const products = [
       "assets/generated-image-32.png",
       "assets/generated-image-35.png",
       "assets/generated-image-36.png"
-]
+    ]
+  },
+
   },
   {
     id: 17,
@@ -376,7 +378,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Width": "5mm",
-      "Finish": "High Polish",
       "Weight": "5.8g",
       "Finish": "Matte with engraved pattern",
       "Care": "Polish gently with a dry cloth. Store in a fabric-lined box. Avoid abrasive surfaces."
@@ -573,10 +574,6 @@ const products = [
       "assets/generated-image-69.png"
     ]
   },
-
-
-
- 
 ];
 
 
@@ -689,7 +686,7 @@ class Router {
   createProductCard(product) {
     return `
       <div class="product-card" onclick="router.navigateToProduct(${product.id})">
-        <img src="${product.images[0]}" alt="${product.name}" class="product-card__image">
+        <img src="${product.images?.[0] || 'assets/default.png'}" alt="${product.name}" class="product-card__image">
         <div class="product-card__content">
           <h3 class="product-card__title">${product.name}</h3>
           <div class="product-card__price">$${product.price}</div>
@@ -707,8 +704,8 @@ class Router {
   }
   
   navigateToProduct(productId) {
-    window.location.hash = `product/${productId}`;
-  }
+  window.location.hash = `product/${productId}`;
+}
   
   loadProductDetails(product) {
     // Update breadcrumb
