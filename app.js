@@ -1,25 +1,43 @@
 // Application data
 const products = [
+  // {
+  //   id: 1,
+  //   name: "Elegant Gold Chain Female",
+  //   price: 299,
+  //   category: "necklaces",
+  //   gender: "female",
+  //   description: "Delicate feminine gold chain perfect for everyday elegance. Crafted with high-quality sterling silver and finished in lustrous gold plating.",
+  //   detailedDescription: "This exquisite gold chain represents the perfect blend of elegance and versatility. Meticulously crafted with premium sterling silver and finished with a lustrous gold plating, this piece is designed for the modern woman who appreciates timeless beauty. The delicate links create a flowing silhouette that complements both casual and formal attire.",
+  //   specifications: {
+  //     "Material": "Sterling Silver with Gold Plating",
+  //     "Length": "18 inches (adjustable)",
+  //     "Weight": "12g",
+  //     "Clasp": "Secure lobster clasp",
+  //     "Care": "Avoid water and perfume contact"
+  //   },
+  //   images: [
+  //     "assets/generated-image.png",
+  //     "assets/generated-image-3.png"
+  //   ]
+  // },
   {
-    id: 1,
-    name: "Elegant Gold Chain Female",
-    price: 299,
-    category: "necklaces",
-    gender: "female",
-    description: "Delicate feminine gold chain perfect for everyday elegance. Crafted with high-quality sterling silver and finished in lustrous gold plating.",
-    detailedDescription: "This exquisite gold chain represents the perfect blend of elegance and versatility. Meticulously crafted with premium sterling silver and finished with a lustrous gold plating, this piece is designed for the modern woman who appreciates timeless beauty. The delicate links create a flowing silhouette that complements both casual and formal attire.",
-    specifications: {
-      "Material": "Sterling Silver with Gold Plating",
-      "Length": "18 inches (adjustable)",
-      "Weight": "12g",
-      "Clasp": "Secure lobster clasp",
-      "Care": "Avoid water and perfume contact"
-    },
-    images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
-    ]
+  id: 1,
+  name: "Men's Silver Chain",
+  price: 349,
+  category: "necklaces",
+  gender: "male",
+  description: "Stylish and sleek silver chain for modern men.",
+  detailedDescription: "This elegant men's silver chain is a bold expression of minimalism and class. Crafted with pure sterling silver, its fine finish makes it a versatile accessory for both casual and formal wear.",
+  specifications: {
+    "Material": "925 Sterling Silver",
+    "Length": "22 inches",
+    "Weight": "15g",
+    "Clasp": "Hook Clasp",
+    "Care": "Avoid exposure to water and chemicals"
   },
+  images: [ "assets/generated-image30.png" ]
+}
+
   {
     id: 1,
     name: "Elegant Gold Chain Female",
