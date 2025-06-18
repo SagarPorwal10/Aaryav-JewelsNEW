@@ -20,25 +20,6 @@ const products = [
   //     "assets/generated-image-3.png"
   //   ]
   // },
-  {
-  id: 1,
-  name: "Men's Silver Chain",
-  price: 349,
-  category: "necklaces",
-  gender: "male",
-  description: "Stylish and sleek silver chain for modern men.",
-  detailedDescription: "This elegant men's silver chain is a bold expression of minimalism and class. Crafted with pure sterling silver, its fine finish makes it a versatile accessory for both casual and formal wear.",
-  specifications: {
-    "Material": "925 Sterling Silver",
-    "Length": "22 inches",
-    "Weight": "15g",
-    "Clasp": "Hook Clasp",
-    "Care": "Avoid exposure to water and chemicals"
-  },
-  images: 
-    [ "assets/generated-image-30.png",
-      "assets/generated-image-35.png"]
-}
 
   {
     id: 1,
@@ -55,10 +36,10 @@ const products = [
       "Clasp": "Secure lobster clasp",
       "Care": "Avoid water and perfume contact"
     },
-    images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
-    ]
+      images: 
+    [ "assets/generated-image-30.png",
+      "assets/generated-image-35.png"]
+
   },
 
   {
