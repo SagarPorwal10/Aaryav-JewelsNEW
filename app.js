@@ -406,44 +406,44 @@ const products = [
       "assets/generated-image-40.png"
     ]
   },
-  // {
-  //   id: 20,
-  //   name: "Vintage Style Ring Female",
-  //   price: 349,
-  //   category: "rings",
-  //   gender: "female",
-  //   description: "Ornate vintage-inspired design with intricate details",
-  //   detailedDescription: "Transport yourself to a bygone era with this vintage-inspired ring featuring intricate filigree work and delicate details. The ornate design showcases exceptional craftsmanship and attention to detail.",
-  //   specifications: {
-  //     "Material": "Sterling Silver with Antique Finish",
-  //     "Style": "Vintage Art Deco",
-  //     "Stone": "Cubic Zirconia",
-  //     "Ring Size": "Adjustable 6-8",
-  //     "Width": "15mm"
-  //   },
-  //   images: [
-  //     "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRkZENzAwIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxYTFhMWEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIwLjNlbSI+VmludGFnZSBSaW5nPC90ZXh0Pgo8L3N2Zz4="
-  //   ]
-  // },
-//   {
-//     id: 21,
-//     name: "Textured Rope-Link Silver Chain",
-//     price: 349,
-//     category: "bracelets",
-//     gender: "unisex",
-//     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
-//     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
-//     specifications: {
-//       "Material": "Sterling Silver",
-//       "Length": "8 inches",
-//       "Weight": "13g",
-//       "Clasp": "Heavy-duty lobster clasp",
-//       "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
-//   },
-//     images: [
-//       "assets/generated-image-39.png"
-//     ]
-//   },
+  {
+    id: 20,
+    name: "Vintage Style Ring Female",
+    price: 349,
+    category: "rings",
+    gender: "female",
+    description: "Ornate vintage-inspired design with intricate details",
+    detailedDescription: "Transport yourself to a bygone era with this vintage-inspired ring featuring intricate filigree work and delicate details. The ornate design showcases exceptional craftsmanship and attention to detail.",
+    specifications: {
+      "Material": "Sterling Silver with Antique Finish",
+      "Style": "Vintage Art Deco",
+      "Stone": "Cubic Zirconia",
+      "Ring Size": "Adjustable 6-8",
+      "Width": "15mm"
+    },
+    images: [
+      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRkZENzAwIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxYTFhMWEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIwLjNlbSI+VmludGFnZSBSaW5nPC90ZXh0Pgo8L3N2Zz4="
+    ]
+  },
+  {
+    id: 21,
+    name: "Textured Rope-Link Silver Chain",
+    price: 349,
+    category: "bracelets",
+    gender: "unisex",
+    description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
+    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+    specifications: {
+      "Material": "Sterling Silver",
+      "Length": "8 inches",
+      "Weight": "13g",
+      "Clasp": "Heavy-duty lobster clasp",
+      "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
+  },
+    images: [
+      "assets/generated-image-39.png"
+    ]
+  },
 //  {
 //     id: 22,
 //     name: "Ram Silver Ring",
