@@ -240,90 +240,90 @@ const products = [
     ]
    },
 
-//   {
-//     id: 12,
-//     name: "Sculpted Culture Pavé Band",
-//     price: 299,
-//     category: "rings",
-//     gender: "female",
-//     description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
-//     detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Width": "6 mm",
-//       "Weight": "6g",
-//       "Finish": "High-polish with matte contrast in grooves",
-//       "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
-//     },
-//     images: [
-//       "assets/generated-image-23.png",
-//       "assets/generated-image-24.png"
-//     ]
-//   },
+  {
+    id: 12,
+    name: "Sculpted Culture Pavé Band",
+    price: 299,
+    category: "rings",
+    gender: "female",
+    description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
+    detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "6 mm",
+      "Weight": "6g",
+      "Finish": "High-polish with matte contrast in grooves",
+      "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
+    },
+    images: [
+      "assets/generated-image-23.png",
+      "assets/generated-image-24.png"
+    ]
+  },
 
-//   {
-//     id: 13,
-//     name: "Sculpted Band",
-//     price: 299,
-//     category: "rings",
-//     gender: "female",
-//     description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
-//     detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Width": "6 mm",
-//       "Weight": "6g",
-//       "Finish": "High-polish with matte contrast in grooves",
-//       "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
-//     },
-//     images: [
-//       "assets/generated-image-25.png",
-//       "assets/generated-image-26.png",
-//       "assets/generated-image-31.png"
-//     ]
-//   },
+  {
+    id: 13,
+    name: "Sculpted Band",
+    price: 299,
+    category: "rings",
+    gender: "female",
+    description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
+    detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "6 mm",
+      "Weight": "6g",
+      "Finish": "High-polish with matte contrast in grooves",
+      "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
+    },
+    images: [
+      "assets/generated-image-25.png",
+      "assets/generated-image-26.png",
+      "assets/generated-image-31.png"
+    ]
+  },
 
-//   {
-//     id: 14,
-//     name: "Textured Rope-Link Silver Chain",
-//     price: 349,
-//     category: "bracelets",
-//     gender: "unisex",
-//     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
-//     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
-//     specifications: {
-//       "Material": "Sterling Silver",
-//       "Length": "8 inches",
-//       "Weight": "13g",
-//       "Clasp": "Heavy-duty lobster clasp",
-//       "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
-//   },
-//     images: [
-//       "assets/generated-image-27.png",
-//     ]
-//   },
+  {
+    id: 14,
+    name: "Textured Rope-Link Silver Chain",
+    price: 349,
+    category: "bracelets",
+    gender: "unisex",
+    description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
+    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+    specifications: {
+      "Material": "Sterling Silver",
+      "Length": "8 inches",
+      "Weight": "13g",
+      "Clasp": "Heavy-duty lobster clasp",
+      "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
+  },
+    images: [
+      "assets/generated-image-27.png",
+    ]
+  },
 
-//   {
-//     id: 15,
-//     name: "Textured Oval-Link Silver Chain",
-//     price: 349,
-//     category: "bracelets",
-//     gender: "unisex",
-//     description: "Distinctive silver chain featuring Oval-style links for a bold and intricate look. Made from 777 silver.",
-//     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
-//     specifications: {
-//       "Material": "Sterling Silver",
-//       "Length": "8 inches",
-//       "Weight": "13g",
-//       "Clasp": "Heavy-duty lobster clasp",
-//       "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
-//   },
-//     images: [
-//       "assets/generated-image-28.png",
-//       "assets/generated-image-29.png",
-//       "assets/generated-image-30.png"
-//     ]
-//   },
+  {
+    id: 15,
+    name: "Textured Oval-Link Silver Chain",
+    price: 349,
+    category: "bracelets",
+    gender: "unisex",
+    description: "Distinctive silver chain featuring Oval-style links for a bold and intricate look. Made from 777 silver.",
+    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+    specifications: {
+      "Material": "Sterling Silver",
+      "Length": "8 inches",
+      "Weight": "13g",
+      "Clasp": "Heavy-duty lobster clasp",
+      "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
+  },
+    images: [
+      "assets/generated-image-28.png",
+      "assets/generated-image-29.png",
+      "assets/generated-image-30.png"
+    ]
+  },
 //   {
 //     id: 16,
 //     name: "Minimalist Silver Chain",
