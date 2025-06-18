@@ -345,8 +345,7 @@ const products = [
       "assets/generated-image-36.png"
     ]
   },
-
-  },
+ 
   {
     id: 17,
     name: "Eternal Sparkle Slim Diamond Band",
