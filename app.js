@@ -17,7 +17,6 @@ const products = [
     },
     images: [
       "assets/generated-image.png",
-      "assets/generated-image-1.png",
       "assets/generated-image-3.png"
     ]
   },
@@ -38,7 +37,6 @@ const products = [
     },
     images: [
       "assets/generated-image.png",
-      "assets/generated-image-1.png",
       "assets/generated-image-3.png"
 ]
   },
@@ -59,7 +57,6 @@ const products = [
     },
     images: [
        "assets/generated-image.png",
-       "assets/generated-image-2.png",
        "assets/generated-image-3.png"
     ]
   },
