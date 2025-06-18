@@ -452,7 +452,7 @@ const products = [
     gender: "unisex",
     description: "A bold sterling silver Ram Challa ring engraved with sacred symbolism. A timeless expression of strength, devotion, and tradition.",
     detailedDescription: "Rooted in tradition and crafted with precision, the Ram Challa ring carries a powerful message of faith and inner strength. Made from solid sterling silver, the ring features a clean, polished surface with intricate engravings of the word 'राम' (Ram) across its band. Revered for its spiritual significance, this unisex ring is a tribute to the divine and a reflection of unwavering resolve. Perfect for daily wear, rituals, or as a meaningful gift.",
-    specifications": {
+    specifications: {
        "Material": "Silver",
        "Width": "6 mm",
        "Weight": "7g",
@@ -465,68 +465,68 @@ const products = [
       "assets/generated-image-42.png"
     ]
   },
-//   {
-//     id: 23,
-//     name: "Minimalist Silver Chain",
-//     price: 399,
-//     category: "necklaces",
-//     gender: "Male",
-//     description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
-//     detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Length": "18 inches",
-//       "Weight": "15g",
-//       "Clasp": "Lobster clasp",
-//       "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
-//     },
-//     images: [
-//       "assets/generated-image-44.png",
-//       "assets/generated-image-45.png"
-// ]
-//   },
-//  {
-//     id: 24,
-//     name: "Pure Form Minimalist Silver Band",
-//     price: 199,
-//     category: "rings",
-//     gender: "unisex",
-//     description: "A sleek and minimal sterling silver ring designed for everyday elegance. Understated. Timeless. Essential.",
-//     detailedDescription: "Celebrate the beauty of simplicity with the Pure Form Minimalist Band. Crafted from high-quality 925 sterling silver, this ultra-slim ring features a smooth, polished surface with a low-profile silhouette. Whether worn solo, stacked, or paired with statement pieces, it effortlessly complements any style. Perfect for those who appreciate clean lines and quiet sophistication.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Width": "1.5 mm",
-//       "Weight": "1.8g",
-//       "Finish": "High-polish mirror finish",
-//       "Care": "Avoid harsh chemicals. Clean with a soft dry cloth. Store separately to prevent scratches."
-//     },
-//     images: [
-//       "assets/generated-image-48.png",
-//       "assets/generated-image-49.png"
-//     ]
-//   },
-//  {
-//   id: 25,
-//   name: "Urban Edge Flat Silver Chain",
-//   price: 379,
-//   category: "necklaces",
-//   gender: "male",
-//   description: "A bold, short flat sterling silver chain with a strong profile and smooth finish. Designed for urban minimalism.",
-//   detailedDescription: "Refined yet powerful, the Urban Edge Flat Chain is crafted for the modern man. Made from high-quality 925 sterling silver, this short-length necklace features flat, interlocking links that lie flush against the skin, delivering both comfort and contemporary style. With a sturdy clasp and sleek polish, it’s perfect as a solo statement or layered with other pieces for a bolder look.",
-//   specifications: {
-//     "Material": "925 Sterling Silver",
-//     "Length": "18 inches",
-//     "Width": "5 mm",
-//     "Weight": "15g",
-//     "Clasp": "Lobster clasp",
-//     "Finish": "High-polish flat links",
-//     "Care": "Wipe with a soft cloth after use. Avoid direct contact with moisture and perfume."
-//   },
-//   "images": [
-//     "assets/generated-image-53.png",
-//     "assets/generated-image-54.png"
-//   ]
-// },
+  {
+    id: 23,
+    name: "Minimalist Silver Chain",
+    price: 399,
+    category: "necklaces",
+    gender: "Male",
+    description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
+    detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "18 inches",
+      "Weight": "15g",
+      "Clasp": "Lobster clasp",
+      "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
+    },
+    images: [
+      "assets/generated-image-44.png",
+      "assets/generated-image-45.png"
+]
+  },
+ {
+    id: 24,
+    name: "Pure Form Minimalist Silver Band",
+    price: 199,
+    category: "rings",
+    gender: "unisex",
+    description: "A sleek and minimal sterling silver ring designed for everyday elegance. Understated. Timeless. Essential.",
+    detailedDescription: "Celebrate the beauty of simplicity with the Pure Form Minimalist Band. Crafted from high-quality 925 sterling silver, this ultra-slim ring features a smooth, polished surface with a low-profile silhouette. Whether worn solo, stacked, or paired with statement pieces, it effortlessly complements any style. Perfect for those who appreciate clean lines and quiet sophistication.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "1.5 mm",
+      "Weight": "1.8g",
+      "Finish": "High-polish mirror finish",
+      "Care": "Avoid harsh chemicals. Clean with a soft dry cloth. Store separately to prevent scratches."
+    },
+    images: [
+      "assets/generated-image-48.png",
+      "assets/generated-image-49.png"
+    ]
+  },
+ {
+  id: 25,
+  name: "Urban Edge Flat Silver Chain",
+  price: 379,
+  category: "necklaces",
+  gender: "male",
+  description: "A bold, short flat sterling silver chain with a strong profile and smooth finish. Designed for urban minimalism.",
+  detailedDescription: "Refined yet powerful, the Urban Edge Flat Chain is crafted for the modern man. Made from high-quality 925 sterling silver, this short-length necklace features flat, interlocking links that lie flush against the skin, delivering both comfort and contemporary style. With a sturdy clasp and sleek polish, it’s perfect as a solo statement or layered with other pieces for a bolder look.",
+  specifications: {
+    "Material": "925 Sterling Silver",
+    "Length": "18 inches",
+    "Width": "5 mm",
+    "Weight": "15g",
+    "Clasp": "Lobster clasp",
+    "Finish": "High-polish flat links",
+    "Care": "Wipe with a soft cloth after use. Avoid direct contact with moisture and perfume."
+  },
+  "images": [
+    "assets/generated-image-53.png",
+    "assets/generated-image-54.png"
+  ]
+},
 // {
 //   id: 26,
 //   name: "Legacy Flat-Link Silver Chain",
