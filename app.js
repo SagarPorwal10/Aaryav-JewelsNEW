@@ -197,69 +197,69 @@ const products = [
   },
 
 
-//   {
-//     id: 10,
-//     name: "Elegant Gold Chain Female",
-//     price: 299,
-//     category: "necklaces",
-//     gender: "female",
-//     description: "Delicate feminine gold chain perfect for everyday elegance. Crafted with high-quality sterling silver and finished in lustrous gold plating.",
-//     detailedDescription: "This exquisite gold chain represents the perfect blend of elegance and versatility. Meticulously crafted with premium sterling silver and finished with a lustrous gold plating, this piece is designed for the modern woman who appreciates timeless beauty. The delicate links create a flowing silhouette that complements both casual and formal attire.",
-//     specifications: {
-//       "Material": "Sterling Silver with Gold Plating",
-//       "Length": "18 inches (adjustable)",
-//       "Weight": "12g",
-//       "Clasp": "Secure lobster clasp",
-//       "Care": "Avoid water and perfume contact"
-//     },
-//     images: [
-//       "assets/generated-image-14.png",
-//       "assets/generated-image-15.png"
-//     ]
-//   },
+  {
+    id: 10,
+    name: "Sculpted Stippling Pavé Band",
+    price: 299,
+    category: "rings",
+    gender: "unisex",
+    description: "A sleek silver band featuring geometric grids. Designed for bold elegance and modern refinement.",
+    detailedDescription: "This stunning silver ring showcases a contemporary band design. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality 777 silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "6 mm",
+      "Weight": "3g",
+      "Finish": "High-polish with matte contrast in grooves",
+      "Care": "Avoid water and perfume contact"
+    },
+    images: [
+      "assets/generated-image-19.png",
+      "assets/generated-image-21.png"
+    ]
+  },
 
 
-//   {
-//     id: 11,
-//     name: "Elegant Gold Chain Female",
-//     price: 299,
-//     category: "necklaces",
-//     gender: "female",
-//     description: "Delicate feminine gold chain perfect for everyday elegance. Crafted with high-quality sterling silver and finished in lustrous gold plating.",
-//     detailedDescription: "This exquisite gold chain represents the perfect blend of elegance and versatility. Meticulously crafted with premium sterling silver and finished with a lustrous gold plating, this piece is designed for the modern woman who appreciates timeless beauty. The delicate links create a flowing silhouette that complements both casual and formal attire.",
-//     specifications: {
-//       "Material": "Sterling Silver with Gold Plating",
-//       "Length": "18 inches (adjustable)",
-//       "Weight": "12g",
-//       "Clasp": "Secure lobster clasp",
-//       "Care": "Avoid water and perfume contact"
-//     },
-//     images: [
-//       "assets/generated-image-16.png",
-//       "assets/generated-image-15.png"
-//     ]
-//   },
+  {
+    id: 11,
+    name: "Celestial Blue & White Gemstone Ring",
+    price: 299,
+    category: "rings",
+    gender: "female",
+    description: "A graceful silver ring featuring alternating vivid blue and white stones. A symbol of elegance with a celestial touch.",
+    detailedDescription: "Capture the night sky's allure with this delicate silver ring, showcasing a captivating sequence of alternating royal blue and brilliant white gemstones. The round-cut stones are prong-set for maximum sparkle, each one carefully selected for clarity and color balance. Ideal as a promise ring, anniversary gift, or stackable statement piece, this band embodies refined femininity and timeless charm.",
+    specifications: {
+      "Material": "Sterling Silver with Diamond Simulants",
+      "Stone Size": "3 mm each (approx.)",
+      "Weight": "12g",
+      "Setting": "Prong setting",
+      "Care": "Clean with a soft cloth. Avoid direct heat, chemicals, and water immersion."
+    },
+    images: [
+      "assets/generated-image-20.png",
+      "assets/generated-image-22.png"
+    ]
+  },
 
-//   {
-//     id: 12,
-//     name: "Elegant Gold Chain Female",
-//     price: 299,
-//     category: "necklaces",
-//     gender: "female",
-//     description: "Delicate feminine gold chain perfect for everyday elegance. Crafted with high-quality sterling silver and finished in lustrous gold plating.",
-//     detailedDescription: "This exquisite gold chain represents the perfect blend of elegance and versatility. Meticulously crafted with premium sterling silver and finished with a lustrous gold plating, this piece is designed for the modern woman who appreciates timeless beauty. The delicate links create a flowing silhouette that complements both casual and formal attire.",
-//     specifications: {
-//       "Material": "Sterling Silver with Gold Plating",
-//       "Length": "18 inches (adjustable)",
-//       "Weight": "12g",
-//       "Clasp": "Secure lobster clasp",
-//       "Care": "Avoid water and perfume contact"
-//     },
-//     images: [
-//       "assets/generated-image-17.png",
-//       "assets/generated-image-18.png"
-//     ]
-//   },
+  {
+    id: 12,
+    name: "Sculpted Culture Pavé Band",
+    price: 299,
+    category: "rings",
+    gender: "female",
+    description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
+    detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "6 mm",
+      "Weight": "6g",
+      "Finish": "High-polish with matte contrast in grooves",
+      "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
+    },
+    images: [
+      "assets/generated-image-23.png",
+      "assets/generated-image-24.png"
+    ]
+  },
 
 //   {
 //     id: 13,
