@@ -324,108 +324,108 @@ const products = [
       "assets/generated-image-30.png"
     ]
   },
-//   {
-//     id: 16,
-//     name: "Minimalist Silver Chain",
-//     price: 399,
-//     category: "necklaces",
-//     gender: "female",
-//     description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
-//     detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Length": "18 inches",
-//       "Weight": "6g",
-//       "Clasp": "Lobster clasp",
-//       "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
-//     },
-//     images: [
-//       "assets/generated-image-32.png",
-//       "assets/generated-image-35.png",
-//       "assets/generated-image-36.png"
-//     ]
-//   },
+  {
+    id: 16,
+    name: "Minimalist Silver Chain",
+    price: 399,
+    category: "necklaces",
+    gender: "female",
+    description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
+    detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "18 inches",
+      "Weight": "6g",
+      "Clasp": "Lobster clasp",
+      "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
+    },
+    images: [
+      "assets/generated-image-32.png",
+      "assets/generated-image-35.png",
+      "assets/generated-image-36.png"
+    ]
+  },
 
-//   },
-//   {
-//     id: 17,
-//     name: "Eternal Sparkle Slim Diamond Band",
-//     price: 289,
-//     category: "rings",
-//     gender: "female",
-//     description: "A sleek silver band featuring a single row of shimmering artificial diamonds at its center. Elegant, minimal, and radiant.",
-//     detailedDescription: "Add a touch of refined brilliance to your everyday look with this slender sterling silver ring. At the heart of the design lies a continuous line of high-grade artificial diamonds, precisely set to create a seamless circle of sparkle. Perfect as a promise ring, stacking band, or solo statement, this ring combines timeless style with modern simplicity. Lightweight yet dazzling, it’s crafted for lasting comfort and shine.",
-//     specifications: {
-//       "Material": "Sterling Silver with Diamond Simulants",
-//       "Width": "2 mm",
-//       "Weight": "2.5g",
-//       "Setting": "Channel-set",
-//       "Care": "Avoid direct contact with water or perfumes. Clean gently with a soft jewelry cloth."
-//     },
-//     images: [
-//        "assets/generated-image-33.png",
-//        "assets/generated-image-34.png"
-//     ]
-//   },
-//   {
-//     id: 18,
-//     name: "GeoPulse Unisex Patterned Band",
-//     price: 199,
-//     category: "rings",
-//     gender: "unisex",
-//     description: "A bold unisex ring featuring a continuous pattern engraved around a brushed silver band. Built for those who move with rhythm and intention.",
-//     detailedDescription: "The GeoPulse Band redefines minimalism with a modern industrial edge. Crafted from durable sterling silver, this unisex ring showcases a repeating motif, precision-etched along the center of a matte-finished surface. The clean, structured design evokes balance, rhythm, and purpose—making it a standout piece for everyday wear or meaningful gifting. Designed for comfort with a slightly curved inner edge.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Width": "5mm",
-//       "Weight": "5.8g",
-//       "Finish": "Matte with engraved pattern",
-//       "Care": "Polish gently with a dry cloth. Store in a fabric-lined box. Avoid abrasive surfaces."
-//     },
-//     images: [
-//       "assets/generated-image-37.png"
-//     ]
-//   },
-//   {
-//     id: 19,
-//     name: "Heart of Grace Slim Diamond Band",
-//     price: 899,
-//     category: "rings",
-//     gender: "female",
-//     description: "A delicate sterling silver ring adorned with a line of white artificial diamonds and a single red heart centerpiece—symbolizing love, strength, and elegance.",
-//     detailedDescription: "Celebrate timeless beauty and heartfelt sentiment with this finely crafted slim band. Designed in sterling silver, the ring features a continuous line of sparkling white diamond simulants, accented by a single radiant red heart-shaped stone at the center. The contrast of color draws the eye and adds emotional depth—perfect as a promise ring, anniversary token, or elegant daily wear. Lightweight, feminine, and full of meaning.",
-//     specifications: {
-//       "Material": "Silver with Diamond Simulants and Red Cubic Zirconia",
-//       "Diamond Cut": "Round Brilliant",
-//       "Band Width": "2mm",
-//       "Setting": "Micro pavé and prong setting",
-//       "Care": "Avoid chemicals and impact. Clean gently with a soft cloth. Store in a velvet pouch."
+  },
+  {
+    id: 17,
+    name: "Eternal Sparkle Slim Diamond Band",
+    price: 289,
+    category: "rings",
+    gender: "female",
+    description: "A sleek silver band featuring a single row of shimmering artificial diamonds at its center. Elegant, minimal, and radiant.",
+    detailedDescription: "Add a touch of refined brilliance to your everyday look with this slender sterling silver ring. At the heart of the design lies a continuous line of high-grade artificial diamonds, precisely set to create a seamless circle of sparkle. Perfect as a promise ring, stacking band, or solo statement, this ring combines timeless style with modern simplicity. Lightweight yet dazzling, it’s crafted for lasting comfort and shine.",
+    specifications: {
+      "Material": "Sterling Silver with Diamond Simulants",
+      "Width": "2 mm",
+      "Weight": "2.5g",
+      "Setting": "Channel-set",
+      "Care": "Avoid direct contact with water or perfumes. Clean gently with a soft jewelry cloth."
+    },
+    images: [
+       "assets/generated-image-33.png",
+       "assets/generated-image-34.png"
+    ]
+  },
+  {
+    id: 18,
+    name: "GeoPulse Unisex Patterned Band",
+    price: 199,
+    category: "rings",
+    gender: "unisex",
+    description: "A bold unisex ring featuring a continuous pattern engraved around a brushed silver band. Built for those who move with rhythm and intention.",
+    detailedDescription: "The GeoPulse Band redefines minimalism with a modern industrial edge. Crafted from durable sterling silver, this unisex ring showcases a repeating motif, precision-etched along the center of a matte-finished surface. The clean, structured design evokes balance, rhythm, and purpose—making it a standout piece for everyday wear or meaningful gifting. Designed for comfort with a slightly curved inner edge.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "5mm",
+      "Weight": "5.8g",
+      "Finish": "Matte with engraved pattern",
+      "Care": "Polish gently with a dry cloth. Store in a fabric-lined box. Avoid abrasive surfaces."
+    },
+    images: [
+      "assets/generated-image-37.png"
+    ]
+  },
+  {
+    id: 19,
+    name: "Heart of Grace Slim Diamond Band",
+    price: 899,
+    category: "rings",
+    gender: "female",
+    description: "A delicate sterling silver ring adorned with a line of white artificial diamonds and a single red heart centerpiece—symbolizing love, strength, and elegance.",
+    detailedDescription: "Celebrate timeless beauty and heartfelt sentiment with this finely crafted slim band. Designed in sterling silver, the ring features a continuous line of sparkling white diamond simulants, accented by a single radiant red heart-shaped stone at the center. The contrast of color draws the eye and adds emotional depth—perfect as a promise ring, anniversary token, or elegant daily wear. Lightweight, feminine, and full of meaning.",
+    specifications: {
+      "Material": "Silver with Diamond Simulants and Red Cubic Zirconia",
+      "Diamond Cut": "Round Brilliant",
+      "Band Width": "2mm",
+      "Setting": "Micro pavé and prong setting",
+      "Care": "Avoid chemicals and impact. Clean gently with a soft cloth. Store in a velvet pouch."
       
-//     },
-//     images: [
-//       "assets/generated-image-38.png",
-//       "assets/generated-image-40.png"
-//     ]
-//   },
-//   // {
-//   //   id: 20,
-//   //   name: "Vintage Style Ring Female",
-//   //   price: 349,
-//   //   category: "rings",
-//   //   gender: "female",
-//   //   description: "Ornate vintage-inspired design with intricate details",
-//   //   detailedDescription: "Transport yourself to a bygone era with this vintage-inspired ring featuring intricate filigree work and delicate details. The ornate design showcases exceptional craftsmanship and attention to detail.",
-//   //   specifications: {
-//   //     "Material": "Sterling Silver with Antique Finish",
-//   //     "Style": "Vintage Art Deco",
-//   //     "Stone": "Cubic Zirconia",
-//   //     "Ring Size": "Adjustable 6-8",
-//   //     "Width": "15mm"
-//   //   },
-//   //   images: [
-//   //     "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRkZENzAwIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxYTFhMWEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIwLjNlbSI+VmludGFnZSBSaW5nPC90ZXh0Pgo8L3N2Zz4="
-//   //   ]
-//   // },
+    },
+    images: [
+      "assets/generated-image-38.png",
+      "assets/generated-image-40.png"
+    ]
+  },
+  // {
+  //   id: 20,
+  //   name: "Vintage Style Ring Female",
+  //   price: 349,
+  //   category: "rings",
+  //   gender: "female",
+  //   description: "Ornate vintage-inspired design with intricate details",
+  //   detailedDescription: "Transport yourself to a bygone era with this vintage-inspired ring featuring intricate filigree work and delicate details. The ornate design showcases exceptional craftsmanship and attention to detail.",
+  //   specifications: {
+  //     "Material": "Sterling Silver with Antique Finish",
+  //     "Style": "Vintage Art Deco",
+  //     "Stone": "Cubic Zirconia",
+  //     "Ring Size": "Adjustable 6-8",
+  //     "Width": "15mm"
+  //   },
+  //   images: [
+  //     "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRkZENzAwIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxYTFhMWEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIwLjNlbSI+VmludGFnZSBSaW5nPC90ZXh0Pgo8L3N2Zz4="
+  //   ]
+  // },
 //   {
 //     id: 21,
 //     name: "Textured Rope-Link Silver Chain",
