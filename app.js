@@ -79,8 +79,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image3.png",
+      "assets/generated-image-4.png"
     ]
   },
 
@@ -100,8 +100,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-5.png",
+      "assets/generated-image-6.png"
     ]
   },
 
@@ -121,8 +121,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-7.png",
+      "assets/generated-image-8.png"
     ]
   },
 
@@ -142,8 +142,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-8.png",
+      "assets/generated-image-9.png"
     ]
   },
 
@@ -164,8 +164,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-10.png",
+      "assets/generated-image-11.png"
     ]
   },
 
@@ -186,8 +186,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-11.png",
+      "assets/generated-image-12.png"
     ]
   },
 
@@ -208,8 +208,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-13.png",
+      "assets/generated-image-14.png"
     ]
   },
 
@@ -230,8 +230,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-14.png",
+      "assets/generated-image-15.png"
     ]
   },
 
@@ -252,8 +252,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-16.png",
+      "assets/generated-image-15.png"
     ]
   },
 
@@ -273,8 +273,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-17.png",
+      "assets/generated-image-18.png"
     ]
   },
 
@@ -294,8 +294,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-19.png",
+      "assets/generated-image-20.png"
     ]
   },
 
@@ -315,8 +315,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-21.png",
+      "assets/generated-image-22.png"
     ]
   },
 
@@ -336,8 +336,8 @@ const products = [
       "Care": "Avoid water and perfume contact"
     },
     images: [
-      "assets/generated-image.png",
-      "assets/generated-image-3.png"
+      "assets/generated-image-24.png",
+      "assets/generated-image-26.png"
     ]
   },
   {
