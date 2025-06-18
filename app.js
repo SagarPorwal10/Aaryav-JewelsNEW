@@ -505,28 +505,28 @@ const products = [
       "assets/generated-image-49.png"
     ]
   },
- {
-  id: 25,
-  name: "Urban Edge Flat Silver Chain",
-  price: 379,
-  category: "necklaces",
-  gender: "male",
-  description: "A bold, short flat sterling silver chain with a strong profile and smooth finish. Designed for urban minimalism.",
-  detailedDescription: "Refined yet powerful, the Urban Edge Flat Chain is crafted for the modern man. Made from high-quality 925 sterling silver, this short-length necklace features flat, interlocking links that lie flush against the skin, delivering both comfort and contemporary style. With a sturdy clasp and sleek polish, it’s perfect as a solo statement or layered with other pieces for a bolder look.",
-  specifications: {
-    "Material": "925 Sterling Silver",
-    "Length": "18 inches",
-    "Width": "5 mm",
-    "Weight": "15g",
-    "Clasp": "Lobster clasp",
-    "Finish": "High-polish flat links",
-    "Care": "Wipe with a soft cloth after use. Avoid direct contact with moisture and perfume."
-  },
-  images: [
-    "assets/generated-image-53.png",
-    "assets/generated-image-54.png"
-  ]
-},
+//  {
+//   id: 25,
+//   name: "Urban Edge Flat Silver Chain",
+//   price: 379,
+//   category: "necklaces",
+//   gender: "male",
+//   description: "A bold, short flat sterling silver chain with a strong profile and smooth finish. Designed for urban minimalism.",
+//   detailedDescription: "Refined yet powerful, the Urban Edge Flat Chain is crafted for the modern man. Made from high-quality 925 sterling silver, this short-length necklace features flat, interlocking links that lie flush against the skin, delivering both comfort and contemporary style. With a sturdy clasp and sleek polish, it’s perfect as a solo statement or layered with other pieces for a bolder look.",
+//   specifications: {
+//     "Material": "925 Sterling Silver",
+//     "Length": "18 inches",
+//     "Width": "5 mm",
+//     "Weight": "15g",
+//     "Clasp": "Lobster clasp",
+//     "Finish": "High-polish flat links",
+//     "Care": "Wipe with a soft cloth after use. Avoid direct contact with moisture and perfume."
+//   },
+//   images: [
+//     "assets/generated-image-53.png",
+//     "assets/generated-image-54.png"
+//   ]
+// },
 {
   id: 26,
   name: "Legacy Flat-Link Silver Chain",
@@ -553,26 +553,26 @@ const products = [
     "assets/generated-image-67.png"
   ]
 },
-//  {
-//     id: 27,
-//     name: "Dominion Cuban Link Bracelet",
-//     price: 349,
-//     category: "bracelets",
-//     gender: "unisex",
-//     description: "A bold Cuban link bracelet crafted from 777 silver. Rugged elegance with undeniable street style influence.",
-//     detailedDescription: "The Dominion Cuban Link Bracelet brings classic strength and style together in one iconic piece. Handcrafted from solid 777 silver, its tightly interlocked links offer a thick, heavy feel and unmistakable shine. The bracelet is finished with a secure box clasp, ensuring durability for everyday wear. Whether worn solo or stacked, this Cuban link delivers presence, power, and polish—ideal for men who move with confidence.",
-//     specifications: {
-//       "Material": "Silver",
-//       "Length": "8.5 inches",
-//       "Weight": "3.4g",
-//       "Clasp": "High-gloss polished links",
-//       "Care": "Polish with a dry cloth. Avoid chemical contact and moisture. Store flat in a pouch."
-//   },
-//     images: [
-//       "assets/generated-image-68.png",
-//       "assets/generated-image-69.png"
-//     ]
-//   },
+ {
+    id: 27,
+    name: "Dominion Cuban Link Bracelet",
+    price: 349,
+    category: "bracelets",
+    gender: "unisex",
+    description: "A bold Cuban link bracelet crafted from 777 silver. Rugged elegance with undeniable street style influence.",
+    detailedDescription: "The Dominion Cuban Link Bracelet brings classic strength and style together in one iconic piece. Handcrafted from solid 777 silver, its tightly interlocked links offer a thick, heavy feel and unmistakable shine. The bracelet is finished with a secure box clasp, ensuring durability for everyday wear. Whether worn solo or stacked, this Cuban link delivers presence, power, and polish—ideal for men who move with confidence.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "8.5 inches",
+      "Weight": "3.4g",
+      "Clasp": "High-gloss polished links",
+      "Care": "Polish with a dry cloth. Avoid chemical contact and moisture. Store flat in a pouch."
+  },
+    images: [
+      "assets/generated-image-68.png",
+      "assets/generated-image-69.png"
+    ]
+  },
 ];
 
 
