@@ -769,6 +769,7 @@ class Router {
   
   navigateToProduct(productId) {
   window.location.hash = `product/${productId}`;
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
   
   loadProductDetails(product) {
