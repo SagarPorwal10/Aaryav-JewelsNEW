@@ -1032,82 +1032,123 @@ class MobileNav {
 // Initialize application
 let router, productGallery, productFilter, contactForm, mobileNav;
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Initialize all components
-  router = new Router();
-  productGallery = new ProductGallery();
-  productFilter = new ProductFilter();
-  contactForm = new ContactForm();
-  mobileNav = new MobileNav();
+// document.addEventListener('DOMContentLoaded', () => {
+//   // Initialize all components
+//   router = new Router();
+//   productGallery = new ProductGallery();
+//   productFilter = new ProductFilter();
+//   contactForm = new ContactForm();
+//   mobileNav = new MobileNav();
   
-  // Initialize back to shop button
-  const backToShopBtn = document.getElementById('back-to-shop');
-  if (backToShopBtn) {
-    backToShopBtn.addEventListener('click', () => {
-      window.location.hash = 'shop';
+//   // Initialize back to shop button
+//   const backToShopBtn = document.getElementById('back-to-shop');
+//   if (backToShopBtn) {
+//     backToShopBtn.addEventListener('click', () => {
+//       window.location.hash = 'shop';
 
-  applySilverRateToProductPrices();   // 💰 Update prices based on manual silver rate
-  displaySilverRate();                // 📢 Show silver rate on homepage
-    });
-  }
+//   applySilverRateToProductPrices();   // 💰 Update prices based on manual silver rate
+//   displaySilverRate();                // 📢 Show silver rate on homepage
+//     });
+//   }
   
-  // Initialize smooth scrolling for internal links
+//   // Initialize smooth scrolling for internal links
+//   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//       const targetId = this.getAttribute('href');
+//       if (targetId === '#' || targetId === '#home' || targetId === '#shop' || 
+//           targetId === '#about' || targetId === '#contact') {
+//         // Let the router handle these
+//         return;
+//       }
+      
+//       e.preventDefault();
+//       const targetElement = document.querySelector(targetId);
+//       if (targetElement) {
+//         targetElement.scrollIntoView({
+//           behavior: 'smooth'
+//         });
+//       }
+//     });
+//   });
+  
+//   console.log('Aaryav Jewels application initialized successfully!');
+// });
+
+
+
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   // Initialize all components
+//   router = new Router();
+//   productGallery = new ProductGallery();
+//   productFilter = new ProductFilter();
+//   contactForm = new ContactForm();
+//   mobileNav = new MobileNav();
+
+//   applySilverRateToProductPrices(); // 💰 Apply silver pricing logic
+// });
+// // function displaySilverRate() {
+// //   const el = document.getElementById('silver-rate-display');
+// //   if (el) el.textContent = `Silver Rate: ₹ ${dailySilverRateINR} /g`;
+// // }
+
+
+
+
+
+
+
+
+
+// // applySilverRateToProductPrices();
+// document.querySelector('.navbar__mobile-toggle').addEventListener('click', () => {
+//   document.querySelector('.navbar__menu').classList.toggle('active');
+// const router = new Router();
+
+
+
+
+
+// // Export for global access
+// window.router = router;
+
+document.addEventListener('DOMContentLoaded', () => {
+  // 💰 Apply silver pricing
+  applySilverRateToProductPrices();
+  displaySilverRate();
+
+  // 🧭 Initialize app features
+  const router = new Router();
+  const productGallery = new ProductGallery();
+  const productFilter = new ProductFilter();
+  const contactForm = new ContactForm();
+  const mobileNav = new MobileNav();
+
+  // 📱 Mobile menu toggle
+  document.querySelector('.navbar__mobile-toggle').addEventListener('click', () => {
+    document.querySelector('.navbar__menu').classList.toggle('active');
+  });
+
+  // 🔗 Smooth scrolling for anchor links (excluding route-based links)
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
-      if (targetId === '#' || targetId === '#home' || targetId === '#shop' || 
-          targetId === '#about' || targetId === '#contact') {
-        // Let the router handle these
-        return;
+      if (['#', '#home', '#shop', '#about', '#contact'].includes(targetId)) {
+        return; // Let router handle these
       }
-      
+
       e.preventDefault();
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: 'smooth'
-        });
+        targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     });
   });
-  
+
   console.log('Aaryav Jewels application initialized successfully!');
 });
 
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Initialize all components
-  router = new Router();
-  productGallery = new ProductGallery();
-  productFilter = new ProductFilter();
-  contactForm = new ContactForm();
-  mobileNav = new MobileNav();
-
-  applySilverRateToProductPrices(); // 💰 Apply silver pricing logic
-});
-function displaySilverRate() {
-  const el = document.getElementById('silver-rate-display');
-  if (el) el.textContent = `Silver Rate: ₹ ${dailySilverRateINR} /g`;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Export for global access
-window.router = router;
