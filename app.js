@@ -591,6 +591,25 @@ const products = [
   images: [
     "assets/IMG_20250530_2034800.png"
   ]
+},
+ {
+  id: 29,
+  name: "Khatu Shyam Devotional Pendant",
+  price: 299,
+  category: "pendants",
+  gender: "unisex",
+  description: "A divine Khatu Shyam pendant in 925 silver. Crafted with reverence for spiritual devotion and timeless elegance.",
+  detailedDescription: "Embrace divine blessings with the Khatu Shyam Devotional Pendant. Handcrafted from pure 925 sterling silver, this pendant features an intricately carved image of Lord Shyam, revered as the God of faith and sacrifice. The pendant is designed with a radiant finish that enhances its spiritual aura and visual appeal. Whether worn daily or on special religious occasions, this pendant serves as a constant source of strength, devotion, and grace.",
+  specifications: {
+    "Material": "925 Sterling Silver",
+    "Height": "1.75 inches",
+    "Weight": "2.5g",
+    "Finish": "Glossy antique-style engraving",
+    "Care": "Wipe with a soft cloth after use. Keep away from chemicals and water. Store in a dry pouch or box."
+  },
+  images: [
+    "assets/IMG_20250530_234800.jpg"
+  ]
 }
 ];
 
