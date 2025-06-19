@@ -628,7 +628,7 @@ function applySilverRateToProductPrices() {
     if (match) {
       const weight = parseFloat(match[1]);
       const makingCharge = 50; // Optional markup
-      product.price = Math.round(weight * dailySilverRateINR + 50*makingCharge);
+      product.price = Math.round(weight * dailySilverRateINR + weight*makingCharge);
     }
   });
 }
