@@ -703,26 +703,13 @@ select.form-control {
 
 @media (max-width: 768px) {
   .navbar__menu {
-  transition: max-height 0.3s ease;
-  overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    flex-direction: column;
   }
 
-.navbar__mobile-toggle {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  gap: var(--space-4);
-}
-
-.navbar__mobile-toggle span {
-  width: 24px;
-  height: 2px;
-  background: var(--color-text);
-  border-radius: var(--radius-sm);
-  transition: all var(--duration-fast) var(--ease-standard);
-}
-
-.navbar__menu.active {
+  .navbar__menu.active {
     display: flex;
     flex-direction: column;
     background: var(--color-surface);
@@ -732,7 +719,17 @@ select.form-control {
     right: 0;
     padding: var(--space-16);
     z-index: 99;
+    max-height: 500px; /* You can adjust this */
+  }
+
+  .navbar__mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: var(--space-4);
+  }
 }
+
 
 
 /* Hero Section */
