@@ -11,7 +11,7 @@ const products = [
 
   {
     id: 1,
-    name: "Male oval rope bracelet",
+    name: "Elegant Gold Chain Female",
     // price: 299,
     category: "bracelets",
     gender: "male",
@@ -33,7 +33,7 @@ const products = [
 
   {
     id: 2,
-    name: "Male Bracelet (rope-stype)",
+    name: "Elegant Gold Chain Female",
     // price: 299,
     category: "bracelets",
     gender: "male",
@@ -620,24 +620,6 @@ const products = [
 }
 ];
 
-function renderProducts() {
-  const featuredContainer = document.getElementById('featured-products-grid');
-  if (!featuredContainer) return;
-
-  products.slice(0, 3).forEach(product => {
-    const card = document.createElement('div');
-    card.className = 'product-card';
-    card.innerHTML = `
-      <img src="${product.images[0]}" alt="${product.name}" class="product-image">
-      <h3 class="product-name">${product.name}</h3>
-      <p class="product-price">₹${(product.weight * dailySilverRateINR).toFixed(0)}</p>
-    `;
-    featuredContainer.appendChild(card);
-  });
-}
-renderProducts();
-
-
 function applySilverRateToProductPrices() {
   products.forEach(product => {
     const weightStr = product.specifications?.Weight || "";
@@ -758,10 +740,6 @@ class Router {
     
     const featuredProducts = products.filter(p => [0, 2, 4, 16].includes(p.id));
     grid.innerHTML = featuredProducts.map(product => this.createProductCard(product)).join('');
-    if (filteredProducts.length === 0) {
-       grid.innerHTML = '<p>No products match your filters.</p>';
-}
-
   }
   
   loadShopProducts() {
@@ -769,14 +747,12 @@ class Router {
     if (!grid) return;
     
     grid.innerHTML = filteredProducts.map(product => this.createProductCard(product)).join('');
-    if (filteredProducts.length === 0) {
-       grid.innerHTML = '<p>No products match your filters.</p>';
   }
   
   createProductCard(product) {
     return `
       <div class="product-card" onclick="router.navigateToProduct(${product.id})">
-        <img src="${product.images?.[0]}" alt="${product.name}" class="product-card__image">
+        <img src="${product.images?.[0] || 'assets/default.png'}" alt="${product.name}" class="product-card__image">
         <div class="product-card__content">
           <h3 class="product-card__title">${product.name}</h3>
           <div class="product-card__price">₹${product.price}</div>
@@ -811,10 +787,6 @@ class Router {
     document.getElementById('product-title').textContent = product.name;
     document.getElementById('product-price').textContent = `₹${product.price}`;
     document.getElementById('product-description-text').textContent = product.detailedDescription;
-
-   if (titleEl) titleEl.textContent = product.name;
-   if (priceEl) priceEl.textContent = `$${product.price}`;
-   if (descEl) descEl.textContent = product.detailedDescription;
     
     // Update tags
     const tagsContainer = document.getElementById('product-tags');
@@ -835,7 +807,7 @@ class Router {
     
     // Update main image
     const mainImage = document.getElementById('main-product-image');
-    mainImage.src = product.images?.[0];
+    mainImage.src = product.images[0];
     mainImage.alt = product.name;
     
     // Update thumbnails
@@ -903,24 +875,24 @@ class ProductGallery {
     const zoomModal = document.getElementById('zoom-modal');
     const zoomImage = document.getElementById('zoom-image');
     const closeBtn = document.querySelector('.zoom-modal__close');
-
-  zoomBtn.addEventListener('click', () => {
-    const mainImage = document.getElementById('main-product-image');
-    zoomImage.src = mainImage.src;
-    zoomModal.classList.add('active');
-  });
-
-  closeBtn.addEventListener('click', () => {
-    zoomModal.classList.remove('active');
-  });
-
-  zoomModal.addEventListener('click', (e) => {
-    if (e.target === zoomModal) {
+    
+    zoomBtn.addEventListener('click', () => {
+      const mainImage = document.getElementById('main-product-image');
+      zoomImage.src = mainImage.src;
+      zoomModal.classList.add('active');
+    });
+    
+    closeBtn.addEventListener('click', () => {
       zoomModal.classList.remove('active');
-    }
-  });
+    });
+    
+    zoomModal.addEventListener('click', (e) => {
+      if (e.target === zoomModal) {
+        zoomModal.classList.remove('active');
+      }
+    });
+  }
 }
-
 
 // Product Filter class
 class ProductFilter {
@@ -1037,51 +1009,12 @@ class MobileNav {
       });
       
       // Close menu when clicking on a link
-      // document.querySelectorAll('.nav-link').forEach(link => {
-      //   link.addEventListener('click', () => {
-      //     menu.classList.remove('active');
-      //     toggle.classList.remove('active');
-      //   });
-      // });
-     
-//      document.querySelectorAll('.nav-link').forEach(link => {
-//        link.addEventListener('click', function (e) {
-//        e.preventDefault();
-//        const targetId = this.getAttribute('href').substring(1) + '-page';
-
-//        // Hide all pages
-//      document.querySelectorAll('.page').forEach(page => {
-//        page.classList.remove('active');
-//     });
-
-//     // Show the selected page
-//     const targetPage = document.getElementById(targetId);
-//     if (targetPage) {
-//       targetPage.classList.add('active');
-//     }
-
-//     // Update active nav link
-//     document.querySelectorAll('.nav-link').forEach(nav => {
-//       nav.classList.remove('active');
-//     });
-//     this.classList.add('active');
-//   });
-// });
- document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
-
-        const id = this.getAttribute('href').replace('#', '') + '-page';
-        document.getElementById(id).classList.add('active');
-
-        // Update active nav link
-        document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
-        this.classList.add('active');
-    });
-});
-
-
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('active');
+          toggle.classList.remove('active');
+        });
+      });
     }
   }
 }
@@ -1089,123 +1022,82 @@ class MobileNav {
 // Initialize application
 let router, productGallery, productFilter, contactForm, mobileNav;
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   // Initialize all components
-//   router = new Router();
-//   productGallery = new ProductGallery();
-//   productFilter = new ProductFilter();
-//   contactForm = new ContactForm();
-//   mobileNav = new MobileNav();
-  
-//   // Initialize back to shop button
-//   const backToShopBtn = document.getElementById('back-to-shop');
-//   if (backToShopBtn) {
-//     backToShopBtn.addEventListener('click', () => {
-//       window.location.hash = 'shop';
-
-//   applySilverRateToProductPrices();   // 💰 Update prices based on manual silver rate
-//   displaySilverRate();                // 📢 Show silver rate on homepage
-//     });
-//   }
-  
-//   // Initialize smooth scrolling for internal links
-//   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//       const targetId = this.getAttribute('href');
-//       if (targetId === '#' || targetId === '#home' || targetId === '#shop' || 
-//           targetId === '#about' || targetId === '#contact') {
-//         // Let the router handle these
-//         return;
-//       }
-      
-//       e.preventDefault();
-//       const targetElement = document.querySelector(targetId);
-//       if (targetElement) {
-//         targetElement.scrollIntoView({
-//           behavior: 'smooth'
-//         });
-//       }
-//     });
-//   });
-  
-//   console.log('Aaryav Jewels application initialized successfully!');
-// });
-
-
-
-
-
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   // Initialize all components
-//   router = new Router();
-//   productGallery = new ProductGallery();
-//   productFilter = new ProductFilter();
-//   contactForm = new ContactForm();
-//   mobileNav = new MobileNav();
-
-//   applySilverRateToProductPrices(); // 💰 Apply silver pricing logic
-// });
-// // function displaySilverRate() {
-// //   const el = document.getElementById('silver-rate-display');
-// //   if (el) el.textContent = `Silver Rate: ₹ ${dailySilverRateINR} /g`;
-// // }
-
-
-
-
-
-
-
-
-
-// // applySilverRateToProductPrices();
-// document.querySelector('.navbar__mobile-toggle').addEventListener('click', () => {
-//   document.querySelector('.navbar__menu').classList.toggle('active');
-// const router = new Router();
-
-
-
-
-
-// // Export for global access
-// window.router = router;
-
 document.addEventListener('DOMContentLoaded', () => {
-  // 💰 Apply silver pricing
-  applySilverRateToProductPrices();
-  displaySilverRate();
+  // Initialize all components
+  router = new Router();
+  productGallery = new ProductGallery();
+  productFilter = new ProductFilter();
+  contactForm = new ContactForm();
+  mobileNav = new MobileNav();
+  
+  // Initialize back to shop button
+  const backToShopBtn = document.getElementById('back-to-shop');
+  if (backToShopBtn) {
+    backToShopBtn.addEventListener('click', () => {
+      window.location.hash = 'shop';
 
-  // 🧭 Initialize app features
-  const router = new Router();
-  const productGallery = new ProductGallery();
-  const productFilter = new ProductFilter();
-  const contactForm = new ContactForm();
-  const mobileNav = new MobileNav();
-
-  // 📱 Mobile menu toggle
-  document.querySelector('.navbar__mobile-toggle').addEventListener('click', () => {
-    document.querySelector('.navbar__menu').classList.toggle('active');
-  });
-
-  // 🔗 Smooth scrolling for anchor links (excluding route-based links)
+  applySilverRateToProductPrices();   // 💰 Update prices based on manual silver rate
+  displaySilverRate();                // 📢 Show silver rate on homepage
+    });
+  }
+  
+  // Initialize smooth scrolling for internal links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
-      if (['#', '#home', '#shop', '#about', '#contact'].includes(targetId)) {
-        return; // Let router handle these
+      if (targetId === '#' || targetId === '#home' || targetId === '#shop' || 
+          targetId === '#about' || targetId === '#contact') {
+        // Let the router handle these
+        return;
       }
-
+      
       e.preventDefault();
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
       }
     });
   });
-
+  
   console.log('Aaryav Jewels application initialized successfully!');
 });
 
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize all components
+  router = new Router();
+  productGallery = new ProductGallery();
+  productFilter = new ProductFilter();
+  contactForm = new ContactForm();
+  mobileNav = new MobileNav();
+
+  applySilverRateToProductPrices(); // 💰 Apply silver pricing logic
+});
+function displaySilverRate() {
+  const el = document.getElementById('silver-rate-display');
+  if (el) el.textContent = `Silver Rate: ₹ ${dailySilverRateINR} /g`;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Export for global access
+window.router = router;
