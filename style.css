@@ -701,36 +701,20 @@ select.form-control {
   background: var(--color-secondary);
 }
 
-@media (max-width: 768px) {
-  .navbar__menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    flex-direction: column;
-  }
-
-  .navbar__menu.active {
-    display: flex;
-    flex-direction: column;
-    background: var(--color-surface);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    padding: var(--space-16);
-    z-index: 99;
-    max-height: 500px; /* You can adjust this */
-  }
-
-  .navbar__mobile-toggle {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    gap: var(--space-4);
-  }
+.navbar__mobile-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: var(--space-4);
 }
 
-
+.navbar__mobile-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-fast) var(--ease-standard);
+}
 
 /* Hero Section */
 .hero {
@@ -777,7 +761,7 @@ select.form-control {
 }
 
 .product-card {
-  background: var(--color-image-bg);
+  background: var(--color-surface);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-card-border);
   overflow: hidden;
@@ -931,14 +915,6 @@ select.form-control {
   gap: var(--space-8);
   overflow-x: auto;
   padding: var(--space-4);
-}
-.gallery-thumbnails::-webkit-scrollbar {
-  height: 6px;
-}
-
-.gallery-thumbnails::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary);
-  border-radius: 10px;
 }
 
 .thumbnail {
