@@ -695,6 +695,7 @@ class Router {
     // Hide all pages
     document.querySelectorAll('.page').forEach(page => {
       page.classList.remove('active');
+     
     });
     
     // Show target page
@@ -729,6 +730,7 @@ class Router {
       if (link.getAttribute('href') === `#${currentRoute}`) {
         link.classList.add('active');
       }
+     window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
   
