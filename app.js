@@ -633,6 +633,11 @@ function applySilverRateToProductPrices() {
   });
 }
 
+function displaySilverRate() {
+  const el = document.getElementById("silver-rate-display");
+  if (el) el.textContent = `Silver Rate: ₹${dailySilverRateINR} /g`;
+}
+
 
 
 
@@ -1027,6 +1032,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (backToShopBtn) {
     backToShopBtn.addEventListener('click', () => {
       window.location.hash = 'shop';
+
+  applySilverRateToProductPrices();   // 💰 Update prices based on manual silver rate
+  displaySilverRate();                // 📢 Show silver rate on homepage
     });
   }
   
