@@ -571,7 +571,7 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Length": "8.5 inches",
-      "Weight": "3.4g",
+      "Weight": "34g",
       "Clasp": "High-gloss polished links",
       "Care": "Polish with a dry cloth. Avoid chemical contact and moisture. Store flat in a pouch."
   },
@@ -782,7 +782,7 @@ class Router {
     
     // Update product info
     document.getElementById('product-title').textContent = product.name;
-    document.getElementById('product-price').textContent = `$${product.price}`;
+    document.getElementById('product-price').textContent = `₹${product.price}`;
     document.getElementById('product-description-text').textContent = product.detailedDescription;
     
     // Update tags
@@ -835,7 +835,7 @@ class Router {
   }
   
   orderViaWhatsApp(product) {
-    const message = `Hi! I'm interested in ordering the ${product.name} (Price: $${product.price}). 
+    const message = `Hi! I'm interested in ordering the ${product.name} (Price: ₹${product.price}). 
 
 Product Details:
 ${product.description}
