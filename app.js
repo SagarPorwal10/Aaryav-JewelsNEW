@@ -573,6 +573,25 @@ const products = [
       "assets/generated-image-69.png"
     ]
   },
+ {
+  id: 28,
+  name: "Om Divine Silver Pendant",
+  price: 279,
+  category: "pendants",
+  gender: "unisex",
+  description: "A spiritual Om pendant handcrafted in 925 silver. Symbolic serenity in a refined, radiant form.",
+  detailedDescription: "Channel peace and purpose with the Om Divine Silver Pendant. Expertly crafted in 925 sterling silver, this pendant features a finely detailed Om symbol — representing universal energy and inner calm. Its smooth, high-polish surface adds a contemporary touch to this timeless spiritual icon. Whether worn close to the heart or gifted as a meaningful token, the Om Divine Pendant balances style with soulful significance.",
+  specifications: {
+    "Material": "925 Sterling Silver",
+    "Height": "1.5 inches",
+    "Weight": "2.1g",
+    "Finish": "High-polish reflective surface",
+    "Care": "Clean gently with a dry cloth. Avoid water and harsh chemicals. Store in a protective pouch."
+  },
+  images: [
+    "assets/IMG_20250530_2034800.png"
+  ]
+}
 ];
 
 
