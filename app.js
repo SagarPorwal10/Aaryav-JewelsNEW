@@ -11,7 +11,7 @@ const products = [
 
   {
     id: 1,
-    name: "Elegant Gold Chain Female",
+    name: "Male oval rope bracelet",
     // price: 299,
     category: "bracelets",
     gender: "male",
@@ -33,7 +33,7 @@ const products = [
 
   {
     id: 2,
-    name: "Elegant Gold Chain Female",
+    name: "Male Bracelet (rope-stype)",
     // price: 299,
     category: "bracelets",
     gender: "male",
@@ -740,6 +740,10 @@ class Router {
     
     const featuredProducts = products.filter(p => [0, 2, 4, 16].includes(p.id));
     grid.innerHTML = featuredProducts.map(product => this.createProductCard(product)).join('');
+    if (filteredProducts.length === 0) {
+       grid.innerHTML = '<p>No products match your filters.</p>';
+}
+
   }
   
   loadShopProducts() {
@@ -747,6 +751,8 @@ class Router {
     if (!grid) return;
     
     grid.innerHTML = filteredProducts.map(product => this.createProductCard(product)).join('');
+    if (filteredProducts.length === 0) {
+       grid.innerHTML = '<p>No products match your filters.</p>';
   }
   
   createProductCard(product) {
@@ -787,6 +793,10 @@ class Router {
     document.getElementById('product-title').textContent = product.name;
     document.getElementById('product-price').textContent = `₹${product.price}`;
     document.getElementById('product-description-text').textContent = product.detailedDescription;
+
+   if (titleEl) titleEl.textContent = product.name;
+   if (priceEl) priceEl.textContent = `$${product.price}`;
+   if (descEl) descEl.textContent = product.detailedDescription;
     
     // Update tags
     const tagsContainer = document.getElementById('product-tags');
@@ -807,7 +817,7 @@ class Router {
     
     // Update main image
     const mainImage = document.getElementById('main-product-image');
-    mainImage.src = product.images[0];
+    mainImage.src = product.images?.[0] || 'assets/default.png';;
     mainImage.alt = product.name;
     
     // Update thumbnails
