@@ -776,7 +776,7 @@ class Router {
   createProductCard(product) {
     return `
       <div class="product-card" onclick="router.navigateToProduct(${product.id})">
-        <img src="${product.images?.[0] || 'assets/default.png'}" alt="${product.name}" class="product-card__image">
+        <img src="${product.images?.[0]}" alt="${product.name}" class="product-card__image">
         <div class="product-card__content">
           <h3 class="product-card__title">${product.name}</h3>
           <div class="product-card__price">₹${product.price}</div>
@@ -835,7 +835,7 @@ class Router {
     
     // Update main image
     const mainImage = document.getElementById('main-product-image');
-    mainImage.src = product.images?.[0] || 'assets/default.png';;
+    mainImage.src = product.images?.[0];
     mainImage.alt = product.name;
     
     // Update thumbnails
