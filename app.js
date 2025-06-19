@@ -627,8 +627,8 @@ function applySilverRateToProductPrices() {
 
     if (match) {
       const weight = parseFloat(match[1]);
-      const makingCharge = 100; // Optional markup
-      product.price = Math.round(weight * dailySilverRateINR + makingCharge);
+      const makingCharge = 50; // Optional markup
+      product.price = Math.round(weight * dailySilverRateINR + 50*makingCharge);
     }
   });
 }
@@ -1080,7 +1080,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 function displaySilverRate() {
   const el = document.getElementById('silver-rate-display');
-  if (el) el.textContent = `Silver Rate: ₹${dailySilverRateINR} /g`;
+  if (el) el.textContent = `Silver Rate: ₹ ${dailySilverRateINR} /g`;
 }
 
 
