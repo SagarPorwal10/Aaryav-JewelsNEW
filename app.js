@@ -589,7 +589,7 @@ const products = [
     "Care": "Clean gently with a dry cloth. Avoid water and harsh chemicals. Store in a protective pouch."
   },
   images: [
-    "assets/IMG_20250530_2034800.png"
+    "assets/IMG_20250530_234800.jpg"
   ]
 },
  {
@@ -608,7 +608,7 @@ const products = [
     "Care": "Wipe with a soft cloth after use. Keep away from chemicals and water. Store in a dry pouch or box."
   },
   images: [
-    "assets/IMG_20250530_234800.jpg"
+    "assets/IMG_20250530_234813.jpg"
   ]
 }
 ];
