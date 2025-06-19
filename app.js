@@ -1,4 +1,11 @@
 // Application data
+// 🪙 Manually update this silver rate daily (₹ per gram)
+let dailySilverRateINR = 115.50;
+
+
+
+
+
 const products = [
  
 
@@ -613,6 +620,21 @@ const products = [
 }
 ];
 
+function applySilverRateToProductPrices() {
+  products.forEach(product => {
+    const weightStr = product.specifications?.Weight || "";
+    const match = weightStr.match(/([\d.]+)g/); // Match number with 'g'
+
+    if (match) {
+      const weight = parseFloat(match[1]);
+      const makingCharge = 100; // Optional markup
+      product.price = Math.round(weight * dailySilverRateINR + makingCharge);
+    }
+  });
+}
+
+
+
 
 
 const whatsappNumber = "+917011317729";
@@ -1030,6 +1052,41 @@ document.addEventListener('DOMContentLoaded', () => {
   
   console.log('Aaryav Jewels application initialized successfully!');
 });
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize all components
+  router = new Router();
+  productGallery = new ProductGallery();
+  productFilter = new ProductFilter();
+  contactForm = new ContactForm();
+  mobileNav = new MobileNav();
+
+  applySilverRateToProductPrices(); // 💰 Apply silver pricing logic
+});
+function displaySilverRate() {
+  const el = document.getElementById('silver-rate-display');
+  if (el) el.textContent = `Silver Rate: ₹${dailySilverRateINR} /g`;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Export for global access
 window.router = router;
