@@ -620,6 +620,24 @@ const products = [
 }
 ];
 
+function renderProducts() {
+  const featuredContainer = document.getElementById('featured-products-grid');
+  if (!featuredContainer) return;
+
+  products.slice(0, 3).forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.innerHTML = `
+      <img src="${product.images[0]}" alt="${product.name}" class="product-image">
+      <h3 class="product-name">${product.name}</h3>
+      <p class="product-price">₹${(product.weight * dailySilverRateINR).toFixed(0)}</p>
+    `;
+    featuredContainer.appendChild(card);
+  });
+}
+renderProducts();
+
+
 function applySilverRateToProductPrices() {
   products.forEach(product => {
     const weightStr = product.specifications?.Weight || "";
