@@ -941,9 +941,9 @@ class ProductFilter {
       // Price filter
       if (priceRange !== 'all') {
         const price = product.price;
-        if (priceRange === '0-300' && price >= 300) return false;
-        if (priceRange === '300-600' && (price < 300 || price >= 600)) return false;
-        if (priceRange === '600+' && price < 600) return false;
+        if (priceRange === '0-1000' && price >= 1001) return false;
+        if (priceRange === '1000-2000' && (price < 999 || price >= 2001)) return false;
+        if (priceRange === '2000' && price < 1999) return false;
       }
       
       return true;
