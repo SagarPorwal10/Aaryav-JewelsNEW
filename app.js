@@ -1019,12 +1019,36 @@ class MobileNav {
       });
       
       // Close menu when clicking on a link
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-          menu.classList.remove('active');
-          toggle.classList.remove('active');
-        });
-      });
+      // document.querySelectorAll('.nav-link').forEach(link => {
+      //   link.addEventListener('click', () => {
+      //     menu.classList.remove('active');
+      //     toggle.classList.remove('active');
+      //   });
+      // });
+     document.querySelectorAll('.nav-link').forEach(link => {
+       link.addEventListener('click', function (e) {
+       e.preventDefault();
+       const targetId = this.getAttribute('href').substring(1) + '-page';
+
+       // Hide all pages
+     document.querySelectorAll('.page').forEach(page => {
+       page.classList.remove('active');
+    });
+
+    // Show the selected page
+    const targetPage = document.getElementById(targetId);
+    if (targetPage) {
+      targetPage.classList.add('active');
+    }
+
+    // Update active nav link
+    document.querySelectorAll('.nav-link').forEach(nav => {
+      nav.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});
+
     }
   }
 }
