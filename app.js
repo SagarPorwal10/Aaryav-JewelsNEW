@@ -753,7 +753,7 @@ class Router {
         <img src="${product.images?.[0] || 'assets/default.png'}" alt="${product.name}" class="product-card__image">
         <div class="product-card__content">
           <h3 class="product-card__title">${product.name}</h3>
-          <div class="product-card__price">$${product.price}</div>
+          <div class="product-card__price">₹${product.price}</div>
           <p class="product-card__description">${product.description}</p>
           <div class="product-card__tags">
             <span class="product-tag">${product.category}</span>
