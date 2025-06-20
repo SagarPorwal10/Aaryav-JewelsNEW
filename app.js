@@ -1088,6 +1088,16 @@ function displaySilverRate() {
 
 
 
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.navbar__mobile-toggle');
+  const menu = document.querySelector('.navbar__menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    toggle.classList.toggle('active');
+  });
+});
 
 
 
