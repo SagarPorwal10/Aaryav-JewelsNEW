@@ -704,6 +704,7 @@ select.form-control {
 .navbar__mobile-toggle {
   display: none;
   flex-direction: column;
+  margin-left: auto;
   cursor: pointer;
   gap: var(--space-4);
 }
