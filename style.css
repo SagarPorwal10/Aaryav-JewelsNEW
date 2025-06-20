@@ -669,6 +669,7 @@ select.form-control {
   align-items: center;
   justify-content: space-between;
   padding: var(--space-16) 0;
+  position: relative;
 }
 
 .navbar__brand h1 {
@@ -1345,6 +1346,7 @@ select.form-control {
 
   .navbar__mobile-toggle {
     display: block;
+    margin-left: auto;
     cursor: pointer;
   }
 
