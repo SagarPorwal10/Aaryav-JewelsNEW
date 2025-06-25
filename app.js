@@ -1,9 +1,3 @@
-// Application data
-// 🪙 Manually update this silver rate daily (₹ per gram)
-let dailySilverRateINR = 115.50;
-
-
-
 
 
 const products = [
@@ -12,7 +6,7 @@ const products = [
   {
     id: 1,
     name: "Elegant Gold Chain Female",
-    // price: 299,
+    price: 299,
     category: "bracelets",
     gender: "male",
     description: "Sleek and minimal silver chain designed for everyday sophistication. Crafted from high-quality sterling silver with a modern oval-link pattern.",
@@ -55,7 +49,7 @@ const products = [
   {
     id: 3,
     name: "Elegant Gold Chain Female",
-    // price: 299,
+    price: 299,
     category: "bracelets",
     gender: "female",
     description: "A refined silver bracelet adorned with brilliant-cut diamonds set in square links. Crafted for elegant evenings and timeless sophistication.",
@@ -76,7 +70,7 @@ const products = [
   {
     id: 4,
     name: "Elegant Pink Sapphire Marquise Bracelet",
-    // price: 299,
+    price: 299,
     category: "bracelets",
     gender: "female",
     description: "A delicate silver bracelet featuring alternating marquise links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
@@ -118,7 +112,7 @@ const products = [
   {
     id: 6,
     name: "Om(ॐ) Diamond-Bar Spiritual Bracelet",
-    // price: 299,
+    price: 299,
     category: "bracelets",
     gender: "female",
     description: "A bold and spiritual bracelet featuring an 'Om' symbol at the center of a shimmering pavé diamond bar. Perfect harmony of style and meaning.",
@@ -140,7 +134,7 @@ const products = [
   {
     id: 7,
     name: "Titan Classic Curb Chain Bracelet",
-    // price: 299,
+    price: 299,
     category: "bracelets",
     gender: "male",
     description: "A timeless silver curb chain bracelet that speaks of strength and subtle style. A staple accessory for the modern man.",
@@ -162,7 +156,7 @@ const products = [
   // {
   //   id: 8,
   //   name: "Midnight Evil Eye Beaded Bracelet",
-  //   price: 299,
+    // price: 299,
   //   category: "bracelets",
   //   gender: "female",
   //   description: "A symbolic beaded bracelet featuring a deep blue evil eye charm flanked by glossy black and silver-tone beads. Designed for everyday wear and protection.",
@@ -185,7 +179,7 @@ const products = [
   {
     id: 9,
     name: "Elegant Pink Sapphire floral Bracelet",
-    // price: 299,
+    price: 299,
     category: "bracelets",
     gender: "female",
     description: "A delicate silver bracelet featuring floral links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
@@ -229,7 +223,7 @@ const products = [
    {
     id: 11,
     name: "Celestial Blue & White Gemstone Ring",
-    // price: 299,
+    price: 299,
     category: "rings",
     gender: "female",
     description: "A graceful silver ring featuring alternating vivid blue and white stones. A symbol of elegance with a celestial touch.",
@@ -271,7 +265,7 @@ const products = [
   {
     id: 13,
     name: "Sculpted Band",
-    // price: 299,
+    price: 299,
     category: "rings",
     gender: "female",
     description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
@@ -293,7 +287,7 @@ const products = [
   {
     id: 14,
     name: "Textured Rope-Link Silver Chain",
-    // price: 349,
+    price: 349,
     category: "bracelets",
     gender: "unisex",
     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
@@ -313,7 +307,7 @@ const products = [
   {
     id: 15,
     name: "Textured Oval-Link Silver Chain",
-    // price: 349,
+    price: 349,
     category: "bracelets",
     gender: "unisex",
     description: "Distinctive silver chain featuring Oval-style links for a bold and intricate look. Made from 777 silver.",
@@ -334,7 +328,7 @@ const products = [
   {
     id: 16,
     name: "Minimalist Silver Chain",
-    // price: 399,
+    price: 399,
     category: "necklaces",
     gender: "female",
     description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
@@ -356,7 +350,7 @@ const products = [
   {
     id: 17,
     name: "Eternal Sparkle Slim Diamond Band",
-    // price: 289,
+    price: 289,
     category: "rings",
     gender: "female",
     description: "A sleek silver band featuring a single row of shimmering artificial diamonds at its center. Elegant, minimal, and radiant.",
@@ -376,7 +370,7 @@ const products = [
   {
     id: 18,
     name: "GeoPulse Unisex Patterned Band",
-    // price: 199,
+    price: 199,
     category: "rings",
     gender: "unisex",
     description: "A bold unisex ring featuring a continuous pattern engraved around a brushed silver band. Built for those who move with rhythm and intention.",
@@ -395,7 +389,7 @@ const products = [
   {
     id: 19,
     name: "Heart of Grace Slim Diamond Band",
-    // price: 899,
+    price: 899,
     category: "rings",
     gender: "female",
     description: "A delicate sterling silver ring adorned with a line of white artificial diamonds and a single red heart centerpiece—symbolizing love, strength, and elegance.",
@@ -435,7 +429,7 @@ const products = [
   {
     id: 21,
     name: "Textured Rope-Link Silver Chain",
-    // price: 349,
+    price: 349,
     category: "bracelets",
     gender: "unisex",
     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
@@ -454,7 +448,7 @@ const products = [
  {
     id: 22,
     name: "Ram Silver Ring",
-    // price: 499,
+    price: 499,
     category: "rings",
     gender: "unisex",
     description: "A bold sterling silver Ram Challa ring engraved with sacred symbolism. A timeless expression of strength, devotion, and tradition.",
@@ -475,7 +469,7 @@ const products = [
   {
     id: 23,
     name: "Minimalist Silver Chain",
-    // price: 399,
+    price: 399,
     category: "necklaces",
     gender: "Male",
     description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
@@ -495,7 +489,7 @@ const products = [
  {
     id: 24,
     name: "Pure Form Minimalist Silver Band",
-    // price: 199,
+    price: 199,
     category: "rings",
     gender: "unisex",
     description: "A sleek and minimal sterling silver ring designed for everyday elegance. Understated. Timeless. Essential.",
@@ -537,7 +531,7 @@ const products = [
 {
   id: 26,
   name: "Legacy Flat-Link Silver Chain",
-  // price: 449,
+  price: 449,
   category: "necklaces",
   gender: "male",
   description: "A long flat-link chain crafted from silver. Bold, sleek, and designed for timeless confidence.",
@@ -583,7 +577,7 @@ const products = [
  {
   id: 28,
   name: "Om Divine Silver Pendant",
-  // price: 279,
+  price: 279,
   category: "pendants",
   gender: "unisex",
   description: "A spiritual Om pendant handcrafted in 925 silver. Symbolic serenity in a refined, radiant form.",
@@ -602,7 +596,7 @@ const products = [
  {
   id: 29,
   name: "Khatu Shyam Devotional Pendant",
-  // price: 299,
+  price: 299,
   category: "pendants",
   gender: "unisex",
   description: "A divine Khatu Shyam pendant in 925 silver. Crafted with reverence for spiritual devotion and timeless elegance.",
@@ -619,26 +613,6 @@ const products = [
   ]
 }
 ];
-
-function applySilverRateToProductPrices() {
-  products.forEach(product => {
-    const weightStr = product.specifications?.Weight || "";
-    const match = weightStr.match(/([\d.]+)g/); // Match number with 'g'
-
-    if (match) {
-      const weight = parseFloat(match[1]);
-      const makingCharge = 50; // Optional markup
-      product.price = Math.round(weight * dailySilverRateINR + weight * makingCharge);
-    }
-  });
-}
-
-function displaySilverRate() {
-  const el = document.getElementById("silver-rate-display");
-  if (el) el.textContent = `Silver Rate: ₹${dailySilverRateINR} /g`;
-}
-
-
 
 
 
@@ -1098,6 +1072,21 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.classList.toggle('active');
   });
 });
+
+// Scroll to Top Button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollToTopBtn.classList.add("show");
+  } else {
+    scrollToTopBtn.classList.remove("show");
+  }
+};
+
+scrollToTopBtn.onclick = function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
 
 
