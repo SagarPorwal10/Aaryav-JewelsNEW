@@ -1540,12 +1540,20 @@ scrollToTopBtn.onclick = function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
+document.getElementById('zoom-btn').addEventListener('click', () => {
+  const modal = document.getElementById('zoom-modal');
+  const zoomImage = document.getElementById('zoom-image');
+  const mainImage = document.getElementById('main-product-image');
+  
+  if (mainImage && zoomImage && modal) {
+    zoomImage.src = mainImage.src;
+    modal.style.display = 'flex';
+  }
+});
 
-
-
-
-
-
+document.querySelector('.zoom-modal__close').addEventListener('click', () => {
+  document.getElementById('zoom-modal').style.display = 'none';
+});
 
 
 
