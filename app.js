@@ -668,7 +668,230 @@ const products = [
   images: [
     "assets/IMG20250621221234.jpg",
   ]
+},
+ {
+  id: 33,
+  name: "Italian Silver Butterfly Pendant",
+  price: 1299,
+  category: "pendants",
+  gender: "female",
+  description: "Delicate butterfly pendant crafted in 92.5 sterling silver with fine silver plating. Lightweight, elegant, and full of grace.",
+  detailedDescription: "This elegant pendant features a beautifully detailed butterfly, symbolizing transformation, hope, and beauty. Expertly crafted in Italy from 92.5 sterling silver and finished with high-polish silver plating, the design is lightweight yet eye-catching. Perfect for everyday wear or as a meaningful gift, this pendant is ideal for women who love subtle charm with symbolic depth.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "Italian High Gloss Polish",
+    "Weight": "3g",
+    "Dimensions": "Height: 1 inch, Width: 1 inch",
+    "Care": "Avoid moisture and chemicals; store in soft pouch"
+  },
+  images: [
+    "assets/IMG20250621215222.jpg",
+  ]
+},
+ {
+  id: 34,
+  name: "Italian Silver Lock & Key Pendant Set",
+  price: 1499,
+  category: "pendants",
+  gender: "female",
+  description: "Stylish lock and key pendants crafted in 92.5 sterling silver with sleek silver plating. A modern symbol of connection and trust.",
+  detailedDescription: "This Italian-crafted pendant set features a beautifully detailed lock and matching key, representing love, security, and hidden meanings. Made from lightweight 92.5 sterling silver with a polished silver-plated finish, this duo can be worn together or shared between two people. Perfect as a gift for couples, best friends, or anyone who values unique, meaningful jewelry.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "Glossy Italian Craftsmanship",
+    "Weight": "4g (combined)",
+    "Dimensions": "Lock: 0.8 inch, Key: 1 inch",
+    "Care": "Avoid chemicals and water; polish gently with a silver cloth"
+  },
+  images: [
+    "assets/IMG20250621215107.jpg",
+    "assets/image_7.png",
+    "assets/image_8.png"
+  ]
+},
+ {
+  id: 35,
+  name: "Italian Silver Star Duo Pendant Set",
+  price: 1499,
+  category: "pendants",
+  gender: "unisex",
+  description: "Minimalist star pendant set crafted in 92.5 sterling silver with a refined Italian silver finish. A perfect symbol of dreams, guidance, and light.",
+  detailedDescription: "This graceful pendant set features two interlinked star designs—one solid, one hollow—symbolizing hope and harmony. Crafted in lightweight 92.5 sterling silver with sleek silver plating, the pieces can be worn together as one or shared as matching symbols of connection. A beautiful gift for couples, close friends, or anyone who believes in following their inner light. Designed with Italian craftsmanship and delicate detailing.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "Polished Italian Silver",
+    "Weight": "4g (combined)",
+    "Dimensions": "Solid Star: 0.9 inch, Hollow Star: 1 inch",
+    "Care": "Keep dry; gently clean with silver polish cloth to retain shine"
+  },
+  images: [
+    "assets/image_3.png",
+    "assets/image_4.png",
+    "assets/image_5.png",
+    "assets/image_6.png"
+  ]
+},
+ {
+  id: 36,
+  name: "Italian Silver Infinity Loop Pendant",
+  price: 1399,
+  category: "pendants",
+  gender: "female",
+  description: "Elegant infinity loop pendant made with 92.5 sterling silver and Italian silver plating. A timeless symbol of love, unity, and eternity.",
+  detailedDescription: "This graceful pendant showcases the iconic infinity symbol, crafted with precision from 92.5 sterling silver and polished with a lustrous silver-plated finish. Lightweight and versatile, it embodies eternal love, endless possibilities, and inner balance. Perfect as a thoughtful gift or a daily reminder of meaningful bonds, this Italian-style design blends minimalism with deep symbolism.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "High-Gloss Italian Polish",
+    "Weight": "3.2g",
+    "Dimensions": "Length: 1.2 inch, Width: 0.4 inch",
+    "Care": "Store in a soft pouch; avoid direct contact with water and perfumes"
+  },
+  images: [
+    "assets/image_17.png",
+    "assets/image_18.png"
+  ]
+},
+ {
+  "id": 37,
+  "name": "Crimson Elegance Drop Earrings",
+  "price": 799,
+  "category": "earrings",
+  "gender": "female",
+  "description": "Delicate long-drop earrings featuring a red crystal bead, silver bow accent, and minimalist oval hoop for a bold yet graceful statement.",
+  "detailedDescription": "These sophisticated drop earrings combine charm and modern design. Featuring a shimmering silver bow, vibrant red bead, and textured oval hoop with a sleek trailing chain, they’re perfect for both festive occasions and elegant evenings. Lightweight yet eye-catching, they offer a perfect balance of color and movement, making them a standout accessory for any wardrobe.",
+  "specifications": {
+    "Material": "Alloy with Silver Polish",
+    "Accents": "Red Crystal Beads, Silver Bow",
+    "Length": "3.8 inches",
+    "Weight": "2.6g (each)",
+    "Care": "Keep in dry storage; avoid moisture, perfumes, and chemicals"
+  },
+  "images": [
+    "assets/IMG20250621214227.jpg",
+    "assets/image_15.png",
+    "assets/image_16.png"
+   
+  ]
+},
+
+{
+  id: 38,
+  name: "Convertible Magnetic Silver Pendant",
+  price: 1799,
+  category: "pendants",
+  gender: "unisex",
+  description: "Innovative magnetic pendant crafted in 92.5 sterling silver with Italian-style silver plating. Wear it as one or share it as two.",
+  detailedDescription: "This convertible magnetic pendant features a clever two-piece design that clicks together seamlessly using hidden magnets. Crafted from 92.5 sterling silver and plated with a high-gloss silver finish, it's perfect for expressing connection, love, or duality. Can be worn as a single statement piece or split into two for couples or close friends. Lightweight, modern, and meaningful — a perfect blend of art and sentiment.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "Italian Glossy Finish",
+    "Weight": "5g (combined)",
+    "Dimensions": "Each Half: 0.8 inch | Combined: 1.5 inch",
+    "Magnet Type": "Built-in neodymium magnet for secure hold",
+    "Care": "Keep away from moisture and strong magnetic fields; clean with soft cloth"
+  },
+  images: [
+    "assets/image_21.png",
+    "assets/image_28.png",
+    "assets/image_29.png",
+    "assets/image_23.png",
+    "assets/image_22.png",
+    "assets/image_24.png"
+  ]
+},
+ {
+  "id": 39,
+  "name": "Minimalist Silver Threader Earrings",
+  "price": 649,
+  "category": "earrings",
+  "gender": "female",
+  "description": "Sleek and lightweight silver threader earrings crafted for a subtle, modern look. Perfect for everyday elegance.",
+  "detailedDescription": "These ultra-light silver threader earrings feature a fine beaded chain that offers graceful movement and understated sophistication. Designed for modern minimalists, they add a touch of elegance without overpowering your look. Whether worn solo or paired with layered accessories, these earrings blend seamlessly with both casual and formal styles.",
+  "specifications": {
+    "Material": "Alloy with 92.5 Silver Polish",
+    "Design": "Beaded Chain Threader",
+    "Length": "4 inches",
+    "Weight": "1.8g (each)",
+    "Care": "Avoid moisture, perfume, and chemicals; store separately in a soft pouch"
+  },
+  "images": [
+    "assets/IMG20250621214110.jpg",
+    "assets/image_35.png",
+    "assets/image_36.png"
+  ]
+},
+ {
+  "id": 40,
+  "name": "Hamsa Sparkle Drop Earrings",
+  "price": 899,
+  "category": "earrings",
+  "gender": "female",
+  "description": "Protective Hamsa drop earrings embellished with cubic zirconia and sleek silver bars. A perfect fusion of charm and elegance.",
+  "detailedDescription": "Channel elegance and spiritual symbolism with these stunning Hamsa drop earrings. The intricately designed Hamsa hand, encrusted with dazzling cubic zirconia and a central black crystal, symbolizes protection and good fortune. A slender polished silver bar elegantly extends below, creating a modern silhouette that’s both refined and meaningful. Ideal for festive wear, gifting, or everyday glamour with a touch of mystique.",
+  "specifications": {
+    "Material": "Alloy with 92.5 Silver Polish",
+    "Accents": "Cubic Zirconia & Black Crystal",
+    "Length": "3.5 inches",
+    "Weight": "2.4g (each)",
+    "Symbolism": "Hamsa Hand – Protection, Strength, and Blessings",
+    "Care": "Avoid contact with moisture, perfumes, and sharp objects; store in a dry pouch"
+  },
+  "images": [
+    "assets/IMG20250621214010.jpg",
+    "assets/image_32.png",
+    "assets/image_33.png"
+    
+  ]
+},
+ {
+  "id": 41,
+  "name": "Hamsa Heart Drop Earrings",
+  "price": 899,
+  "category": "earrings",
+  "gender": "female",
+  "description": "Elegant Hamsa drop earrings adorned with a heart-shaped crystal and cubic zirconia, finished with sleek silver bars. A blend of love and protection.",
+  "detailedDescription": "Infused with both charm and symbolism, these Hamsa drop earrings feature a heart-shaped center crystal in place of the traditional eye, representing love, care, and emotional strength. Surrounded by fine cubic zirconia and finished with a slender polished silver bar, the design exudes grace and modern spirituality. Perfect for romantic gifts or as a stylish talisman for self-love and balance.",
+  "specifications": {
+    "Material": "Alloy with 92.5 Silver Polish",
+    "Accents": "Cubic Zirconia & Heart Crystal",
+    "Length": "3.5 inches",
+    "Weight": "2.4g (each)",
+    "Symbolism": "Hamsa Hand with Heart – Love, Protection, and Harmony",
+    "Care": "Avoid contact with moisture, perfumes, and sharp objects; store in a dry pouch"
+  },
+  "images": [
+    "assets/IMG20250621213921.jpg",
+    "assets/image_30.png",
+    "assets/image_31.png"
+  ]
+},
+  {
+  "id": 42,
+  "name": "Parisian Charm Eiffel Tower Earrings",
+  "price": 749,
+  "category": "earrings",
+  "gender": "female",
+  "description": "Romantic drop earrings featuring the Eiffel Tower charm, symbolizing travel, love, and timeless elegance.",
+  "detailedDescription": "Embrace the spirit of Paris with these stylish Eiffel Tower earrings. Crafted with delicate detail and a polished silver finish, these drops capture the magic of love, dreams, and wanderlust. Lightweight and charming, they’re perfect for romantics at heart or as a token of your love for adventure. Whether for a travel lover or as a personal keepsake, these earrings bring a touch of Europe to every outfit.",
+  "specifications": {
+    "Material": "Alloy with Silver Polish",
+    "Charm": "Miniature Eiffel Tower",
+    "Length": "2.8 inches",
+    "Weight": "2.1g (each)",
+    "Care": "Keep away from moisture and perfume; store in a dry, padded pouch"
+  },
+  "images": [
+    "assets/image_34.jpg"
+  ]
 }
+
+
+
+
+
+
+
+
  
 ];
 
