@@ -883,16 +883,187 @@ const products = [
   "images": [
     "assets/image_34.jpg"
   ]
+},
+{
+  "id": 43,
+  "name": "Radiant Bloom Silver Stud Set",
+  "price": 1499,
+  "category": "earrings",
+  "gender": "female",
+  "description": "Elegant floral-inspired stud set crafted in 92.5 sterling silver with pavé-set cubic zirconia. Three sizes, endless styling possibilities.",
+  "detailedDescription": "This beautifully designed stud set features three radiant flower/starburst-shaped earrings in varying sizes, each meticulously crafted from 92.5 sterling silver. Embellished with sparkling pavé-set cubic zirconia, these versatile studs are perfect for single, double, or triple lobe piercings. Whether you wear them as a matching set or mix and match for a layered look, they bring a touch of brilliance and charm to any ensemble. Lightweight, hypoallergenic, and ideal for everyday elegance or special occasions.",
+  "specifications": {
+    "Material": "92.5 Sterling Silver with Cubic Zirconia",
+    "Finish": "High Polish with Pavé Detailing",
+    "Weight": "3.2g (combined)",
+    "Dimensions": "Small: 0.5 inch | Medium: 0.6 inch | Large: 0.75 inch",
+    "Back Type": "Butterfly Push-Back",
+    "Care": "Store in a dry place; avoid contact with perfume or water; clean gently with a silver cloth"
+  },
+  "images": [
+    "assets/image_42.png",
+    "assets/image_43.png"
+  ]
+},
+ {
+  "id": 44,
+  "name": "Heartfelt Sparkle Silver Pendant",
+  "price": 1699,
+  "category": "pendants",
+  "gender": "female",
+  "description": "A delicate heart-shaped pendant in 92.5 sterling silver with a shimmering white CZ finish and a single red heart accent. A symbol of love, forever.",
+  "detailedDescription": "Crafted with care and elegance, the Heartfelt Sparkle Pendant captures timeless love in a modern form. Made from premium 92.5 sterling silver and encrusted with white cubic zirconia stones, this dainty heart pendant stands out with a bold red heart centerpiece. Perfect as a gift or a personal keepsake, it represents affection, warmth, and enduring bonds. The fine Italian-style glossy silver plating enhances its brilliance, making it suitable for both everyday wear and special occasions.",
+  "specifications": {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Stones": "White and Red Cubic Zirconia",
+    "Finish": "Glossy Italian Silver",
+    "Weight": "3g",
+    "Dimensions": "Pendant: 0.9 inch x 0.8 inch",
+    "Chain Compatibility": "Fits standard chains up to 3mm",
+    "Care": "Avoid moisture and harsh chemicals; store in a dry, padded box; clean gently with soft cloth"
+  },
+  "images": [
+    "assets/image_40.png",
+    "assets/image_41.png"
+  ]
+},
+
+
+{
+  "id": 45,
+  "name": "Enchanted Fairy Silver Pendant",
+  "price": 1899,
+  "category": "pendants",
+  "gender": "female",
+  "description": "Whimsical fairy pendant crafted in 92.5 sterling silver with shimmering wings and magical detail. A symbol of wonder and grace.",
+  "detailedDescription": "Step into a world of fantasy with the Enchanted Fairy Pendant — a charming piece that captures the essence of dreams and magic. Handcrafted in 92.5 sterling silver and finished with a luminous Italian silver gloss, this pendant features a graceful fairy with outstretched, winged elegance. Delicate white CZ stones embellish her wings, reflecting light like morning dew. Ideal for dreamers, storytellers, or anyone drawn to the mystical, it’s a wearable reminder of belief in the beautiful and unseen.",
+  "specifications": {
+    "Material": "92.5 Sterling Silver",
+    "Finish": "Glossy Italian Silver",
+    "Stones": "White Cubic Zirconia on Wings",
+    "Weight": "4.2g",
+    "Dimensions": "1.2 inch height x 0.9 inch width",
+    "Chain Compatibility": "Fits chains up to 3mm",
+    "Care": "Avoid water and chemicals; clean gently with a soft cloth; store in a cool, dry place"
+  },
+  "images": [
+    "assets/image_44.png",
+    "assets/image_45.png"
+  ]
+},
+ {
+  "id": 46,
+  "name": "Floral Radiance Silver Studs",
+  "price": 1599,
+  "category": "earrings",
+  "gender": "female",
+  "description": "Elegant floral silver studs crafted in 92.5 sterling silver with glittering cubic zirconia petals. Nature’s grace, captured in shine.",
+  "detailedDescription": "Inspired by blooming daisies and sunbursts, the Floral Radiance Studs bring a touch of nature’s joy to your jewelry box. Crafted in high-quality 92.5 sterling silver, each earring features a radiant floral design with pavé-set white cubic zirconia on every petal, surrounding a smooth silver dome at the center. Lightweight yet striking, they’re perfect for everyday wear or a sparkling accent to elevate your look. A delicate expression of femininity and natural beauty.",
+  "specifications": {
+    "Material": "92.5 Sterling Silver with Cubic Zirconia",
+    "Finish": "Glossy Pavé Finish",
+    "Weight": "3.5g (pair)",
+    "Dimensions": "Diameter: 0.75 inch",
+    "Back Type": "Secure Butterfly Push-Back",
+    "Care": "Store away from moisture and perfumes; clean with a soft silver cloth"
+  },
+  "images": [
+    "assets/image_50.png",
+    "assets/image_52.png"
+  ]
+},
+ {
+  "id": 47,
+  "name": "Moonlit Pearl Silver Set",
+  "price": 2199,
+  "category": "sets",
+  "gender": "female",
+  "description": "Elegant pearl and silver jewelry set with crescent-shaped design and sparkling CZ stones. A timeless symbol of grace and serenity.",
+  "detailedDescription": "The Moonlit Pearl Silver Set blends classic elegance with celestial beauty. Featuring a matching pendant and stud earrings, each piece is crafted from 92.5 sterling silver and gracefully cradles a luminous white pearl in a crescent-like arc. Accented with brilliant cubic zirconia stones, the design evokes the peaceful radiance of the moon. Whether worn for special occasions or as everyday elegance, this set embodies sophistication, femininity, and poise.",
+  "specifications": {
+    "Material": "92.5 Sterling Silver",
+    "Stones": "White Imitation Pearls & Cubic Zirconia",
+    "Finish": "High-Gloss Italian Silver Plating",
+    "Weight": "Pendant: 2.5g | Earrings (pair): 3.8g",
+    "Dimensions": "Pendant: 1.1 inch | Earrings: 0.9 inch",
+    "Back Type": "Earrings: Butterfly Push-Back",
+    "Care": "Avoid water, perfumes, and sprays; clean gently with a soft cloth; store separately to avoid scratches"
+  },
+  "images": [
+    "assets/image_55.png",
+    "assets/image_56.png"
+  ]
+},
+ {
+  "id": 48,
+  "name": "Retro Pop Enamel Huggie Earrings",
+  "price": 1399,
+  "category": "earrings",
+  "gender": "unisex",
+  "description": "Bold and playful huggie earrings in orange enamel with mint green accents. A funky fusion of retro style and modern attitude.",
+  "detailedDescription": "Add a pop of personality to your everyday look with the Retro Pop Enamel Huggie Earrings. Featuring a smooth, chunky band in vibrant orange enamel, each earring is adorned with playful mint green shapes and dotted accents in earthy brown. Crafted from durable stainless steel with a glossy finish, these huggies are lightweight, bold, and comfortable for all-day wear. Ideal for unisex styling, festival outfits, or quirky fashion lovers who embrace bold accessories.",
+  "specifications": {
+    "Material": "Stainless Steel with Hand-Applied Enamel",
+    "Finish": "Glossy Color-Enamel Coating",
+    "Weight": "5.5g (pair)",
+    "Dimensions": "Diameter: 0.8 inch | Width: 0.35 inch",
+    "Closure Type": "Hinged Snap Closure",
+    "Care": "Avoid water, perfumes, and abrasive surfaces; store separately to preserve enamel finish"
+  },
+  "images": [
+    "assets/image_57.png",
+    "assets/image_58.png",
+    "assets/image_59.png",
+    "assets/image_60.png"
+  ]
+},
+ {
+  "id": 49,
+  "name": "Mystic Bloom Silver Necklace",
+  "price": 1599,
+  "category": "necklaces",
+  "gender": "female",
+  "description": "Iridescent flower pendant on a dainty 92.5 sterling silver chain. Subtle, radiant, and full of charm.",
+  "detailedDescription": "The Mystic Bloom Necklace is a gentle yet striking piece that captures the essence of ethereal beauty. A finely crafted flower-shaped pendant glimmers with multicolor iridescence, subtly changing hues as it catches the light. Set on a slender 92.5 sterling silver chain with adjustable links, this necklace offers a minimalist silhouette with a magical twist. Perfect for layering or wearing solo, it’s a versatile piece for free spirits and dreamers.",
+  "specifications": {
+    "Material": "92.5 Sterling Silver",
+    "Pendant": "Iridescent Crystal in Flower Cut",
+    "Finish": "High-Polish Silver",
+    "Weight": "2.4g",
+    "Chain Length": "14 inch + 2 inch adjustable extension",
+    "Clasp Type": "Spring Ring Clasp",
+    "Care": "Keep away from water, perfumes, and cosmetics; store flat; clean gently with a soft cloth."
+  },
+  "images": [
+    "assets/image_77.png",
+    "assets/image_78.png",
+  ]
+   },
+   {
+  "id": 50,
+  "name": "Celeste Teardrop Solitaire Necklace",
+  "price": 1799,
+  "category": "necklaces",
+  "gender": "female",
+  "description": "Timeless teardrop solitaire pendant in 92.5 sterling silver with a dazzling CZ centerpiece. Pure elegance, always in style.",
+  "detailedDescription": "The Celeste Teardrop Necklace captures the essence of classic beauty with its minimal yet powerful design. A brilliant pear-cut cubic zirconia stone sits gracefully in a sleek 92.5 sterling silver setting, suspended from a fine, high-polish silver chain. This piece adds instant sophistication to any look — whether layered for trend-driven styling or worn solo for timeless grace. The clean silhouette and radiant sparkle make it a staple for both daily elegance and evening wear.",
+  "specifications": {
+    "Material": "92.5 Sterling Silver",
+    "Stone": "High-Grade Cubic Zirconia (Teardrop Cut)",
+    "Finish": "Mirror Polish",
+    "Weight": "2.7g",
+    "Pendant Size": "0.6 inch x 0.35 inch",
+    "Chain Length": "16 inch + 2 inch adjustable",
+    "Clasp Type": "Spring Ring Clasp",
+    "Care": "Avoid chemicals and water; clean gently with a soft cloth; store separately to prevent scratching"
+  },
+  "images": [
+    "assets/image_79.png",
+    "assets/image_80.png",
+  ]
 }
 
-
-
-
-
-
-
-
- 
+   
 ];
 
 
