@@ -611,7 +611,65 @@ const products = [
   images: [
     "assets/IMG_20250530_234813.jpg"
   ]
+},
+ {
+  id: 30,
+  name: "Sparkling Silver Diamond Necklace",
+  price: 4000,
+  category: "necklaces",
+  gender: "female",
+  description: "Elegant sterling silver necklace adorned with shimmering artificial diamonds. Perfect for parties, weddings, or everyday glam.",
+  detailedDescription: "This sparkling silver necklace features high-quality AAA-grade artificial diamonds intricately set in a 925 sterling silver base. With its delicate design and brilliant shine, it's an ideal accessory for women who love timeless beauty without the high cost. Lightweight, hypoallergenic, and beautifully finished, it’s perfect for gifting or adding a touch of luxury to any outfit.",
+  specifications: {
+    "Material": "925 Sterling Silver with AAA Simulated Diamonds",
+    "Length": "16 inches + 2-inch extender",
+    "Weight": "11g",
+    "Clasp": "Secure spring ring clasp",
+    "Care": "Keep dry and store in a soft pouch; avoid perfume and moisture"
+  },
+  images: [
+    "assets/IMG20250621201906.jpg",
+  ]
+},
+ {
+  id: 31,
+  name: "Sterling Silver Snake Idol for Puja",
+  price: 200,
+  category: "puja-saman",
+  gender: "unisex",
+  description: "A finely crafted sterling silver snake idol, ideal for Nag Panchami, Shiva Puja, and other religious rituals.",
+  detailedDescription: "This sacred snake idol is handcrafted from pure 925 sterling silver and symbolizes Nag Devta, often worshipped during Nag Panchami and other Hindu rituals. Designed with intricate detailing, this piece holds spiritual significance and is ideal for temple setups or home altars. It’s a perfect puja saman for devotees who value traditional worship with purity and elegance.",
+  specifications: {
+    "Material": "777 Silver",
+    "Weight": "varies",
+    "Symbolism": "Represents Nag Devta, protector of dharma and fertility",
+    "Care": "Keep in a dry place; polish gently with soft cloth to maintain shine"
+  },
+  images: [
+    "assets/IMG_20250621_210807.jpg",
+    "assets/image_50.png"
+  ]
+},
+ {
+  id: 32,
+  name: "Gold-Plated Italian Silver Goat Pendant",
+  price: 1599,
+  category: "pendants",
+  gender: "unisex",
+  description: "Charming gold-plated goat pendant crafted from Italian 92.5 silver. A unique blend of tradition, symbolism, and style.",
+  detailedDescription: "This handcrafted lightweight pendant showcases a tiny goat motif, symbolizing strength and determination. Made from premium 92.5 sterling silver with rich Italian craftsmanship and a high-quality gold plating, this piece stands out with its minimalist yet artistic design. Ideal for spiritual wearers, animal lovers, or those who appreciate unique symbolic jewelry. Can be paired with a silver or gold-plated chain.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Gold Plating",
+    "Finish": "Glossy Italian Craftsmanship",
+    "Weight": "4g",
+    "Dimensions": "Height: 1.2 inch, Width: 0.6 inch",
+    "Care": "Avoid water, perfume, and store in anti-tarnish pouch"
+  },
+  images: [
+    "assets/IMG20250621221234.jpg",
+  ]
 }
+ 
 ];
 
 
