@@ -6,17 +6,17 @@ const products = [
   {
     id: 1,
     name: "Silver Chain",
-    price: 299,
-    discount: 20,
+    price: 1899,
+    discount: 21.06,
     category: "bracelets",
-    soldOut: true,
+    soldOut: false,
     gender: "male",
     description: "Sleek and minimal silver chain designed for everyday sophistication. Crafted from high-quality sterling silver with a modern oval-link pattern.",
     detailedDescription: "This elegant silver chain blends timeless design with contemporary style. Meticulously crafted from 777 silver, the chain features polished oval links and a secure lobster clasp, making it perfect for both casual wear and formal occasions. Its unisex design ensures it complements any outfit, for any gender.",
     specifications: {
       "Material": "Silver",
       "Length": "18 inches (adjustable)",
-      "Weight": "11g",
+    
       "Clasp": "Secure lobster clasp",
       "Care": "Avoid water and perfume contact"
     },
@@ -30,8 +30,8 @@ const products = [
   {
     id: 2,
     name: "Silver male bracelets",
-    price: 299,
-    discount: 20,
+    price: 2999,
+    discount: 16.67,
     category: "bracelets",
     soldOut: false,
     gender: "male",
@@ -40,7 +40,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Length": "8 inches (adjustable)",
-      "Weight": "10g",
       "Clasp": "Secure lobster clasp",
       "Care": "Avoid water and perfume contact"
     },
@@ -52,9 +51,9 @@ const products = [
 
   {
     id: 3,
-    name: "Silver male bracelets - 2",
-    price: 299,
-    discount: 20,
+    name: "Silver bracelets bling diamond",
+    price: 1999,
+    discount: 25.01,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -63,7 +62,6 @@ const products = [
     specifications: {
       "Material": "Sterling Silver with Diamond Simulants",
       "Length": "7 inches + 1-inch extender",
-      "Weight": "14g",
       "Clasp": "Lobster clasp with extender chain",
       "Care": "Store separately in a jewelry pouch. Avoid exposure to moisture and chemicals."
     },
@@ -76,8 +74,8 @@ const products = [
   {
     id: 4,
     name: "Elegant Pink Sapphire Marquise Bracelet",
-    price: 299,
-    discount: 20,
+    price: 1799,
+    discount: 27.79,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -86,7 +84,6 @@ const products = [
     specifications: {
       "Material": "Silver with Pink Sapphire Simulants and CZ Accents",
       "Length": "7 inches + 1-inch extender",
-      "Weight": "12g",
       "Clasp": "Lobster clasp with extender chain",
       "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents."
     },
@@ -99,8 +96,8 @@ const products = [
   {
     id: 5,
     name: "Lustrous Marquise-Link Diamond Bracelet",
-    price: 299,
-    discount: 20,
+    price: 2499 ,
+    discount: 36.01,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -109,7 +106,6 @@ const products = [
     specifications: {
       "Material": "Sterling Silver with Cubic Zirconia",
       "Length": "7 inches + 1-inch extender",
-      "Weight": "10g",
       "Clasp": "Lobster clasp with extender chain",
       "Care": "Keep in a soft-lined box. Avoid direct contact with water, perfumes, and chemicals."
     },
@@ -122,8 +118,8 @@ const products = [
   {
     id: 6,
     name: "Om(ॐ) Diamond-Bar Spiritual Bracelet",
-    price: 299,
-    discount: 20,
+    price: 2999,
+    discount: 33.34,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -132,7 +128,6 @@ const products = [
     specifications: {
       "Material": "Sterling Silver with Black Enamel and Cubic Zirconia",
       "Length": "Adjustable – fits most wrist sizes",
-      "Weight": "16g",
       "Clasp": "Adjustable sliding clasp with bead ends",
       "Care": "Polish with a soft cloth. Avoid water and chemicals to maintain finish and shine."
     },
@@ -146,8 +141,8 @@ const products = [
   {
     id: 7,
     name: "Titan Classic Curb Chain Bracelet",
-    price: 299,
-    discount: 20,
+    price: 1999,
+    discount: 30.02,
     category: "bracelets",
     soldOut: false,
     gender: "male",
@@ -156,7 +151,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Length": "8.5 inches",
-      "Weight": "12g",
       "Clasp": "Fold-over clasp with triangle cap accent",
       "Care": "Clean with a soft cloth. Avoid exposure to saltwater and harsh chemicals."
     },
@@ -193,8 +187,8 @@ const products = [
   {
     id: 9,
     name: "Elegant Pink Sapphire floral Bracelet",
-    price: 299,
-    discount: 20,
+    price: 1999,
+    discount: 27.51,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -203,7 +197,6 @@ const products = [
     specifications: {
       "Material": "Sterling Silver with Pink Sapphire Simulants and CZ Accents",
       "Length": "7 inches + 1-inch extender",
-      "Weight": "12g",
       "Clasp": "Lobster clasp with extender chain",
       "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents"
     },
@@ -239,8 +232,8 @@ const products = [
    {
     id: 11,
     name: "Celestial Blue & White Gemstone Ring",
-    price: 299,
-    discount: 20,
+    price: 599,
+    discount: 50.08,
     category: "rings",
     soldOut: false,
     gender: "female",
@@ -249,7 +242,6 @@ const products = [
     specifications: {
       "Material": "Sterling Silver with Diamond Simulants",
       "Stone Size": "3 mm each (approx.)",
-      "Weight": "12g",
       "Setting": "Prong setting",
       "Care": "Clean with a soft cloth. Avoid direct heat, chemicals, and water immersion."
     },
@@ -262,7 +254,7 @@ const products = [
   {
     id: 12,
     name: "Sculpted Culture Pavé Band",
-    price: 299,
+    price: 699,
     discount: 20,
     category: "rings",
     soldOut: true,
@@ -272,7 +264,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Width": "6 mm",
-      "Weight": "6g",
       "Finish": "High-polish with matte contrast in grooves",
       "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
     },
@@ -295,7 +286,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Width": "6 mm",
-      "Weight": "6g",
       "Finish": "High-polish with matte contrast in grooves",
       "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
     },
@@ -309,8 +299,8 @@ const products = [
   {
     id: 14,
     name: "Textured Rope-Link Silver Chain",
-    price: 349,
-    discount: 20,
+    price: 2499,
+    discount: 28.01,
     category: "bracelets",
     soldOut: false,
     gender: "unisex",
@@ -319,7 +309,6 @@ const products = [
     specifications: {
       "Material": "Sterling Silver",
       "Length": "8 inches",
-      "Weight": "13g",
       "Clasp": "Heavy-duty lobster clasp",
       "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
   },
@@ -331,8 +320,8 @@ const products = [
   {
     id: 15,
     name: "Textured Oval-Link Silver Chain",
-    price: 349,
-    discount: 20,
+    price: 2999,
+    discount: 30.1,
     category: "bracelets",
     soldOut: false,
     gender: "unisex",
@@ -341,7 +330,6 @@ const products = [
     specifications: {
       "Material": "Sterling Silver",
       "Length": "8 inches",
-      "Weight": "13g",
       "Clasp": "Heavy-duty lobster clasp",
       "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
   },
@@ -354,8 +342,8 @@ const products = [
   {
     id: 16,
     name: "Minimalist Silver Chain",
-    price: 399,
-    discount: 20,
+    price: 2999,
+    discount: 40.01,
     category: "necklaces",
     soldOut: false,
     gender: "female",
@@ -364,7 +352,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Length": "18 inches",
-      "Weight": "6g",
       "Clasp": "Lobster clasp",
       "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
     },
@@ -378,17 +365,16 @@ const products = [
   {
     id: 17,
     name: "Eternal Sparkle Slim Diamond Band",
-    price: 289,
-    discount: 20,
+    price: 699,
+    discount: 50.07,
     category: "rings",
-    soldOut: true,
+    soldOut: false,
     gender: "female",
     description: "A sleek silver band featuring a single row of shimmering artificial diamonds at its center. Elegant, minimal, and radiant.",
     detailedDescription: "Add a touch of refined brilliance to your everyday look with this slender sterling silver ring. At the heart of the design lies a continuous line of high-grade artificial diamonds, precisely set to create a seamless circle of sparkle. Perfect as a promise ring, stacking band, or solo statement, this ring combines timeless style with modern simplicity. Lightweight yet dazzling, it’s crafted for lasting comfort and shine.",
     specifications: {
       "Material": "Sterling Silver with Diamond Simulants",
       "Width": "2 mm",
-      "Weight": "2.5g",
       "Setting": "Channel-set",
       "Care": "Avoid direct contact with water or perfumes. Clean gently with a soft jewelry cloth."
     },
@@ -400,8 +386,8 @@ const products = [
   {
     id: 18,
     name: "GeoPulse Unisex Patterned Band",
-    price: 199,
-    discount: 20,
+    price: 1499,
+    discount: 46.70,
     category: "rings",
     soldOut: false,
     gender: "unisex",
@@ -410,7 +396,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Width": "5mm",
-      "Weight": "5.8g",
       "Finish": "Matte with engraved pattern",
       "Care": "Polish gently with a dry cloth. Store in a fabric-lined box. Avoid abrasive surfaces."
     },
@@ -463,8 +448,8 @@ const products = [
   {
     id: 21,
     name: "Textured Rope-Link Silver Chain",
-    price: 349,
-    discount: 20,
+    price: 1999,
+    discount: 20.01,
     category: "bracelets",
     soldOut: false,
     gender: "unisex",
@@ -473,7 +458,6 @@ const products = [
     specifications: {
       "Material": "Sterling Silver",
       "Length": "8 inches",
-      "Weight": "13g",
       "Clasp": "Heavy-duty lobster clasp",
       "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
   },
@@ -484,8 +468,8 @@ const products = [
  {
     id: 22,
     name: "Ram Silver Ring",
-    price: 499,
-    discount: 20,
+    price: 1599,
+    discount: 18.76,
     category: "rings",
     soldOut: false,
     gender: "unisex",
@@ -494,7 +478,6 @@ const products = [
     specifications: {
        "Material": "Silver",
        "Width": "6 mm",
-       "Weight": "7g",
        "Engraving": "राम (Ram) in Devanagari script",
        "Finish": "High-polish with oxidized accents",
        "Care": "Clean with a silver cloth. Avoid water and strong chemicals. Store wrapped separately."
@@ -507,8 +490,8 @@ const products = [
   {
     id: 23,
     name: "Minimalist Silver Chain",
-    price: 399,
-    discount: 20,
+    price: 1899,
+    discount: 36.86,
     category: "necklaces",
     soldOut: false,
     gender: "Male",
@@ -517,7 +500,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Length": "18 inches",
-      "Weight": "15g",
       "Clasp": "Lobster clasp",
       "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
     },
@@ -529,8 +511,8 @@ const products = [
  {
     id: 24,
     name: "Pure Form Minimalist Silver Band",
-    price: 199,
-    discount: 20,
+    price: 1599,
+    discount: 37.52,
     category: "rings",
     soldOut: false,
     gender: "unisex",
@@ -539,7 +521,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Width": "1.5 mm",
-      "Weight": "1.8g",
       "Finish": "High-polish mirror finish",
       "Care": "Avoid harsh chemicals. Clean with a soft dry cloth. Store separately to prevent scratches."
     },
@@ -573,8 +554,8 @@ const products = [
 {
   id: 26,
   name: "Legacy Flat-Link Silver Chain",
-  price: 449,
-  discount: 20,
+  price: 1799,
+  discount: 19.46,
   category: "necklaces",
   soldOut: false,
   gender: "male",
@@ -584,7 +565,6 @@ const products = [
     "Material": "Silver",
     "Length": "24 inches",
     "Width": "5.5 mm",
-    "Weight": "21g",
     "Clasp": "Heavy-duty lobster clasp",
     "Finish": "Mirror-polished flat links",
     "Care": "Wipe gently after use. Store separately to prevent scratches. Avoid water and chemicals."
@@ -601,8 +581,8 @@ const products = [
  {
     id: 27,
     name: "Dominion Cuban Link Bracelet",
-    price: 349,
-    discount: 20,
+    price: 10000,
+    discount: 50.1,
     category: "bracelets",
     soldOut: false,
     gender: "unisex",
@@ -611,7 +591,6 @@ const products = [
     specifications: {
       "Material": "Silver",
       "Length": "8.5 inches",
-      "Weight": "34g",
       "Clasp": "High-gloss polished links",
       "Care": "Polish with a dry cloth. Avoid chemical contact and moisture. Store flat in a pouch."
   },
@@ -623,8 +602,8 @@ const products = [
  {
   id: 28,
   name: "Om Divine Silver Pendant",
-  price: 279,
-  discount: 20,
+  price: 500,
+  discount: 25,
   category: "pendants",
   soldOut: false,
   gender: "unisex",
@@ -633,7 +612,6 @@ const products = [
   specifications: {
     "Material": "925 Sterling Silver",
     "Height": "1.5 inches",
-    "Weight": "2.1g",
     "Finish": "High-polish reflective surface",
     "Care": "Clean gently with a dry cloth. Avoid water and harsh chemicals. Store in a protective pouch."
   },
@@ -644,7 +622,7 @@ const products = [
  {
   id: 29,
   name: "Khatu Shyam Devotional Pendant",
-  price: 299,
+  price: 500,
   discount: 20,
   category: "pendants",
   soldOut: false,
@@ -654,7 +632,6 @@ const products = [
   specifications: {
     "Material": "925 Sterling Silver",
     "Height": "1.75 inches",
-    "Weight": "2.5g",
     "Finish": "Glossy antique-style engraving",
     "Care": "Wipe with a soft cloth after use. Keep away from chemicals and water. Store in a dry pouch or box."
   },
@@ -665,8 +642,8 @@ const products = [
  {
   id: 30,
   name: "Sparkling Silver Diamond Necklace",
-  price: 4000,
-  discount: 20,
+  price: 6999,
+  discount: 50.01,
   category: "necklaces",
   soldOut: false,
   gender: "female",
@@ -675,7 +652,6 @@ const products = [
   specifications: {
     "Material": "925 Sterling Silver with AAA Simulated Diamonds",
     "Length": "16 inches + 2-inch extender",
-    "Weight": "11g",
     "Clasp": "Secure spring ring clasp",
     "Care": "Keep dry and store in a soft pouch; avoid perfume and moisture"
   },
@@ -687,7 +663,7 @@ const products = [
   id: 31,
   name: "Sterling Silver Snake Idol for Puja",
   price: 200,
-  discount: 20,
+  discount: 0,
   category: "puja-saman",
   soldOut: false,
   gender: "unisex",
@@ -717,7 +693,6 @@ const products = [
   specifications: {
     "Material": "92.5 Sterling Silver with Gold Plating",
     "Finish": "Glossy Italian Craftsmanship",
-    "Weight": "4g",
     "Dimensions": "Height: 1.2 inch, Width: 0.6 inch",
     "Care": "Avoid water, perfume, and store in anti-tarnish pouch"
   },
@@ -728,8 +703,8 @@ const products = [
  {
   id: 33,
   name: "Italian Silver Butterfly Pendant",
-  price: 1299,
-  discount: 20,
+  price: 2000,
+  discount: 25.05,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -738,7 +713,6 @@ const products = [
   specifications: {
     "Material": "92.5 Sterling Silver with Silver Plating",
     "Finish": "Italian High Gloss Polish",
-    "Weight": "3g",
     "Dimensions": "Height: 1 inch, Width: 1 inch",
     "Care": "Avoid moisture and chemicals; store in soft pouch"
   },
@@ -749,8 +723,8 @@ const products = [
  {
   id: 34,
   name: "Italian Silver Lock & Key Pendant Set",
-  price: 1499,
-  discount: 20,
+  price: 2000,
+  discount:  25.05,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -759,7 +733,6 @@ const products = [
   specifications: {
     "Material": "92.5 Sterling Silver with Silver Plating",
     "Finish": "Glossy Italian Craftsmanship",
-    "Weight": "4g (combined)",
     "Dimensions": "Lock: 0.8 inch, Key: 1 inch",
     "Care": "Avoid chemicals and water; polish gently with a silver cloth"
   },
@@ -772,8 +745,8 @@ const products = [
  {
   id: 35,
   name: "Italian Silver Star Duo Pendant Set",
-  price: 1499,
-  discount: 20,
+  price: 2000,
+  discount: 30.05,
   category: "pendants",
   soldOut: false,
   gender: "unisex",
@@ -782,7 +755,6 @@ const products = [
   specifications: {
     "Material": "92.5 Sterling Silver with Silver Plating",
     "Finish": "Polished Italian Silver",
-    "Weight": "4g (combined)",
     "Dimensions": "Solid Star: 0.9 inch, Hollow Star: 1 inch",
     "Care": "Keep dry; gently clean with silver polish cloth to retain shine"
   },
@@ -796,8 +768,8 @@ const products = [
  {
   id: 36,
   name: "Italian Silver Infinity Loop Pendant",
-  price: 1399,
-  discount: 20,
+  price: 2000,
+  discount: 30.05,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -806,7 +778,6 @@ const products = [
   specifications: {
     "Material": "92.5 Sterling Silver with Silver Plating",
     "Finish": "High-Gloss Italian Polish",
-    "Weight": "3.2g",
     "Dimensions": "Length: 1.2 inch, Width: 0.4 inch",
     "Care": "Store in a soft pouch; avoid direct contact with water and perfumes"
   },
@@ -818,7 +789,8 @@ const products = [
  {
   id: 37,
   name: "Crimson Elegance Drop Earrings",
-  price: 799,
+  price: 1999,
+  discount: 40.02,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -828,7 +800,6 @@ const products = [
     "Material": "Alloy with Silver Polish",
     "Accents": "Red Crystal Beads, Silver Bow",
     "Length": "3.8 inches",
-    "Weight": "2.6g (each)",
     "Care": "Keep in dry storage; avoid moisture, perfumes, and chemicals"
   },
   images: [
@@ -841,8 +812,8 @@ const products = [
 {
   id: 38,
   name: "Convertible Magnetic Silver Pendant",
-  price: 1799,
-  discount: 20,
+  price: 2999,
+  discount: 33.34,
   category: "pendants",
   soldOut: false,
   gender: "unisex",
@@ -851,7 +822,6 @@ const products = [
   specifications: {
     "Material": "92.5 Sterling Silver with Silver Plating",
     "Finish": "Italian Glossy Finish",
-    "Weight": "5g (combined)",
     "Dimensions": "Each Half: 0.8 inch | Combined: 1.5 inch",
     "Magnet Type": "Built-in neodymium magnet for secure hold",
     "Care": "Keep away from moisture and strong magnetic fields; clean with soft cloth"
@@ -868,8 +838,8 @@ const products = [
  {
   id: 39,
   name: "Minimalist Silver Threader Earrings",
-  price: 649,
-  discount: 20,
+  price: 1000,
+  discount: 65.1,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -879,7 +849,6 @@ const products = [
     "Material": "Alloy with 92.5 Silver Polish",
     "Design": "Beaded Chain Threader",
     "Length": "4 inches",
-    "Weight": "1.8g (each)",
     "Care": "Avoid moisture, perfume, and chemicals; store separately in a soft pouch"
   },
   images: [
@@ -891,8 +860,8 @@ const products = [
  {
   id: 40,
   name: "Hamsa Sparkle Drop Earrings",
-  price: 899,
-  discount: 20,
+  price: 1999,
+  discount: 35.05,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -902,7 +871,6 @@ const products = [
     "Material": "Alloy with 92.5 Silver Polish",
     "Accents": "Cubic Zirconia & Black Crystal",
     "Length": "3.5 inches",
-    "Weight": "2.4g (each)",
     "Symbolism": "Hamsa Hand – Protection, Strength, and Blessings",
     "Care": "Avoid contact with moisture, perfumes, and sharp objects; store in a dry pouch"
   },
@@ -916,8 +884,8 @@ const products = [
  {
   id: 41,
   name: "Hamsa Heart Drop Earrings",
-  price: 899,
-  discount: 20,
+  price: 1599,
+  discount: 43.78,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -927,7 +895,6 @@ const products = [
     "Material": "Alloy with 92.5 Silver Polish",
     "Accents": "Cubic Zirconia & Heart Crystal",
     "Length": "3.5 inches",
-    "Weight": "2.4g (each)",
     "Symbolism": "Hamsa Hand with Heart – Love, Protection, and Harmony",
     "Care": "Avoid contact with moisture, perfumes, and sharp objects; store in a dry pouch"
   },
@@ -940,8 +907,8 @@ const products = [
   {
   id: 42,
   name: "Parisian Charm Eiffel Tower Earrings",
-  price: 749,
-  discount: 20,
+  price: 899,
+  discount: 41.60,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -964,14 +931,13 @@ const products = [
   price: 1499,
   discount: 20,
   category: "earrings",
-  soldOut: false,
+  soldOut: true,
   gender: "female",
   description: "Elegant floral-inspired stud set crafted in 92.5 sterling silver with pavé-set cubic zirconia. Three sizes, endless styling possibilities.",
   detailedDescription: "This beautifully designed stud set features three radiant flower/starburst-shaped earrings in varying sizes, each meticulously crafted from 92.5 sterling silver. Embellished with sparkling pavé-set cubic zirconia, these versatile studs are perfect for single, double, or triple lobe piercings. Whether you wear them as a matching set or mix and match for a layered look, they bring a touch of brilliance and charm to any ensemble. Lightweight, hypoallergenic, and ideal for everyday elegance or special occasions.",
   specifications: {
     "Material": "92.5 Sterling Silver with Cubic Zirconia",
     "Finish": "High Polish with Pavé Detailing",
-    "Weight": "3.2g (combined)",
     "Dimensions": "Small: 0.5 inch | Medium: 0.6 inch | Large: 0.75 inch",
     "Back Type": "Butterfly Push-Back",
     "Care": "Store in a dry place; avoid contact with perfume or water; clean gently with a silver cloth"
@@ -985,7 +951,7 @@ const products = [
   id: 44,
   name: "Heartfelt Sparkle Silver Pendant",
   price: 1699,
-  discount: 20,
+  discount: 41.09,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -995,7 +961,6 @@ const products = [
     "Material": "92.5 Sterling Silver with Silver Plating",
     "Stones": "White and Red Cubic Zirconia",
     "Finish": "Glossy Italian Silver",
-    "Weight": "3g",
     "Dimensions": "Pendant: 0.9 inch x 0.8 inch",
     "Chain Compatibility": "Fits standard chains up to 3mm",
     "Care": "Avoid moisture and harsh chemicals; store in a dry, padded box; clean gently with soft cloth"
@@ -1011,7 +976,7 @@ const products = [
   id: 45,
   name: "Enchanted Fairy Silver Pendant",
   price: 1899,
-  discount: 20,
+  discount: 36.86,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -1021,7 +986,6 @@ const products = [
     "Material": "92.5 Sterling Silver",
     "Finish": "Glossy Italian Silver",
     "Stones": "White Cubic Zirconia on Wings",
-    "Weight": "4.2g",
     "Dimensions": "1.2 inch height x 0.9 inch width",
     "Chain Compatibility": "Fits chains up to 3mm",
     "Care": "Avoid water and chemicals; clean gently with a soft cloth; store in a cool, dry place"
@@ -1044,7 +1008,6 @@ const products = [
   specifications: {
     "Material": "92.5 Sterling Silver with Cubic Zirconia",
     "Finish": "Glossy Pavé Finish",
-    "Weight": "3.5g (pair)",
     "Dimensions": "Diameter: 0.75 inch",
     "Back Type": "Secure Butterfly Push-Back",
     "Care": "Store away from moisture and perfumes; clean with a soft silver cloth"
@@ -1061,14 +1024,13 @@ const products = [
   discount: 20,
   category: "sets",
   gender: "female",
-  soldOut: false,
+  soldOut: true,
   description: "Elegant pearl and silver jewelry set with crescent-shaped design and sparkling CZ stones. A timeless symbol of grace and serenity.",
   detailedDescription: "The Moonlit Pearl Silver Set blends classic elegance with celestial beauty. Featuring a matching pendant and stud earrings, each piece is crafted from 92.5 sterling silver and gracefully cradles a luminous white pearl in a crescent-like arc. Accented with brilliant cubic zirconia stones, the design evokes the peaceful radiance of the moon. Whether worn for special occasions or as everyday elegance, this set embodies sophistication, femininity, and poise.",
   specifications: {
     "Material": "92.5 Sterling Silver",
     "Stones": "White Imitation Pearls & Cubic Zirconia",
     "Finish": "High-Gloss Italian Silver Plating",
-    "Weight": "Pendant: 2.5g | Earrings (pair): 3.8g",
     "Dimensions": "Pendant: 1.1 inch | Earrings: 0.9 inch",
     "Back Type": "Earrings: Butterfly Push-Back",
     "Care": "Avoid water, perfumes, and sprays; clean gently with a soft cloth; store separately to avoid scratches"
@@ -1081,8 +1043,8 @@ const products = [
  {
   id: 48,
   name: "Retro Pop Enamel Huggie Earrings",
-  price: 1399,
-  discount: 20,
+  price: 899,
+  discount: 22.25,
   category: "earrings",
   soldOut: false,
   gender: "unisex",
@@ -1091,7 +1053,6 @@ const products = [
   specifications: {
     "Material": "Stainless Steel with Hand-Applied Enamel",
     "Finish": "Glossy Color-Enamel Coating",
-    "Weight": "5.5g (pair)",
     "Dimensions": "Diameter: 0.8 inch | Width: 0.35 inch",
     "Closure Type": "Hinged Snap Closure",
     "Care": "Avoid water, perfumes, and abrasive surfaces; store separately to preserve enamel finish"
@@ -1117,7 +1078,6 @@ const products = [
     "Material": "92.5 Sterling Silver",
     "Pendant": "Iridescent Crystal in Flower Cut",
     "Finish": "High-Polish Silver",
-    "Weight": "2.4g",
     "Chain Length": "14 inch + 2 inch adjustable extension",
     "Clasp Type": "Spring Ring Clasp",
     "Care": "Keep away from water, perfumes, and cosmetics; store flat; clean gently with a soft cloth."
@@ -1134,14 +1094,13 @@ const products = [
   discount: 20,
   category: "necklaces",
   gender: "female",
-  soldOut: false,
+  soldOut: true,
   description: "Timeless teardrop solitaire pendant in 92.5 sterling silver with a dazzling CZ centerpiece. Pure elegance, always in style.",
   detailedDescription: "The Celeste Teardrop Necklace captures the essence of classic beauty with its minimal yet powerful design. A brilliant pear-cut cubic zirconia stone sits gracefully in a sleek 92.5 sterling silver setting, suspended from a fine, high-polish silver chain. This piece adds instant sophistication to any look — whether layered for trend-driven styling or worn solo for timeless grace. The clean silhouette and radiant sparkle make it a staple for both daily elegance and evening wear.",
   specifications: {
     "Material": "92.5 Sterling Silver",
     "Stone": "High-Grade Cubic Zirconia (Teardrop Cut)",
     "Finish": "Mirror Polish",
-    "Weight": "2.7g",
     "Pendant Size": "0.6 inch x 0.35 inch",
     "Chain Length": "16 inch + 2 inch adjustable",
     "Clasp Type": "Spring Ring Clasp",
