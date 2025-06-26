@@ -1240,6 +1240,7 @@ class Router {
     this.loadProductDetails(product);
   }
   
+  
   updateNavigation(currentRoute) {
     document.querySelectorAll('.nav-link').forEach(link => {
       link.classList.remove('active');
@@ -1339,7 +1340,19 @@ createProductCard(product) {
     
     // Update product info
     document.getElementById('product-title').textContent = product.name;
-    document.getElementById('product-price').textContent = `₹${product.price}`;
+    const productPriceEl = document.getElementById("product-price");
+
+    if (product.discount) {
+      const discountedPrice = Math.round(product.price * (1 - product.discount / 100));
+      productPriceEl.innerHTML = `
+        <span class="price-old">M.R.P.: ₹${product.price}</span>
+        <span class="price-new">₹${discountedPrice}</span>
+        <span class="discount-percent">(${product.discount}% OFF)</span>
+      `;
+    } else {
+      productPriceEl.innerHTML = `₹${product.price}`;
+    }
+    
     document.getElementById('product-description-text').textContent = product.detailedDescription;
     
     // Update tags
@@ -1633,7 +1646,21 @@ document.addEventListener('DOMContentLoaded', () => {
   contactForm = new ContactForm();
   mobileNav = new MobileNav();
 
-  applySilverRateToProductPrices(); // 💰 Apply silver pricing logic
+    // 🔍 Real-time search functionality
+  document.getElementById('product-search').addEventListener('input', function (e) {
+    const query = e.target.value.toLowerCase().trim();
+
+  filteredProducts = products.filter(product =>
+    product.name.toLowerCase().includes(query) ||
+    product.category.toLowerCase().includes(query) ||
+    product.gender.toLowerCase().includes(query)
+  );
+
+  router.loadShopProducts();
+});
+
+
+
 });
 function displaySilverRate() {
   const el = document.getElementById('silver-rate-display');
