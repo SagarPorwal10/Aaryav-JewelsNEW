@@ -1,1642 +1,1717 @@
 
-:root {
-  /* Colors */
-  --color-background: rgba(252, 252, 249, 1);
-  --color-surface: rgba(255, 255, 253, 1);
-  --color-text: #222;
-  --color-text-secondary: rgba(98, 108, 113, 1);
-  --color-primary: rgba(33, 128, 141, 1);
-  --color-primary-hover: rgba(29, 116, 128, 1);
-  --color-primary-active: rgba(26, 104, 115, 1);
-  --color-secondary: rgba(94, 82, 64, 0.12);
-  --color-secondary-hover: rgba(94, 82, 64, 0.2);
-  --color-secondary-active: rgba(94, 82, 64, 0.25);
-  --color-border: rgba(94, 82, 64, 0.2);
-  --color-btn-primary-text: rgba(252, 252, 249, 1);
-  --color-card-border: rgba(94, 82, 64, 0.12);
-  --color-card-border-inner: rgba(94, 82, 64, 0.12);
-  --color-error: rgba(192, 21, 47, 1);
-  --color-success: rgba(33, 128, 141, 1);
-  --color-warning: rgba(168, 75, 47, 1);
-  --color-info: rgba(98, 108, 113, 1);
-  --color-focus-ring: rgba(33, 128, 141, 0.4);
-  --color-select-caret: rgba(19, 52, 59, 0.8);
-  --space-32: 32px;
-  --line-height-normal: 1.6;
 
-  /* Common style patterns */
-  --focus-ring: 0 0 0 3px var(--color-focus-ring);
-  --focus-outline: 2px solid var(--color-primary);
-  --status-bg-opacity: 0.15;
-  --status-border-opacity: 0.25;
-  --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-  --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+const products = [
+ 
 
-  /* RGB versions for opacity control */
-  --color-success-rgb: 33, 128, 141;
-  --color-error-rgb: 192, 21, 47;
-  --color-warning-rgb: 168, 75, 47;
-  --color-info-rgb: 98, 108, 113;
+  {
+    id: 1,
+    name: "Silver Chain",
+    price: 299,
+    discount: 20,
+    category: "bracelets",
+    soldOut: true,
+    gender: "male",
+    description: "Sleek and minimal silver chain designed for everyday sophistication. Crafted from high-quality sterling silver with a modern oval-link pattern.",
+    detailedDescription: "This elegant silver chain blends timeless design with contemporary style. Meticulously crafted from 777 silver, the chain features polished oval links and a secure lobster clasp, making it perfect for both casual wear and formal occasions. Its unisex design ensures it complements any outfit, for any gender.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "18 inches (adjustable)",
+      "Weight": "11g",
+      "Clasp": "Secure lobster clasp",
+      "Care": "Avoid water and perfume contact"
+    },
+      images: 
+    [ "assets/generated-image-1.png",
+      "assets/generated-image-2.png"
+     ]
 
-  /* Typography */
-  --font-family-base: "Inter", "Helvetica Neue", "Segoe UI", sans-serif;
-  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
-    Monaco, Consolas, monospace;
-  --font-family-heading: 'Playfair Display', serif;
+  },
 
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-base: 16px;
-  --font-size-md: 18px;
-  --font-size-lg: 20px;
-  --font-size-xl: 24px;
-  --font-size-2xl: 28px;
-  --font-size-3xl: 32px;
-  --font-size-4xl: 40px;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 550;
-  --font-weight-bold: 600;
-  --line-height-tight: 1.25;
-  --line-height-normal: 1.65;
-  --letter-spacing-tight: -0.005em;
-  --letter-spacing-normal: 0.01em;
+  {
+    id: 2,
+    name: "Silver male bracelets",
+    price: 299,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "male",
+    description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from silver.",
+    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "8 inches (adjustable)",
+      "Weight": "10g",
+      "Clasp": "Secure lobster clasp",
+      "Care": "Avoid water and perfume contact"
+    },
+    images: [
+      "assets/generated-image-3.png",
+      "assets/generated-image-4.png"
+    ]
+  },
 
-  /* Spacing */
-  --space-0: 0;
-  --space-1: 1px;
-  --space-2: 2px;
-  --space-4: 4px;
-  --space-6: 6px;
-  --space-8: 8px;
-  --space-10: 10px;
-  --space-12: 12px;
-  --space-16: 16px;
-  --space-20: 20px;
-  --space-24: 24px;
-  --space-32: 32px;
+  {
+    id: 3,
+    name: "Silver male bracelets - 2",
+    price: 299,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "female",
+    description: "A refined silver bracelet adorned with brilliant-cut diamonds set in square links. Crafted for elegant evenings and timeless sophistication.",
+    detailedDescription: "Elevate your jewelry collection with this stunning silver bracelet featuring five dazzling square-shaped links, each encrusted with radiant-cut diamonds. Meticulously set in sterling silver, the bracelet strikes a perfect balance between contemporary design and classic luxury. Its adjustable length and secure clasp offer both comfort and beauty, ideal for formal occasions or as a statement accessory.",
+    specifications: {
+      "Material": "Sterling Silver with Diamond Simulants",
+      "Length": "7 inches + 1-inch extender",
+      "Weight": "14g",
+      "Clasp": "Lobster clasp with extender chain",
+      "Care": "Store separately in a jewelry pouch. Avoid exposure to moisture and chemicals."
+    },
+    images: [
+      "assets/generated-image-5.png",
+      "assets/generated-image-6.png"
+    ]
+  },
 
-  /* Border Radius */
-  --radius-sm: 6px;
-  --radius-base: 8px;
-  --radius-md: 10px;
-  --radius-lg: 12px;
-  --radius-full: 9999px;
+  {
+    id: 4,
+    name: "Elegant Pink Sapphire Marquise Bracelet",
+    price: 299,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "female",
+    description: "A delicate silver bracelet featuring alternating marquise links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
+    detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
+    specifications: {
+      "Material": "Silver with Pink Sapphire Simulants and CZ Accents",
+      "Length": "7 inches + 1-inch extender",
+      "Weight": "12g",
+      "Clasp": "Lobster clasp with extender chain",
+      "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents."
+    },
+    images: [
+      "assets/generated-image-7.png",
+      "assets/generated-image-8.png"
+    ]
+  },
 
-  /* Shadows */
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
-    0 2px 4px -1px rgba(0, 0, 0, 0.02);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
-    0 4px 6px -2px rgba(0, 0, 0, 0.02);
-  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+  {
+    id: 5,
+    name: "Lustrous Marquise-Link Diamond Bracelet",
+    price: 299,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "female",
+    description: "A luminous silver bracelet featuring a continuous design of diamond-studded marquise links. Pure elegance with a modern silhouette.",
+    detailedDescription: "Radiating refined sophistication, this sterling silver bracelet showcases an elegant chain of open marquise-shaped links, each delicately encrusted with sparkling cubic zirconia. The design flows gracefully across the wrist, offering timeless charm with a hint of modern luxury. Its adjustable extension and secure lobster clasp ensure a flawless fit for any occasion—from casual elegance to formal glamour.",
+    specifications: {
+      "Material": "Sterling Silver with Cubic Zirconia",
+      "Length": "7 inches + 1-inch extender",
+      "Weight": "10g",
+      "Clasp": "Lobster clasp with extender chain",
+      "Care": "Keep in a soft-lined box. Avoid direct contact with water, perfumes, and chemicals."
+    },
+    images: [
+      "assets/generated-image-9.png",
+      "assets/generated-image-10.png"
+    ]
+  },
 
-  /* Animation */
-  --duration-fast: 150ms;
-  --duration-normal: 250ms;
-  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+  {
+    id: 6,
+    name: "Om(ॐ) Diamond-Bar Spiritual Bracelet",
+    price: 299,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "female",
+    description: "A bold and spiritual bracelet featuring an 'Om' symbol at the center of a shimmering pavé diamond bar. Perfect harmony of style and meaning.",
+    detailedDescription: "Channel spiritual energy and sophisticated style with this refined bracelet featuring a sleek bar design paved with rows of dazzling cubic zirconia. At the center lies a black enamel 'Om' symbol, symbolizing peace, protection, and cosmic power. The polished sterling silver frame is matched with an adjustable drawstring chain, ensuring comfort and a secure fit. A meaningful accessory that blends tradition with contemporary fashion—ideal for personal wear or a thoughtful gift.",
+    specifications: {
+      "Material": "Sterling Silver with Black Enamel and Cubic Zirconia",
+      "Length": "Adjustable – fits most wrist sizes",
+      "Weight": "16g",
+      "Clasp": "Adjustable sliding clasp with bead ends",
+      "Care": "Polish with a soft cloth. Avoid water and chemicals to maintain finish and shine."
+    },
+    images: [
+      "assets/generated-image-11.png",
+      "assets/generated-image-12.png"
+    ]
+  },
 
-  /* Layout */
-  --container-sm: 640px;
-  --container-md: 768px;
-  --container-lg: 1024px;
-  --container-xl: 1280px;
+
+  {
+    id: 7,
+    name: "Titan Classic Curb Chain Bracelet",
+    price: 299,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "male",
+    description: "A timeless silver curb chain bracelet that speaks of strength and subtle style. A staple accessory for the modern man.",
+    detailedDescription: "Engineered for everyday elegance, this masculine bracelet features a bold, polished curb chain crafted from durable stainless steel. The sleek interlocking links provide a strong yet flexible feel, while the triangular-end clasp detail adds a distinctive modern touch. Whether worn solo or layered with a watch, the Titan Classic bracelet is a statement in simplicity and style—perfect for casual and formal ensembles alike.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "8.5 inches",
+      "Weight": "12g",
+      "Clasp": "Fold-over clasp with triangle cap accent",
+      "Care": "Clean with a soft cloth. Avoid exposure to saltwater and harsh chemicals."
+    },
+    images: [
+      "assets/generated-image-13.png",
+      "assets/generated-image-14.png"
+    ]
+  },
+
+
+  // {
+  //   id: 8,
+  //   name: "Midnight Evil Eye Beaded Bracelet",
+    // price: 299,
+  //   category: "bracelets",
+  //   gender: "female",
+  //   description: "A symbolic beaded bracelet featuring a deep blue evil eye charm flanked by glossy black and silver-tone beads. Designed for everyday wear and protection.",
+  //   detailedDescription: "Rooted in tradition and styled for the modern spirit, the Midnight Evil Eye Bracelet is a perfect blend of symbolism and simplicity. At its center lies a glass evil eye bead in rich navy blue, believed to ward off negativity and attract good energy. The bracelet is meticulously hand-strung with alternating black and silver-toned cube beads that exude a minimal yet bold look. Adjustable in length, this unisex bracelet is perfect for layering or wearing solo, offering both meaning and style in one sleek accessory.",
+  //   specifications: {
+  //     "Material": "Glass and Silver beads with stainless steel findingsg",
+  //     "Charm": "Evil Eye (navy blue glass)",
+  //     "Length": "6.5 to 8 inches (adjustable)",
+  //     "Weight": "16g",
+  //     "Clasp": "Lobster claw with extender chain",
+  //     "Care": "Keep dry; avoid direct contact with perfumes and sprays"
+  //   },
+  //   images: [
+  //     "assets/generated-image-15.png",
+  //     "assets/generated-image-16.png"
+  //   ]
+  // },
+
+
+  {
+    id: 9,
+    name: "Elegant Pink Sapphire floral Bracelet",
+    price: 299,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "female",
+    description: "A delicate silver bracelet featuring floral links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
+    detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
+    specifications: {
+      "Material": "Sterling Silver with Pink Sapphire Simulants and CZ Accents",
+      "Length": "7 inches + 1-inch extender",
+      "Weight": "12g",
+      "Clasp": "Lobster clasp with extender chain",
+      "Care": "Store in a soft pouch. Keep away from water, perfumes, and cleaning agents"
+    },
+    images: [
+      "assets/generated-image-17.png",
+      "assets/generated-image-18.png"
+    ]
+  },
+
+
+  // {
+  //   id: 10,
+  //   name: "Sculpted Stippling Pavé Band",
+  //   price: 299,
+  //   category: "rings",
+  //   gender: "unisex",
+  //   description: "A sleek silver band featuring geometric grids. Designed for bold elegance and modern refinement.",
+  //   detailedDescription: "This stunning silver ring showcases a contemporary band design. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality 777 silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+  //   specifications: {
+  //     "Material": "Silver",
+  //     "Width": "6 mm",
+  //     "Weight": "3g",
+  //     "Finish": "High-polish with matte contrast in grooves",
+  //     "Care": "Avoid water and perfume contact"
+  //   },
+  //   images: [
+  //     "assets/generated-image-19.png",
+  //     "assets/generated-image-21.png"
+  //   ]
+  // },
+
+
+   {
+    id: 11,
+    name: "Celestial Blue & White Gemstone Ring",
+    price: 299,
+    discount: 20,
+    category: "rings",
+    soldOut: false,
+    gender: "female",
+    description: "A graceful silver ring featuring alternating vivid blue and white stones. A symbol of elegance with a celestial touch.",
+    detailedDescription: "Capture the night sky's allure with this delicate silver ring, showcasing a captivating sequence of alternating royal blue and brilliant white gemstones. The round-cut stones are prong-set for maximum sparkle, each one carefully selected for clarity and color balance. Ideal as a promise ring, anniversary gift, or stackable statement piece, this band embodies refined femininity and timeless charm.",
+    specifications: {
+      "Material": "Sterling Silver with Diamond Simulants",
+      "Stone Size": "3 mm each (approx.)",
+      "Weight": "12g",
+      "Setting": "Prong setting",
+      "Care": "Clean with a soft cloth. Avoid direct heat, chemicals, and water immersion."
+    },
+    images: [
+      "assets/generated-image-20.png",
+      "assets/generated-image-22.png"
+    ]
+   },
+
+  {
+    id: 12,
+    name: "Sculpted Culture Pavé Band",
+    price: 299,
+    discount: 20,
+    category: "rings",
+    soldOut: true,
+    gender: "female",
+    description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
+    detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "6 mm",
+      "Weight": "6g",
+      "Finish": "High-polish with matte contrast in grooves",
+      "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
+    },
+    images: [
+      "assets/generated-image-23.png",
+      "assets/generated-image-24.png"
+    ]
+  },
+
+  {
+    id: 13,
+    name: "Sculpted Band",
+    price: 299,
+    discount: 20,
+    category: "rings",
+    soldOut: true,
+    gender: "female",
+    description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
+    detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "6 mm",
+      "Weight": "6g",
+      "Finish": "High-polish with matte contrast in grooves",
+      "Care": "Wipe with a soft cloth. Avoid chemicals and prolonged water exposure."
+    },
+    images: [
+      "assets/generated-image-25.png",
+      "assets/generated-image-26.png",
+      "assets/generated-image-31.png"
+    ]
+  },
+
+  {
+    id: 14,
+    name: "Textured Rope-Link Silver Chain",
+    price: 349,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "unisex",
+    description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
+    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+    specifications: {
+      "Material": "Sterling Silver",
+      "Length": "8 inches",
+      "Weight": "13g",
+      "Clasp": "Heavy-duty lobster clasp",
+      "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
+  },
+    images: [
+      "assets/generated-image-27.png",
+    ]
+  },
+
+  {
+    id: 15,
+    name: "Textured Oval-Link Silver Chain",
+    price: 349,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "unisex",
+    description: "Distinctive silver chain featuring Oval-style links for a bold and intricate look. Made from 777 silver.",
+    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+    specifications: {
+      "Material": "Sterling Silver",
+      "Length": "8 inches",
+      "Weight": "13g",
+      "Clasp": "Heavy-duty lobster clasp",
+      "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
+  },
+    images: [
+      "assets/generated-image-28.png",
+      "assets/generated-image-29.png",
+      "assets/generated-image-30.png"
+    ]
+  },
+  {
+    id: 16,
+    name: "Minimalist Silver Chain",
+    price: 399,
+    discount: 20,
+    category: "necklaces",
+    soldOut: false,
+    gender: "female",
+    description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
+    detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "18 inches",
+      "Weight": "6g",
+      "Clasp": "Lobster clasp",
+      "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
+    },
+    images: [
+      "assets/generated-image-32.png",
+      "assets/generated-image-35.png",
+      "assets/generated-image-36.png"
+    ]
+  },
+ 
+  {
+    id: 17,
+    name: "Eternal Sparkle Slim Diamond Band",
+    price: 289,
+    discount: 20,
+    category: "rings",
+    soldOut: true,
+    gender: "female",
+    description: "A sleek silver band featuring a single row of shimmering artificial diamonds at its center. Elegant, minimal, and radiant.",
+    detailedDescription: "Add a touch of refined brilliance to your everyday look with this slender sterling silver ring. At the heart of the design lies a continuous line of high-grade artificial diamonds, precisely set to create a seamless circle of sparkle. Perfect as a promise ring, stacking band, or solo statement, this ring combines timeless style with modern simplicity. Lightweight yet dazzling, it’s crafted for lasting comfort and shine.",
+    specifications: {
+      "Material": "Sterling Silver with Diamond Simulants",
+      "Width": "2 mm",
+      "Weight": "2.5g",
+      "Setting": "Channel-set",
+      "Care": "Avoid direct contact with water or perfumes. Clean gently with a soft jewelry cloth."
+    },
+    images: [
+       "assets/generated-image-33.png",
+       "assets/generated-image-34.png"
+    ]
+  },
+  {
+    id: 18,
+    name: "GeoPulse Unisex Patterned Band",
+    price: 199,
+    discount: 20,
+    category: "rings",
+    soldOut: false,
+    gender: "unisex",
+    description: "A bold unisex ring featuring a continuous pattern engraved around a brushed silver band. Built for those who move with rhythm and intention.",
+    detailedDescription: "The GeoPulse Band redefines minimalism with a modern industrial edge. Crafted from durable sterling silver, this unisex ring showcases a repeating motif, precision-etched along the center of a matte-finished surface. The clean, structured design evokes balance, rhythm, and purpose—making it a standout piece for everyday wear or meaningful gifting. Designed for comfort with a slightly curved inner edge.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "5mm",
+      "Weight": "5.8g",
+      "Finish": "Matte with engraved pattern",
+      "Care": "Polish gently with a dry cloth. Store in a fabric-lined box. Avoid abrasive surfaces."
+    },
+    images: [
+      "assets/generated-image-37.png"
+    ]
+  },
+  {
+    id: 19,
+    name: "Heart of Grace Slim Diamond Band",
+    price: 899,
+    discount: 20,
+    category: "rings",
+    soldOut: true,
+    gender: "female",
+    description: "A delicate sterling silver ring adorned with a line of white artificial diamonds and a single red heart centerpiece—symbolizing love, strength, and elegance.",
+    detailedDescription: "Celebrate timeless beauty and heartfelt sentiment with this finely crafted slim band. Designed in sterling silver, the ring features a continuous line of sparkling white diamond simulants, accented by a single radiant red heart-shaped stone at the center. The contrast of color draws the eye and adds emotional depth—perfect as a promise ring, anniversary token, or elegant daily wear. Lightweight, feminine, and full of meaning.",
+    specifications: {
+      "Material": "Silver with Diamond Simulants and Red Cubic Zirconia",
+      "Diamond Cut": "Round Brilliant",
+      "Band Width": "2mm",
+      "Setting": "Micro pavé and prong setting",
+      "Care": "Avoid chemicals and impact. Clean gently with a soft cloth. Store in a velvet pouch."
+      
+    },
+    images: [
+      "assets/generated-image-38.png",
+      "assets/generated-image-40.png"
+    ]
+  },
+  // {
+  //   id: 20,
+  //   name: "Vintage Style Ring Female",
+  //   price: 349,
+  //   category: "rings",
+  //   gender: "female",
+  //   description: "Ornate vintage-inspired design with intricate details",
+  //   detailedDescription: "Transport yourself to a bygone era with this vintage-inspired ring featuring intricate filigree work and delicate details. The ornate design showcases exceptional craftsmanship and attention to detail.",
+  //   specifications: {
+  //     "Material": "Sterling Silver with Antique Finish",
+  //     "Style": "Vintage Art Deco",
+  //     "Stone": "Cubic Zirconia",
+  //     "Ring Size": "Adjustable 6-8",
+  //     "Width": "15mm"
+  //   },
+  //   images: [
+  //     "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRkZENzAwIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxYTFhMWEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIwLjNlbSI+VmludGFnZSBSaW5nPC90ZXh0Pgo8L3N2Zz4="
+  //   ]
+  // },
+  {
+    id: 21,
+    name: "Textured Rope-Link Silver Chain",
+    price: 349,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "unisex",
+    description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
+    detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
+    specifications: {
+      "Material": "Sterling Silver",
+      "Length": "8 inches",
+      "Weight": "13g",
+      "Clasp": "Heavy-duty lobster clasp",
+      "Care": "Polish gently with a soft cloth. Avoid water, perfume, and harsh chemicals."
+  },
+    images: [
+      "assets/generated-image-39.png"
+    ]
+  },
+ {
+    id: 22,
+    name: "Ram Silver Ring",
+    price: 499,
+    discount: 20,
+    category: "rings",
+    soldOut: false,
+    gender: "unisex",
+    description: "A bold sterling silver Ram Challa ring engraved with sacred symbolism. A timeless expression of strength, devotion, and tradition.",
+    detailedDescription: "Rooted in tradition and crafted with precision, the Ram Challa ring carries a powerful message of faith and inner strength. Made from solid sterling silver, the ring features a clean, polished surface with intricate engravings of the word 'राम' (Ram) across its band. Revered for its spiritual significance, this unisex ring is a tribute to the divine and a reflection of unwavering resolve. Perfect for daily wear, rituals, or as a meaningful gift.",
+    specifications: {
+       "Material": "Silver",
+       "Width": "6 mm",
+       "Weight": "7g",
+       "Engraving": "राम (Ram) in Devanagari script",
+       "Finish": "High-polish with oxidized accents",
+       "Care": "Clean with a silver cloth. Avoid water and strong chemicals. Store wrapped separately."
+  },
+    images: [
+      "assets/generated-image-41.png",
+      "assets/generated-image-42.png"
+    ]
+  },
+  {
+    id: 23,
+    name: "Minimalist Silver Chain",
+    price: 399,
+    discount: 20,
+    category: "necklaces",
+    soldOut: false,
+    gender: "Male",
+    description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
+    detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "18 inches",
+      "Weight": "15g",
+      "Clasp": "Lobster clasp",
+      "Care": "Polish with a silver cloth. Avoid moisture and store in a dry pouch."
+    },
+    images: [
+      "assets/generated-image-44.png",
+      "assets/generated-image-45.png"
+]
+  },
+ {
+    id: 24,
+    name: "Pure Form Minimalist Silver Band",
+    price: 199,
+    discount: 20,
+    category: "rings",
+    soldOut: false,
+    gender: "unisex",
+    description: "A sleek and minimal sterling silver ring designed for everyday elegance. Understated. Timeless. Essential.",
+    detailedDescription: "Celebrate the beauty of simplicity with the Pure Form Minimalist Band. Crafted from high-quality 925 sterling silver, this ultra-slim ring features a smooth, polished surface with a low-profile silhouette. Whether worn solo, stacked, or paired with statement pieces, it effortlessly complements any style. Perfect for those who appreciate clean lines and quiet sophistication.",
+    specifications: {
+      "Material": "Silver",
+      "Width": "1.5 mm",
+      "Weight": "1.8g",
+      "Finish": "High-polish mirror finish",
+      "Care": "Avoid harsh chemicals. Clean with a soft dry cloth. Store separately to prevent scratches."
+    },
+    images: [
+      "assets/generated-image-48.png",
+      "assets/generated-image-49.png"
+    ]
+  },
+//  {
+//   id: 25,
+//   name: "Urban Edge Flat Silver Chain",
+//   price: 379,
+//   category: "necklaces",
+//   gender: "male",
+//   description: "A bold, short flat sterling silver chain with a strong profile and smooth finish. Designed for urban minimalism.",
+//   detailedDescription: "Refined yet powerful, the Urban Edge Flat Chain is crafted for the modern man. Made from high-quality 925 sterling silver, this short-length necklace features flat, interlocking links that lie flush against the skin, delivering both comfort and contemporary style. With a sturdy clasp and sleek polish, it’s perfect as a solo statement or layered with other pieces for a bolder look.",
+//   specifications: {
+//     "Material": "925 Sterling Silver",
+//     "Length": "18 inches",
+//     "Width": "5 mm",
+//     "Weight": "15g",
+//     "Clasp": "Lobster clasp",
+//     "Finish": "High-polish flat links",
+//     "Care": "Wipe with a soft cloth after use. Avoid direct contact with moisture and perfume."
+//   },
+//   images: [
+//     "assets/generated-image-53.png",
+//     "assets/generated-image-54.png"
+//   ]
+// },
+{
+  id: 26,
+  name: "Legacy Flat-Link Silver Chain",
+  price: 449,
+  discount: 20,
+  category: "necklaces",
+  soldOut: false,
+  gender: "male",
+  description: "A long flat-link chain crafted from silver. Bold, sleek, and designed for timeless confidence.",
+  detailedDescription: "Crafted for those who appreciate understated luxury, the Legacy Flat-Link Chain combines length, weight, and clean design in one powerful accessory. Made from 777 silver, this long chain features flat, close-set links that drape comfortably across the chest. The smooth reflective surface and substantial feel make it a perfect standalone piece or ideal layering base. Built to last, made to stand out.",
+  specifications: {
+    "Material": "Silver",
+    "Length": "24 inches",
+    "Width": "5.5 mm",
+    "Weight": "21g",
+    "Clasp": "Heavy-duty lobster clasp",
+    "Finish": "Mirror-polished flat links",
+    "Care": "Wipe gently after use. Store separately to prevent scratches. Avoid water and chemicals."
+  },
+  images: [
+    "assets/generated-image-63.png",
+    "assets/generated-image-64.png",
+    "assets/generated-image-55.png",
+    "assets/generated-image-65.png",
+    "assets/generated-image-66.png",
+    "assets/generated-image-67.png"
+  ]
+},
+ {
+    id: 27,
+    name: "Dominion Cuban Link Bracelet",
+    price: 349,
+    discount: 20,
+    category: "bracelets",
+    soldOut: false,
+    gender: "unisex",
+    description: "A bold Cuban link bracelet crafted from 777 silver. Rugged elegance with undeniable street style influence.",
+    detailedDescription: "The Dominion Cuban Link Bracelet brings classic strength and style together in one iconic piece. Handcrafted from solid 777 silver, its tightly interlocked links offer a thick, heavy feel and unmistakable shine. The bracelet is finished with a secure box clasp, ensuring durability for everyday wear. Whether worn solo or stacked, this Cuban link delivers presence, power, and polish—ideal for men who move with confidence.",
+    specifications: {
+      "Material": "Silver",
+      "Length": "8.5 inches",
+      "Weight": "34g",
+      "Clasp": "High-gloss polished links",
+      "Care": "Polish with a dry cloth. Avoid chemical contact and moisture. Store flat in a pouch."
+  },
+    images: [
+      "assets/generated-image-68.png",
+      "assets/generated-image-69.png"
+    ]
+  },
+ {
+  id: 28,
+  name: "Om Divine Silver Pendant",
+  price: 279,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "unisex",
+  description: "A spiritual Om pendant handcrafted in 925 silver. Symbolic serenity in a refined, radiant form.",
+  detailedDescription: "Channel peace and purpose with the Om Divine Silver Pendant. Expertly crafted in 925 sterling silver, this pendant features a finely detailed Om symbol — representing universal energy and inner calm. Its smooth, high-polish surface adds a contemporary touch to this timeless spiritual icon. Whether worn close to the heart or gifted as a meaningful token, the Om Divine Pendant balances style with soulful significance.",
+  specifications: {
+    "Material": "925 Sterling Silver",
+    "Height": "1.5 inches",
+    "Weight": "2.1g",
+    "Finish": "High-polish reflective surface",
+    "Care": "Clean gently with a dry cloth. Avoid water and harsh chemicals. Store in a protective pouch."
+  },
+  images: [
+    "assets/IMG_20250530_234800.jpg"
+  ]
+},
+ {
+  id: 29,
+  name: "Khatu Shyam Devotional Pendant",
+  price: 299,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "unisex",
+  description: "A divine Khatu Shyam pendant in 925 silver. Crafted with reverence for spiritual devotion and timeless elegance.",
+  detailedDescription: "Embrace divine blessings with the Khatu Shyam Devotional Pendant. Handcrafted from pure 925 sterling silver, this pendant features an intricately carved image of Lord Shyam, revered as the God of faith and sacrifice. The pendant is designed with a radiant finish that enhances its spiritual aura and visual appeal. Whether worn daily or on special religious occasions, this pendant serves as a constant source of strength, devotion, and grace.",
+  specifications: {
+    "Material": "925 Sterling Silver",
+    "Height": "1.75 inches",
+    "Weight": "2.5g",
+    "Finish": "Glossy antique-style engraving",
+    "Care": "Wipe with a soft cloth after use. Keep away from chemicals and water. Store in a dry pouch or box."
+  },
+  images: [
+    "assets/IMG_20250530_234813.jpg"
+  ]
+},
+ {
+  id: 30,
+  name: "Sparkling Silver Diamond Necklace",
+  price: 4000,
+  discount: 20,
+  category: "necklaces",
+  soldOut: false,
+  gender: "female",
+  description: "Elegant sterling silver necklace adorned with shimmering artificial diamonds. Perfect for parties, weddings, or everyday glam.",
+  detailedDescription: "This sparkling silver necklace features high-quality AAA-grade artificial diamonds intricately set in a 925 sterling silver base. With its delicate design and brilliant shine, it's an ideal accessory for women who love timeless beauty without the high cost. Lightweight, hypoallergenic, and beautifully finished, it’s perfect for gifting or adding a touch of luxury to any outfit.",
+  specifications: {
+    "Material": "925 Sterling Silver with AAA Simulated Diamonds",
+    "Length": "16 inches + 2-inch extender",
+    "Weight": "11g",
+    "Clasp": "Secure spring ring clasp",
+    "Care": "Keep dry and store in a soft pouch; avoid perfume and moisture"
+  },
+  images: [
+    "assets/IMG20250621201906.jpg",
+  ]
+},
+ {
+  id: 31,
+  name: "Sterling Silver Snake Idol for Puja",
+  price: 200,
+  discount: 20,
+  category: "puja-saman",
+  soldOut: false,
+  gender: "unisex",
+  description: "A finely crafted sterling silver snake idol, ideal for Nag Panchami, Shiva Puja, and other religious rituals.",
+  detailedDescription: "This sacred snake idol is handcrafted from pure 925 sterling silver and symbolizes Nag Devta, often worshipped during Nag Panchami and other Hindu rituals. Designed with intricate detailing, this piece holds spiritual significance and is ideal for temple setups or home altars. It’s a perfect puja saman for devotees who value traditional worship with purity and elegance.",
+  specifications: {
+    "Material": "777 Silver",
+    "Weight": "varies",
+    "Symbolism": "Represents Nag Devta, protector of dharma and fertility",
+    "Care": "Keep in a dry place; polish gently with soft cloth to maintain shine"
+  },
+  images: [
+    "assets/IMG_20250621_210807.jpg",
+    "assets/image_50.png"
+  ]
+},
+ {
+  id: 32,
+  name: "Gold-Plated Italian Silver Goat Pendant",
+  price: 1599,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "unisex",
+  description: "Charming gold-plated goat pendant crafted from Italian 92.5 silver. A unique blend of tradition, symbolism, and style.",
+  detailedDescription: "This handcrafted lightweight pendant showcases a tiny goat motif, symbolizing strength and determination. Made from premium 92.5 sterling silver with rich Italian craftsmanship and a high-quality gold plating, this piece stands out with its minimalist yet artistic design. Ideal for spiritual wearers, animal lovers, or those who appreciate unique symbolic jewelry. Can be paired with a silver or gold-plated chain.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Gold Plating",
+    "Finish": "Glossy Italian Craftsmanship",
+    "Weight": "4g",
+    "Dimensions": "Height: 1.2 inch, Width: 0.6 inch",
+    "Care": "Avoid water, perfume, and store in anti-tarnish pouch"
+  },
+  images: [
+    "assets/IMG20250621221234.jpg",
+  ]
+},
+ {
+  id: 33,
+  name: "Italian Silver Butterfly Pendant",
+  price: 1299,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "female",
+  description: "Delicate butterfly pendant crafted in 92.5 sterling silver with fine silver plating. Lightweight, elegant, and full of grace.",
+  detailedDescription: "This elegant pendant features a beautifully detailed butterfly, symbolizing transformation, hope, and beauty. Expertly crafted in Italy from 92.5 sterling silver and finished with high-polish silver plating, the design is lightweight yet eye-catching. Perfect for everyday wear or as a meaningful gift, this pendant is ideal for women who love subtle charm with symbolic depth.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "Italian High Gloss Polish",
+    "Weight": "3g",
+    "Dimensions": "Height: 1 inch, Width: 1 inch",
+    "Care": "Avoid moisture and chemicals; store in soft pouch"
+  },
+  images: [
+    "assets/IMG20250621215222.jpg",
+  ]
+},
+ {
+  id: 34,
+  name: "Italian Silver Lock & Key Pendant Set",
+  price: 1499,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "female",
+  description: "Stylish lock and key pendants crafted in 92.5 sterling silver with sleek silver plating. A modern symbol of connection and trust.",
+  detailedDescription: "This Italian-crafted pendant set features a beautifully detailed lock and matching key, representing love, security, and hidden meanings. Made from lightweight 92.5 sterling silver with a polished silver-plated finish, this duo can be worn together or shared between two people. Perfect as a gift for couples, best friends, or anyone who values unique, meaningful jewelry.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "Glossy Italian Craftsmanship",
+    "Weight": "4g (combined)",
+    "Dimensions": "Lock: 0.8 inch, Key: 1 inch",
+    "Care": "Avoid chemicals and water; polish gently with a silver cloth"
+  },
+  images: [
+    "assets/IMG20250621215107.jpg",
+    "assets/image_7.png",
+    "assets/image_8.png"
+  ]
+},
+ {
+  id: 35,
+  name: "Italian Silver Star Duo Pendant Set",
+  price: 1499,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "unisex",
+  description: "Minimalist star pendant set crafted in 92.5 sterling silver with a refined Italian silver finish. A perfect symbol of dreams, guidance, and light.",
+  detailedDescription: "This graceful pendant set features two interlinked star designs—one solid, one hollow—symbolizing hope and harmony. Crafted in lightweight 92.5 sterling silver with sleek silver plating, the pieces can be worn together as one or shared as matching symbols of connection. A beautiful gift for couples, close friends, or anyone who believes in following their inner light. Designed with Italian craftsmanship and delicate detailing.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "Polished Italian Silver",
+    "Weight": "4g (combined)",
+    "Dimensions": "Solid Star: 0.9 inch, Hollow Star: 1 inch",
+    "Care": "Keep dry; gently clean with silver polish cloth to retain shine"
+  },
+  images: [
+    "assets/image_3.png",
+    "assets/image_4.png",
+    "assets/image_5.png",
+    "assets/image_6.png"
+  ]
+},
+ {
+  id: 36,
+  name: "Italian Silver Infinity Loop Pendant",
+  price: 1399,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "female",
+  description: "Elegant infinity loop pendant made with 92.5 sterling silver and Italian silver plating. A timeless symbol of love, unity, and eternity.",
+  detailedDescription: "This graceful pendant showcases the iconic infinity symbol, crafted with precision from 92.5 sterling silver and polished with a lustrous silver-plated finish. Lightweight and versatile, it embodies eternal love, endless possibilities, and inner balance. Perfect as a thoughtful gift or a daily reminder of meaningful bonds, this Italian-style design blends minimalism with deep symbolism.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "High-Gloss Italian Polish",
+    "Weight": "3.2g",
+    "Dimensions": "Length: 1.2 inch, Width: 0.4 inch",
+    "Care": "Store in a soft pouch; avoid direct contact with water and perfumes"
+  },
+  images: [
+    "assets/image_17.png",
+    "assets/image_18.png"
+  ]
+},
+ {
+  id: 37,
+  name: "Crimson Elegance Drop Earrings",
+  price: 799,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Delicate long-drop earrings featuring a red crystal bead, silver bow accent, and minimalist oval hoop for a bold yet graceful statement.",
+  detailedDescription: "These sophisticated drop earrings combine charm and modern design. Featuring a shimmering silver bow, vibrant red bead, and textured oval hoop with a sleek trailing chain, they’re perfect for both festive occasions and elegant evenings. Lightweight yet eye-catching, they offer a perfect balance of color and movement, making them a standout accessory for any wardrobe.",
+  specifications: {
+    "Material": "Alloy with Silver Polish",
+    "Accents": "Red Crystal Beads, Silver Bow",
+    "Length": "3.8 inches",
+    "Weight": "2.6g (each)",
+    "Care": "Keep in dry storage; avoid moisture, perfumes, and chemicals"
+  },
+  images: [
+    "assets/IMG20250621214227.jpg",
+    "assets/image_15.png",
+    "assets/image_16.png"
+   
+  ]
+},
+{
+  id: 38,
+  name: "Convertible Magnetic Silver Pendant",
+  price: 1799,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "unisex",
+  description: "Innovative magnetic pendant crafted in 92.5 sterling silver with Italian-style silver plating. Wear it as one or share it as two.",
+  detailedDescription: "This convertible magnetic pendant features a clever two-piece design that clicks together seamlessly using hidden magnets. Crafted from 92.5 sterling silver and plated with a high-gloss silver finish, it's perfect for expressing connection, love, or duality. Can be worn as a single statement piece or split into two for couples or close friends. Lightweight, modern, and meaningful — a perfect blend of art and sentiment.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Finish": "Italian Glossy Finish",
+    "Weight": "5g (combined)",
+    "Dimensions": "Each Half: 0.8 inch | Combined: 1.5 inch",
+    "Magnet Type": "Built-in neodymium magnet for secure hold",
+    "Care": "Keep away from moisture and strong magnetic fields; clean with soft cloth"
+  },
+  images: [
+    "assets/image_21.png",
+    "assets/image_28.png",
+    "assets/image_29.png",
+    "assets/image_23.png",
+    "assets/image_22.png",
+    "assets/image_24.png"
+  ]
+},
+ {
+  id: 39,
+  name: "Minimalist Silver Threader Earrings",
+  price: 649,
+  discount: 20,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Sleek and lightweight silver threader earrings crafted for a subtle, modern look. Perfect for everyday elegance.",
+  detailedDescription: "These ultra-light silver threader earrings feature a fine beaded chain that offers graceful movement and understated sophistication. Designed for modern minimalists, they add a touch of elegance without overpowering your look. Whether worn solo or paired with layered accessories, these earrings blend seamlessly with both casual and formal styles.",
+  specifications: {
+    "Material": "Alloy with 92.5 Silver Polish",
+    "Design": "Beaded Chain Threader",
+    "Length": "4 inches",
+    "Weight": "1.8g (each)",
+    "Care": "Avoid moisture, perfume, and chemicals; store separately in a soft pouch"
+  },
+  images: [
+    "assets/IMG20250621214110.jpg",
+    "assets/image_35.png",
+    "assets/image_36.png"
+  ]
+},
+ {
+  id: 40,
+  name: "Hamsa Sparkle Drop Earrings",
+  price: 899,
+  discount: 20,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Protective Hamsa drop earrings embellished with cubic zirconia and sleek silver bars. A perfect fusion of charm and elegance.",
+  detailedDescription: "Channel elegance and spiritual symbolism with these stunning Hamsa drop earrings. The intricately designed Hamsa hand, encrusted with dazzling cubic zirconia and a central black crystal, symbolizes protection and good fortune. A slender polished silver bar elegantly extends below, creating a modern silhouette that’s both refined and meaningful. Ideal for festive wear, gifting, or everyday glamour with a touch of mystique.",
+  specifications: {
+    "Material": "Alloy with 92.5 Silver Polish",
+    "Accents": "Cubic Zirconia & Black Crystal",
+    "Length": "3.5 inches",
+    "Weight": "2.4g (each)",
+    "Symbolism": "Hamsa Hand – Protection, Strength, and Blessings",
+    "Care": "Avoid contact with moisture, perfumes, and sharp objects; store in a dry pouch"
+  },
+  images: [
+    "assets/IMG20250621214010.jpg",
+    "assets/image_32.png",
+    "assets/image_33.png"
+    
+  ]
+},
+ {
+  id: 41,
+  name: "Hamsa Heart Drop Earrings",
+  price: 899,
+  discount: 20,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Elegant Hamsa drop earrings adorned with a heart-shaped crystal and cubic zirconia, finished with sleek silver bars. A blend of love and protection.",
+  detailedDescription: "Infused with both charm and symbolism, these Hamsa drop earrings feature a heart-shaped center crystal in place of the traditional eye, representing love, care, and emotional strength. Surrounded by fine cubic zirconia and finished with a slender polished silver bar, the design exudes grace and modern spirituality. Perfect for romantic gifts or as a stylish talisman for self-love and balance.",
+  specifications: {
+    "Material": "Alloy with 92.5 Silver Polish",
+    "Accents": "Cubic Zirconia & Heart Crystal",
+    "Length": "3.5 inches",
+    "Weight": "2.4g (each)",
+    "Symbolism": "Hamsa Hand with Heart – Love, Protection, and Harmony",
+    "Care": "Avoid contact with moisture, perfumes, and sharp objects; store in a dry pouch"
+  },
+  images: [
+    "assets/IMG20250621213921.jpg",
+    "assets/image_30.png",
+    "assets/image_31.png"
+  ]
+},
+  {
+  id: 42,
+  name: "Parisian Charm Eiffel Tower Earrings",
+  price: 749,
+  discount: 20,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Romantic drop earrings featuring the Eiffel Tower charm, symbolizing travel, love, and timeless elegance.",
+  detailedDescription: "Embrace the spirit of Paris with these stylish Eiffel Tower earrings. Crafted with delicate detail and a polished silver finish, these drops capture the magic of love, dreams, and wanderlust. Lightweight and charming, they’re perfect for romantics at heart or as a token of your love for adventure. Whether for a travel lover or as a personal keepsake, these earrings bring a touch of Europe to every outfit.",
+  specifications: {
+    "Material": "Alloy with Silver Polish",
+    "Charm": "Miniature Eiffel Tower",
+    "Length": "2.8 inches",
+    "Weight": "2.1g (each)",
+    "Care": "Keep away from moisture and perfume; store in a dry, padded pouch"
+  },
+  images: [
+    "assets/image_34.png"
+  ]
+},
+{
+  id: 43,
+  name: "Radiant Bloom Silver Stud Set",
+  price: 1499,
+  discount: 20,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Elegant floral-inspired stud set crafted in 92.5 sterling silver with pavé-set cubic zirconia. Three sizes, endless styling possibilities.",
+  detailedDescription: "This beautifully designed stud set features three radiant flower/starburst-shaped earrings in varying sizes, each meticulously crafted from 92.5 sterling silver. Embellished with sparkling pavé-set cubic zirconia, these versatile studs are perfect for single, double, or triple lobe piercings. Whether you wear them as a matching set or mix and match for a layered look, they bring a touch of brilliance and charm to any ensemble. Lightweight, hypoallergenic, and ideal for everyday elegance or special occasions.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Cubic Zirconia",
+    "Finish": "High Polish with Pavé Detailing",
+    "Weight": "3.2g (combined)",
+    "Dimensions": "Small: 0.5 inch | Medium: 0.6 inch | Large: 0.75 inch",
+    "Back Type": "Butterfly Push-Back",
+    "Care": "Store in a dry place; avoid contact with perfume or water; clean gently with a silver cloth"
+  },
+  images: [
+    "assets/image_42.png",
+    "assets/image_43.png"
+  ]
+},
+ {
+  id: 44,
+  name: "Heartfelt Sparkle Silver Pendant",
+  price: 1699,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "female",
+  description: "A delicate heart-shaped pendant in 92.5 sterling silver with a shimmering white CZ finish and a single red heart accent. A symbol of love, forever.",
+  detailedDescription: "Crafted with care and elegance, the Heartfelt Sparkle Pendant captures timeless love in a modern form. Made from premium 92.5 sterling silver and encrusted with white cubic zirconia stones, this dainty heart pendant stands out with a bold red heart centerpiece. Perfect as a gift or a personal keepsake, it represents affection, warmth, and enduring bonds. The fine Italian-style glossy silver plating enhances its brilliance, making it suitable for both everyday wear and special occasions.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Silver Plating",
+    "Stones": "White and Red Cubic Zirconia",
+    "Finish": "Glossy Italian Silver",
+    "Weight": "3g",
+    "Dimensions": "Pendant: 0.9 inch x 0.8 inch",
+    "Chain Compatibility": "Fits standard chains up to 3mm",
+    "Care": "Avoid moisture and harsh chemicals; store in a dry, padded box; clean gently with soft cloth"
+  },
+  images: [
+    "assets/image_40.png",
+    "assets/image_41.png"
+  ]
+},
+
+
+{
+  id: 45,
+  name: "Enchanted Fairy Silver Pendant",
+  price: 1899,
+  discount: 20,
+  category: "pendants",
+  soldOut: false,
+  gender: "female",
+  description: "Whimsical fairy pendant crafted in 92.5 sterling silver with shimmering wings and magical detail. A symbol of wonder and grace.",
+  detailedDescription: "Step into a world of fantasy with the Enchanted Fairy Pendant — a charming piece that captures the essence of dreams and magic. Handcrafted in 92.5 sterling silver and finished with a luminous Italian silver gloss, this pendant features a graceful fairy with outstretched, winged elegance. Delicate white CZ stones embellish her wings, reflecting light like morning dew. Ideal for dreamers, storytellers, or anyone drawn to the mystical, it’s a wearable reminder of belief in the beautiful and unseen.",
+  specifications: {
+    "Material": "92.5 Sterling Silver",
+    "Finish": "Glossy Italian Silver",
+    "Stones": "White Cubic Zirconia on Wings",
+    "Weight": "4.2g",
+    "Dimensions": "1.2 inch height x 0.9 inch width",
+    "Chain Compatibility": "Fits chains up to 3mm",
+    "Care": "Avoid water and chemicals; clean gently with a soft cloth; store in a cool, dry place"
+  },
+  images: [
+    "assets/image_44.png",
+    "assets/image_45.png"
+  ]
+},
+ {
+  id: 46,
+  name: "Floral Radiance Silver Studs",
+  price: 1599,
+  discount: 20,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Elegant floral silver studs crafted in 92.5 sterling silver with glittering cubic zirconia petals. Nature’s grace, captured in shine.",
+  detailedDescription: "Inspired by blooming daisies and sunbursts, the Floral Radiance Studs bring a touch of nature’s joy to your jewelry box. Crafted in high-quality 92.5 sterling silver, each earring features a radiant floral design with pavé-set white cubic zirconia on every petal, surrounding a smooth silver dome at the center. Lightweight yet striking, they’re perfect for everyday wear or a sparkling accent to elevate your look. A delicate expression of femininity and natural beauty.",
+  specifications: {
+    "Material": "92.5 Sterling Silver with Cubic Zirconia",
+    "Finish": "Glossy Pavé Finish",
+    "Weight": "3.5g (pair)",
+    "Dimensions": "Diameter: 0.75 inch",
+    "Back Type": "Secure Butterfly Push-Back",
+    "Care": "Store away from moisture and perfumes; clean with a soft silver cloth"
+  },
+  images: [
+    "assets/image_50.png",
+    "assets/image_52.png"
+  ]
+},
+ {
+  id: 47,
+  name: "Moonlit Pearl Silver Set",
+  price: 2199,
+  discount: 20,
+  category: "sets",
+  gender: "female",
+  soldOut: false,
+  description: "Elegant pearl and silver jewelry set with crescent-shaped design and sparkling CZ stones. A timeless symbol of grace and serenity.",
+  detailedDescription: "The Moonlit Pearl Silver Set blends classic elegance with celestial beauty. Featuring a matching pendant and stud earrings, each piece is crafted from 92.5 sterling silver and gracefully cradles a luminous white pearl in a crescent-like arc. Accented with brilliant cubic zirconia stones, the design evokes the peaceful radiance of the moon. Whether worn for special occasions or as everyday elegance, this set embodies sophistication, femininity, and poise.",
+  specifications: {
+    "Material": "92.5 Sterling Silver",
+    "Stones": "White Imitation Pearls & Cubic Zirconia",
+    "Finish": "High-Gloss Italian Silver Plating",
+    "Weight": "Pendant: 2.5g | Earrings (pair): 3.8g",
+    "Dimensions": "Pendant: 1.1 inch | Earrings: 0.9 inch",
+    "Back Type": "Earrings: Butterfly Push-Back",
+    "Care": "Avoid water, perfumes, and sprays; clean gently with a soft cloth; store separately to avoid scratches"
+  },
+  images: [
+    "assets/image_55.png",
+    "assets/image_56.png"
+  ]
+},
+ {
+  id: 48,
+  name: "Retro Pop Enamel Huggie Earrings",
+  price: 1399,
+  discount: 20,
+  category: "earrings",
+  soldOut: false,
+  gender: "unisex",
+  description: "Bold and playful huggie earrings in orange enamel with mint green accents. A funky fusion of retro style and modern attitude.",
+  detailedDescription: "Add a pop of personality to your everyday look with the Retro Pop Enamel Huggie Earrings. Featuring a smooth, chunky band in vibrant orange enamel, each earring is adorned with playful mint green shapes and dotted accents in earthy brown. Crafted from durable stainless steel with a glossy finish, these huggies are lightweight, bold, and comfortable for all-day wear. Ideal for unisex styling, festival outfits, or quirky fashion lovers who embrace bold accessories.",
+  specifications: {
+    "Material": "Stainless Steel with Hand-Applied Enamel",
+    "Finish": "Glossy Color-Enamel Coating",
+    "Weight": "5.5g (pair)",
+    "Dimensions": "Diameter: 0.8 inch | Width: 0.35 inch",
+    "Closure Type": "Hinged Snap Closure",
+    "Care": "Avoid water, perfumes, and abrasive surfaces; store separately to preserve enamel finish"
+  },
+  images: [
+    "assets/image_57.png",
+    "assets/image_58.png",
+    "assets/image_59.png",
+    "assets/image_60.png"
+  ]
+},
+ {
+  id: 49,
+  name: "Mystic Bloom Silver Necklace",
+  price: 1599,
+  discount: 20,
+  category: "necklaces",
+  soldOut: false,
+  gender: "female",
+  description: "Iridescent flower pendant on a dainty 92.5 sterling silver chain. Subtle, radiant, and full of charm.",
+  detailedDescription: "The Mystic Bloom Necklace is a gentle yet striking piece that captures the essence of ethereal beauty. A finely crafted flower-shaped pendant glimmers with multicolor iridescence, subtly changing hues as it catches the light. Set on a slender 92.5 sterling silver chain with adjustable links, this necklace offers a minimalist silhouette with a magical twist. Perfect for layering or wearing solo, it’s a versatile piece for free spirits and dreamers.",
+  specifications: {
+    "Material": "92.5 Sterling Silver",
+    "Pendant": "Iridescent Crystal in Flower Cut",
+    "Finish": "High-Polish Silver",
+    "Weight": "2.4g",
+    "Chain Length": "14 inch + 2 inch adjustable extension",
+    "Clasp Type": "Spring Ring Clasp",
+    "Care": "Keep away from water, perfumes, and cosmetics; store flat; clean gently with a soft cloth."
+  },
+  images: [
+    "assets/image_77.png",
+    "assets/image_78.png",
+  ]
+   },
+   {
+  id: 50,
+  name: "Celeste Teardrop Solitaire Necklace",
+  price: 1799,
+  discount: 20,
+  category: "necklaces",
+  gender: "female",
+  soldOut: false,
+  description: "Timeless teardrop solitaire pendant in 92.5 sterling silver with a dazzling CZ centerpiece. Pure elegance, always in style.",
+  detailedDescription: "The Celeste Teardrop Necklace captures the essence of classic beauty with its minimal yet powerful design. A brilliant pear-cut cubic zirconia stone sits gracefully in a sleek 92.5 sterling silver setting, suspended from a fine, high-polish silver chain. This piece adds instant sophistication to any look — whether layered for trend-driven styling or worn solo for timeless grace. The clean silhouette and radiant sparkle make it a staple for both daily elegance and evening wear.",
+  specifications: {
+    "Material": "92.5 Sterling Silver",
+    "Stone": "High-Grade Cubic Zirconia (Teardrop Cut)",
+    "Finish": "Mirror Polish",
+    "Weight": "2.7g",
+    "Pendant Size": "0.6 inch x 0.35 inch",
+    "Chain Length": "16 inch + 2 inch adjustable",
+    "Clasp Type": "Spring Ring Clasp",
+    "Care": "Avoid chemicals and water; clean gently with a soft cloth; store separately to prevent scratching"
+  },
+  images: [
+    "assets/image_79.png",
+    "assets/image_80.png",
+  ]
 }
 
-/* Dark mode colors */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: rgba(31, 33, 33, 1);
-    --color-surface: rgba(38, 40, 40, 1);
-    --color-text: rgba(245, 245, 245, 1);
-    --color-text-secondary: #555;
-    --color-primary: rgba(50, 184, 198, 1);
-    --color-primary-hover: rgba(45, 166, 178, 1);
-    --color-primary-active: rgba(41, 150, 161, 1);
-    --color-secondary: rgba(119, 124, 124, 0.15);
-    --color-secondary-hover: rgba(119, 124, 124, 0.25);
-    --color-secondary-active: rgba(119, 124, 124, 0.3);
-    --color-border: rgba(119, 124, 124, 0.3);
-    --color-error: rgba(255, 84, 89, 1);
-    --color-success: rgba(50, 184, 198, 1);
-    --color-warning: rgba(230, 129, 97, 1);
-    --color-info: rgba(167, 169, 169, 1);
-    --color-focus-ring: rgba(50, 184, 198, 0.4);
-    --color-btn-primary-text: rgba(19, 52, 59, 1);
-    --color-card-border: rgba(119, 124, 124, 0.2);
-    --color-card-border-inner: rgba(119, 124, 124, 0.15);
-    --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-    --button-border-secondary: rgba(119, 124, 124, 0.2);
-    --color-border-secondary: rgba(119, 124, 124, 0.2);
-    --color-select-caret: rgba(245, 245, 245, 0.8);
+   
+];
 
-    /* Common style patterns - updated for dark mode */
-    --focus-ring: 0 0 0 3px var(--color-focus-ring);
-    --focus-outline: 2px solid var(--color-primary);
-    --status-bg-opacity: 0.15;
-    --status-border-opacity: 0.25;
-    --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 
-    /* RGB versions for dark mode */
-    --color-success-rgb: 50, 184, 198;
-    --color-error-rgb: 255, 84, 89;
-    --color-warning-rgb: 230, 129, 97;
-    --color-info-rgb: 167, 169, 169;
+
+const whatsappNumber = "+917011317729";
+const businessInfo = {
+  name: "Aaryav Jewels",
+  address: "F-1308, Aditya Urban Casa, Sector - 78, Noida, 201301",
+  email: "sagarporwalofficial@gmail.com",
+  hours: {
+    weekdays: "Monday - Friday: 9:00 AM - 7:00 PM",
+    saturday: "Saturday: 10:00 AM - 6:00 PM",
+    sunday: "Sunday: 12:00 PM - 5:00 PM"
+  }
+};
+
+// Application state
+let currentPage = 'home';
+let currentProduct = null;
+let filteredProducts = products;
+
+// Router class
+class Router {
+  constructor() {
+    this.routes = {
+      'home': () => this.showPage('home-page'),
+      'shop': () => this.showPage('shop-page'),
+      'about': () => this.showPage('about-page'),
+      'contact': () => this.showPage('contact-page'),
+      'product': (id) => this.showProductPage(id)
+    };
+    
+    this.init();
+  }
+  
+  init() {
+    window.addEventListener('hashchange', () => this.handleRoute());
+    window.addEventListener('load', () => this.handleRoute());
+  }
+  
+  handleRoute() {
+    const hash = window.location.hash.slice(1) || 'home';
+    const [route, param] = hash.split('/');
+    
+    if (this.routes[route]) {
+      this.routes[route](param);
+      this.updateNavigation(route);
+    } else {
+      this.routes['home']();
+      this.updateNavigation('home');
+    }
+  }
+  
+  showPage(pageId) {
+    // Hide all pages
+    document.querySelectorAll('.page').forEach(page => {
+      page.classList.remove('active');
+     
+    });
+    
+    // Show target page
+    const targetPage = document.getElementById(pageId);
+    if (targetPage) {
+      targetPage.classList.add('active');
+    }
+    
+    // Load page-specific content
+    if (pageId === 'shop-page') {
+      this.loadShopProducts();
+    } else if (pageId === 'home-page') {
+      this.loadFeaturedProducts();
+    }
+  }
+  
+  showProductPage(productId) {
+    const product = products.find(p => p.id == productId);
+    if (!product) {
+      window.location.hash = 'home';
+      return;
+    }
+    
+    currentProduct = product;
+    this.showPage('product-page');
+    this.loadProductDetails(product);
+  }
+  
+  
+  updateNavigation(currentRoute) {
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentRoute}`) {
+        link.classList.add('active');
+      }
+     window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+  
+  loadFeaturedProducts() {
+    const grid = document.getElementById('featured-products-grid');
+    if (!grid) return;
+    
+    const featuredProducts = products.filter(p => [0, 2, 4, 16].includes(p.id));
+    grid.innerHTML = featuredProducts.map(product => this.createProductCard(product)).join('');
+  }
+  
+  loadShopProducts() {
+    const grid = document.getElementById('shop-products-grid');
+    if (!grid) return;
+    
+    grid.innerHTML = filteredProducts.map(product => this.createProductCard(product)).join('');
+  }
+  
+  // createProductCard(product) {
+  //   return `
+  //   <div class="product-card ${product.soldOut ? 'sold-out' : ''}" onclick="router.navigateToProduct(${product.id})">
+  //     <img src="${product.images?.[0] || 'assets/default.png'}" alt="${product.name}" class="product-card__image">
+  //     ${product.soldOut ? `<div class="sold-out-overlay">Sold Out</div>` : ''}
+  //     <div class="product-card__content">
+  //       <h3 class="product-card__title">${product.name}</h3>
+  //       <div class="product-card__price">${product.price ? `₹${product.price}` : '—'}</div>
+  //       <p class="product-card__description">${product.description}</p>
+  //       <div class="product-card__tags">
+  //         <span class="product-tag">${product.category}</span>
+  //         <span class="product-tag">${product.gender}</span>
+  //       </div>
+  //       ${product.soldOut 
+  //         ? `<button class="btn btn--secondary btn--sm" disabled>Sold Out</button>`
+  //         : `<button class="btn btn--primary btn--sm" onclick="event.stopPropagation(); router.navigateToProduct(${product.id})">View Details</button>`}
+  //     </div>
+  //   </div>
+  //   `;
+  // }
+createProductCard(product) {
+  const discountBadge = product.discount 
+    ? `<div class="discount-badge">-${product.discount}%</div>` 
+    : "";
+
+  const finalPrice = product.discount 
+    ? Math.round(product.price * (1 - product.discount / 100)) 
+    : product.price;
+
+  const priceHTML = product.discount
+    ? `<div class="product-card__price"><span class="price-old">₹${product.price}</span> <span class="price-new">₹${finalPrice}</span></div>`
+    : `<div class="product-card__price">₹${product.price}</div>`;
+
+  return `
+    <div class="product-card ${product.soldOut ? 'sold-out' : ''}" onclick="router.navigateToProduct(${product.id})">
+      <div class="product-image-wrapper">
+        <img src="${product.images?.[0] || 'assets/default.png'}" alt="${product.name}" class="product-card__image">
+        ${product.soldOut ? `<div class="sold-out-overlay">Sold Out</div>` : ''}
+        ${discountBadge}
+      </div>
+      <div class="product-card__content">
+        <h3 class="product-card__title">${product.name}</h3>
+        ${priceHTML}
+        <p class="product-card__description">${product.description}</p>
+        <div class="product-card__tags">
+          <span class="product-tag">${product.category}</span>
+          <span class="product-tag">${product.gender}</span>
+        </div>
+        ${product.soldOut 
+          ? `<button class="btn btn--secondary btn--sm" disabled>Sold Out</button>`
+          : `<button class="btn btn--primary btn--sm" onclick="event.stopPropagation(); router.navigateToProduct(${product.id})">View Details</button>`}
+      </div>
+    </div>
+  `;
+}
+
+
+  
+  navigateToProduct(productId) {
+  window.location.hash = `product/${productId}`;
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+  
+  loadProductDetails(product) {
+    // Update breadcrumb
+    const breadcrumb = document.getElementById('breadcrumb');
+    breadcrumb.innerHTML = `
+      <a href="#home">Home</a> <span>></span>
+      <a href="#shop">Shop</a> <span>></span>
+      <span>${product.name}</span>
+    `;
+    
+    // Update product info
+    document.getElementById('product-title').textContent = product.name;
+    const productPriceEl = document.getElementById("product-price");
+
+    if (product.discount) {
+      const discountedPrice = Math.round(product.price * (1 - product.discount / 100));
+      productPriceEl.innerHTML = `
+        <span class="price-old">M.R.P.: ₹${product.price}</span>
+        <span class="price-new">₹${discountedPrice}</span>
+        <span class="discount-percent">(${product.discount}% OFF)</span>
+      `;
+    } else {
+      productPriceEl.innerHTML = `₹${product.price}`;
+    }
+    
+    document.getElementById('product-description-text').textContent = product.detailedDescription;
+    
+    // Update tags
+    const tagsContainer = document.getElementById('product-tags');
+    tagsContainer.innerHTML = `
+      <span class="product-tag">${product.category}</span>
+      <span class="product-tag">${product.gender}</span>
+    `;
+    
+    // Update specifications
+    const specsList = document.getElementById('specs-list');
+    specsList.innerHTML = Object.entries(product.specifications)
+      .map(([key, value]) => `
+        <div class="spec-item">
+          <span class="spec-label">${key}:</span>
+          <span class="spec-value">${value}</span>
+        </div>
+      `).join('');
+    
+    // Update main image
+    const mainImage = document.getElementById('main-product-image');
+    mainImage.src = product.images[0];
+    mainImage.alt = product.name;
+    
+    // Update thumbnails
+    const thumbnailsContainer = document.getElementById('gallery-thumbnails');
+    thumbnailsContainer.innerHTML = product.images
+      .map((image, index) => `
+        <img src="${image}" alt="${product.name} ${index + 1}" 
+             class="thumbnail ${index === 0 ? 'active' : ''}" 
+             onclick="productGallery.changeImage('${image}', this)">
+      `).join('');
+    
+    // Update WhatsApp button
+    const whatsappBtn = document.getElementById('whatsapp-order-btn');
+    whatsappBtn.onclick = () => this.orderViaWhatsApp(product);
+    
+    // Load related products
+    this.loadRelatedProducts(product);
+  }
+  
+  loadRelatedProducts(currentProduct) {
+    const related = products
+      .filter(p => p.id !== currentProduct.id && 
+                  (p.category === currentProduct.category || p.gender === currentProduct.gender))
+      .slice(0, 3);
+    
+    const grid = document.getElementById('related-products-grid');
+    grid.innerHTML = related.map(product => this.createProductCard(product)).join('');
+  }
+  
+  orderViaWhatsApp(product) {
+    const message = `Hi! I'm interested in ordering the ${product.name} (Price: ₹${product.price}). 
+
+Product Details:
+${product.description}
+
+Please provide more information about availability and delivery.
+
+Product Link: ${window.location.href}`;
+    
+    const whatsappUrl = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   }
 }
 
-/* Data attribute for manual theme switching */
-[data-color-scheme="dark"] {
-  --color-background: rgba(31, 33, 33, 1);
-  --color-surface: rgba(38, 40, 40, 1);
-  --color-text: rgba(245, 245, 245, 1);
-  --color-text-secondary: rgba(167, 169, 169, 0.7);
-  --color-primary: rgba(50, 184, 198, 1);
-  --color-primary-hover: rgba(45, 166, 178, 1);
-  --color-primary-active: rgba(41, 150, 161, 1);
-  --color-secondary: rgba(119, 124, 124, 0.15);
-  --color-secondary-hover: rgba(119, 124, 124, 0.25);
-  --color-secondary-active: rgba(119, 124, 124, 0.3);
-  --color-border: rgba(119, 124, 124, 0.3);
-  --color-error: rgba(255, 84, 89, 1);
-  --color-success: rgba(50, 184, 198, 1);
-  --color-warning: rgba(230, 129, 97, 1);
-  --color-info: rgba(167, 169, 169, 1);
-  --color-focus-ring: rgba(50, 184, 198, 0.4);
-  --color-btn-primary-text: rgba(19, 52, 59, 1);
-  --color-card-border: rgba(119, 124, 124, 0.15);
-  --color-card-border-inner: rgba(119, 124, 124, 0.15);
-  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  --color-border-secondary: rgba(119, 124, 124, 0.2);
-  --color-select-caret: rgba(245, 245, 245, 0.8);
-
-  /* Common style patterns - updated for dark mode */
-  --focus-ring: 0 0 0 3px var(--color-focus-ring);
-  --focus-outline: 2px solid var(--color-primary);
-  --status-bg-opacity: 0.15;
-  --status-border-opacity: 0.25;
-  --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-  --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-
-  /* RGB versions for dark mode */
-  --color-success-rgb: 50, 184, 198;
-  --color-error-rgb: 255, 84, 89;
-  --color-warning-rgb: 230, 129, 97;
-  --color-info-rgb: 167, 169, 169;
-}
-
-[data-color-scheme="light"] {
-  --color-background: rgba(252, 252, 249, 1);
-  --color-surface: rgba(255, 255, 253, 1);
-  --color-text: rgba(19, 52, 59, 1);
-  --color-text-secondary: rgba(98, 108, 113, 1);
-  --color-primary: rgba(33, 128, 141, 1);
-  --color-primary-hover: rgba(29, 116, 128, 1);
-  --color-primary-active: rgba(26, 104, 115, 1);
-  --color-secondary: rgba(94, 82, 64, 0.12);
-  --color-secondary-hover: rgba(94, 82, 64, 0.2);
-  --color-secondary-active: rgba(94, 82, 64, 0.25);
-  --color-border: rgba(94, 82, 64, 0.2);
-  --color-btn-primary-text: rgba(252, 252, 249, 1);
-  --color-card-border: rgba(94, 82, 64, 0.12);
-  --color-card-border-inner: rgba(94, 82, 64, 0.12);
-  --color-error: rgba(192, 21, 47, 1);
-  --color-success: rgba(33, 128, 141, 1);
-  --color-warning: rgba(168, 75, 47, 1);
-  --color-info: rgba(98, 108, 113, 1);
-  --color-focus-ring: rgba(33, 128, 141, 0.4);
-
-  /* RGB versions for light mode */
-  --color-success-rgb: 33, 128, 141;
-  --color-error-rgb: 192, 21, 47;
-  --color-warning-rgb: 168, 75, 47;
-  --color-info-rgb: 98, 108, 113;
-}
-
-/* Base styles */
-html {
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-normal);
-  letter-spacing: var(--letter-spacing-normal);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-normal);
-  color: var(--color-text);
-  background-color: var(--color-background);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-tight);
-  color: var(--color-text);
-  letter-spacing: var(--letter-spacing-tight);
-  margin-bottom: 0.75em;
-}
-
-h1 {
-  font-size: var(--font-size-4xl);
-}
-h2 {
-  font-size: var(--font-size-3xl);
-}
-h3 {
-  font-size: var(--font-size-2xl);
-}
-h4 {
-  font-size: var(--font-size-xl);
-}
-h5 {
-  font-size: var(--font-size-lg);
-}
-h6 {
-  font-size: var(--font-size-md);
-}
-
-h1, h2, h3 {
-  font-family: var(--font-family-heading);
-}
-
-
-p {
-  margin: 0 0 var(--space-16) 0;
-}
-
-
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color var(--duration-fast) var(--ease-standard);
-}
-
-a:hover {
-  color: var(--color-primary-hover);
-}
-
-code,
-pre {
-  font-family: var(--font-family-mono);
-  font-size: 0.9em;
-  background-color: var(--color-secondary);
-  border-radius: var(--radius-sm);
-}
-
-code {
-  padding: var(--space-1) var(--space-4);
-}
-
-pre {
-  padding: var(--space-16);
-  margin: var(--space-16) 0;
-  overflow: auto;
-  border: 1px solid var(--color-border);
-}
-
-pre code {
-  background: none;
-  padding: 0;
-}
-
-/* Buttons */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-8) var(--space-16);
-  border-radius: var(--radius-base);
-  font-size: var(--font-size-sm);
-  font-weight:  var(--font-weight-semibold);
-  line-height: 1.5;
-  cursor: pointer;
-  transition: background-color var(--duration-fast) var(--ease-standard);
-  border: none;
-  text-decoration: none;
-  position: relative;
-  background-color: var(--color-primary);
-  color: var(--color-btn-primary-text);
-  border: none;
-}
-
-.btn:hover {
-  background-color: var(--color-primary-hover);
-}
-.btn:active {
-  background-color: var(--color-primary-active);
-}
-
-.btn:focus-visible {
-  outline: none;
-  box-shadow: var(--focus-ring);
-}
-
-.btn--primary {
-  background: linear-gradient(135deg, #bfbfbf, #dcdcdc);
-  color: #1c1c1c;
-  border: 1px solid #c4c4c4;
-  font-weight: 600;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-}
-
-.btn--primary:hover {
-  background: linear-gradient(135deg, #e4e4e4, #f9f9f9);
-  transform: translateY(-2px);
-}
-
-.btn--primary:active {
-  background: var(--color-primary-active);
-}
-
-.btn--secondary {
-  background: var(--color-secondary);
-  color: var(--color-text);
-}
-
-.btn--secondary:hover {
-  background: var(--color-secondary-hover);
-}
-
-.btn--secondary:active {
-  background: var(--color-secondary-active);
-}
-
-.btn--outline {
-  background: transparent;
-  border: 1px solid var(--color-border);
-  color: var(--color-text);
-}
-
-.btn--outline:hover {
-  background: var(--color-secondary);
-}
-
-.btn--sm {
-  padding: var(--space-4) var(--space-12);
-  font-size: var(--font-size-sm);
-  border-radius: var(--radius-sm);
-}
-
-.btn--lg {
-  padding: var(--space-10) var(--space-20);
-  font-size: var(--font-size-lg);
-  border-radius: var(--radius-md);
-}
-
-.btn--full-width {
-  width: 100%;
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-
-/* Form elements */
-.form-control {
-  padding: 0.6rem 1rem;
-  border: 1px solid #cfcfcf;
-  border-radius: 8px;
-  background-color: #ffffff;
-  color: #1a1a1a;
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  appearance: none;
-  outline: none;
-  transition: border 0.2s ease, box-shadow 0.2s ease;
-  min-width: 180px;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%22292%22%20height%3D%22182%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2069.4L166.4%20180.7c-9.4%209.2-24.6%209.2-33.9%200L5%2069.4C-1.7%2063-1.7%2052.7%205%2046.3l23.2-22.9c6.7-6.6%2017.4-6.6%2024.1%200L146%20117.8%20239.6%2023.4c6.7-6.6%2017.4-6.6%2024.1%200l23.2%2022.9c6.7%206.6%206.7%2016.7%200%2023.1z%22/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 12px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
-}
-
-
-textarea.form-control {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-}
-
-select.form-control {
-  padding: var(--space-8) var(--space-12);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: var(--select-caret-light);
-  background-repeat: no-repeat;
-  background-position: right var(--space-12) center;
-  background-size: 16px;
-  padding-right: var(--space-32);
-}
-
-/* Add a dark mode specific caret */
-@media (prefers-color-scheme: dark) {
-  select.form-control {
-    background-image: var(--select-caret-dark);
+// Product Gallery class
+class ProductGallery {
+  constructor() {
+    this.currentImageIndex = 0;
+    this.initZoomModal();
+  }
+  
+  changeImage(imageSrc, thumbnailElement) {
+    const mainImage = document.getElementById('main-product-image');
+    mainImage.src = imageSrc;
+    
+    // Update active thumbnail
+    document.querySelectorAll('.thumbnail').forEach(thumb => {
+      thumb.classList.remove('active');
+    });
+    thumbnailElement.classList.add('active');
+  }
+  
+  initZoomModal() {
+    const zoomBtn = document.getElementById('zoom-btn');
+    const zoomModal = document.getElementById('zoom-modal');
+    const zoomImage = document.getElementById('zoom-image');
+    const closeBtn = document.querySelector('.zoom-modal__close');
+    
+    zoomBtn.addEventListener('click', () => {
+      const mainImage = document.getElementById('main-product-image');
+      zoomImage.src = mainImage.src;
+      zoomModal.classList.add('active');
+    });
+    
+    closeBtn.addEventListener('click', () => {
+      zoomModal.classList.remove('active');
+    });
+    
+    zoomModal.addEventListener('click', (e) => {
+      if (e.target === zoomModal) {
+        zoomModal.classList.remove('active');
+      }
+    });
   }
 }
 
-/* Also handle data-color-scheme */
-[data-color-scheme="dark"] select.form-control {
-  background-image: var(--select-caret-dark);
+// Product Filter class
+class ProductFilter {
+  constructor() {
+    this.initFilters();
+  }
+  
+  initFilters() {
+    const categoryFilter = document.getElementById('category-filter');
+    const genderFilter = document.getElementById('gender-filter');
+    const priceFilter = document.getElementById('price-filter');
+    
+    if (categoryFilter) {
+      categoryFilter.addEventListener('change', () => this.applyFilters());
+    }
+    if (genderFilter) {
+      genderFilter.addEventListener('change', () => this.applyFilters());
+    }
+    if (priceFilter) {
+      priceFilter.addEventListener('change', () => this.applyFilters());
+    }
+  }
+  
+  applyFilters() {
+    const categoryFilter = document.getElementById('category-filter');
+    const genderFilter = document.getElementById('gender-filter');
+    const priceFilter = document.getElementById('price-filter');
+    
+    if (!categoryFilter || !genderFilter || !priceFilter) return;
+    
+    const category = categoryFilter.value;
+    const gender = genderFilter.value;
+    const priceRange = priceFilter.value;
+    
+    filteredProducts = products.filter(product => {
+      // Category filter
+      if (category !== 'all' && product.category !== category) {
+        return false;
+      }
+      
+      // Gender filter
+      if (gender !== 'all' && product.gender !== gender) {
+        return false;
+      }
+      
+      // Price filter
+      if (priceRange !== 'all') {
+        const price = product.price;
+        if (priceRange === '0-1000' && price >= 1001) return false;
+        if (priceRange === '1000-2000' && (price < 999 || price >= 2001)) return false;
+        if (priceRange === '2000' && price < 1999) return false;
+      }
+      
+      return true;
+    });
+    
+    // Reload shop products
+    router.loadShopProducts();
+  }
 }
 
-[data-color-scheme="light"] select.form-control {
-  background-image: var(--select-caret-light);
+// Contact Form Handler
+class ContactForm {
+  constructor() {
+    this.initForm();
+  }
+  
+  initForm() {
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', (e) => this.handleSubmit(e));
+    }
+  }
+  
+  handleSubmit(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(e.target);
+    const name = formData.get('name') || e.target.querySelector('input[type="text"]').value;
+    const email = formData.get('email') || e.target.querySelector('input[type="email"]').value;
+    const message = formData.get('message') || e.target.querySelector('textarea').value;
+    
+    const whatsappMessage = `Contact Form Submission:
+
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}`;
+    
+    const whatsappUrl = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+    
+    // Reset form
+    e.target.reset();
+    alert('Thank you for your message! We will contact you soon.');
+  }
 }
 
-.form-control:focus {
-  border-color: var(--color-accent, #b8a97a);
-  box-shadow: 0 0 0 3px rgba(var(--color-primary-hover-rgb), 0.2);
-  background-color: #fff;
+// Mobile Navigation
+class MobileNav {
+  constructor() {
+    this.initMobileNav();
+  }
+  
+  initMobileNav() {
+    const toggle = document.querySelector('.navbar__mobile-toggle');
+    const menu = document.querySelector('.navbar__menu');
+    
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        toggle.classList.toggle('active');
+      });
+      
+      // Close menu when clicking on a link
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('active');
+          toggle.classList.remove('active');
+        });
+      });
+    }
+  }
 }
 
-.form-label {
-  display: block;
-  margin-bottom: var(--space-8);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
-}
+// Initialize application
+let router, productGallery, productFilter, contactForm, mobileNav;
 
-.form-group {
-  margin-bottom: var(--space-16);
-}
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize all components
+  router = new Router();
+  productGallery = new ProductGallery();
+  productFilter = new ProductFilter();
+  contactForm = new ContactForm();
+  mobileNav = new MobileNav();
+  
+  // Initialize back to shop button
+  const backToShopBtn = document.getElementById('back-to-shop');
+  if (backToShopBtn) {
+    backToShopBtn.addEventListener('click', () => {
+      window.location.hash = 'shop';
 
-/* Card component */
-.card {
-  background-color: var(--color-surface);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-card-border);
-  box-shadow: var(--shadow-sm);
-  overflow: hidden;
-  transition: transform var(--duration-fast) var(--ease-standard), box-shadow var(--duration-fast);
-}
+  applySilverRateToProductPrices();   // 💰 Update prices based on manual silver rate
+  displaySilverRate();                // 📢 Show silver rate on homepage
+    });
+  }
+  
+  // Initialize smooth scrolling for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#' || targetId === '#home' || targetId === '#shop' || 
+          targetId === '#about' || targetId === '#contact') {
+        // Let the router handle these
+        return;
+      }
+      
+      e.preventDefault();
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+  console.log('Aaryav Jewels application initialized successfully!');
+});
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
 
-.card__body {
-  padding: var(--space-16);
-}
 
-.card__header,
-.card__footer {
-  padding: var(--space-16);
-  border-bottom: 1px solid var(--color-card-border-inner);
-}
 
-/* Status indicators - simplified with CSS variables */
-.status {
-  display: inline-flex;
-  align-items: center;
-  padding: var(--space-6) var(--space-12);
-  border-radius: var(--radius-full);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
-}
 
-.status--success {
-  background-color: rgba(
-    var(--color-success-rgb, 33, 128, 141),
-    var(--status-bg-opacity)
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize all components
+  router = new Router();
+  productGallery = new ProductGallery();
+  productFilter = new ProductFilter();
+  contactForm = new ContactForm();
+  mobileNav = new MobileNav();
+
+    // 🔍 Real-time search functionality
+  document.getElementById('product-search').addEventListener('input', function (e) {
+    const query = e.target.value.toLowerCase().trim();
+
+  filteredProducts = products.filter(product =>
+    product.name.toLowerCase().includes(query) ||
+    product.category.toLowerCase().includes(query) ||
+    product.gender.toLowerCase().includes(query)
   );
-  color: var(--color-success);
-  border: 1px solid
-    rgba(var(--color-success-rgb, 33, 128, 141), var(--status-border-opacity));
+
+  router.loadShopProducts();
+});
+
+
+
+});
+function displaySilverRate() {
+  const el = document.getElementById('silver-rate-display');
+  if (el) el.textContent = `Silver Rate: ₹ ${dailySilverRateINR} /g`;
 }
 
-.status--error {
-  background-color: rgba(
-    var(--color-error-rgb, 192, 21, 47),
-    var(--status-bg-opacity)
-  );
-  color: var(--color-error);
-  border: 1px solid
-    rgba(var(--color-error-rgb, 192, 21, 47), var(--status-border-opacity));
-}
 
-.status--warning {
-  background-color: rgba(
-    var(--color-warning-rgb, 168, 75, 47),
-    var(--status-bg-opacity)
-  );
-  color: var(--color-warning);
-  border: 1px solid
-    rgba(var(--color-warning-rgb, 168, 75, 47), var(--status-border-opacity));
-}
 
-.status--info {
-  background-color: rgba(
-    var(--color-info-rgb, 98, 108, 113),
-    var(--status-bg-opacity)
-  );
-  color: var(--color-info);
-  border: 1px solid
-    rgba(var(--color-info-rgb, 98, 108, 113), var(--status-border-opacity));
-}
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.navbar__mobile-toggle');
+  const menu = document.querySelector('.navbar__menu');
 
-/* Container layout */
-.container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--space-16);
-  padding-left: var(--space-16);
-}
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    toggle.classList.toggle('active');
+  });
+});
 
-.container,
-.card__body,
-.hero {
-  max-width: 80ch; /* Optimal reading width */
-  margin-left: auto;
-  margin-right: auto;
-}
+// Scroll to Top Button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-@media (min-width: 640px) {
-  .container {
-    max-width: var(--container-sm);
+window.onscroll = function () {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollToTopBtn.classList.add("show");
+  } else {
+    scrollToTopBtn.classList.remove("show");
   }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: var(--container-md);
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: var(--container-lg);
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: var(--container-xl);
-  }
-}
-
-/* Utility classes */
-.flex {
-  display: flex;
-}
-.flex-col {
-  flex-direction: column;
-}
-.items-center {
-  align-items: center;
-}
-.justify-center {
-  justify-content: center;
-}
-.justify-between {
-  justify-content: space-between;
-}
-.gap-4 {
-  gap: var(--space-4);
-}
-.gap-8 {
-  gap: var(--space-8);
-}
-.gap-16 {
-  gap: var(--space-16);
-}
-
-.m-0 {
-  margin: 0;
-}
-.mt-8 {
-  margin-top: var(--space-8);
-}
-.mb-8 {
-  margin-bottom: var(--space-8);
-}
-.mx-8 {
-  margin-left: var(--space-8);
-  margin-right: var(--space-8);
-}
-.my-8 {
-  margin-top: var(--space-8);
-  margin-bottom: var(--space-8);
-}
-
-.p-0 {
-  padding: 0;
-}
-.py-8 {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-.px-8 {
-  padding-left: var(--space-8);
-  padding-right: var(--space-8);
-}
-.py-16 {
-  padding-top: var(--space-16);
-  padding-bottom: var(--space-16);
-}
-.px-16 {
-  padding-left: var(--space-16);
-  padding-right: var(--space-16);
-}
-
-.block {
-  display: block;
-}
-.hidden {
-  display: none;
-}
-
-/* Accessibility */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-:focus-visible {
-  outline: var(--focus-outline);
-  outline-offset: 2px;
-}
-
-/* Dark mode specifics */
-[data-color-scheme="dark"] .btn--outline {
-  border: 1px solid var(--color-border-secondary);
-}
-
-@font-face {
-  font-family: 'FKGroteskNeue';
-  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2')
-    format('woff2');
-}
-
-/* Header and Navigation */
-.header {
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: var(--shadow-sm);
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--space-16) 0;
-  position: relative;
-}
-
-.navbar__brand h1 {
-  color: var(--color-primary);
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-bold);
-  margin: 0;
-}
-
-.navbar__menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: var(--space-32);
-}
-
-.nav-link {
-  color: var(--color-text);
-  text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  padding: var(--space-8) var(--space-12);
-  border-radius: var(--radius-base);
-  transition: all var(--duration-fast) var(--ease-standard);
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: var(--color-primary);
-  background: var(--color-secondary);
-}
-
-.navbar__mobile-toggle {
-  display: none;
-  flex-direction: column;
-  margin-left: auto;
-  cursor: pointer;
-  gap: var(--space-4);
-}
-
-.navbar__mobile-toggle span {
-  width: 24px;
-  height: 2px;
-  background: var(--color-text);
-  border-radius: var(--radius-sm);
-  transition: all var(--duration-fast) var(--ease-standard);
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
-  color: var(--color-btn-primary-text);
-  text-align: center;
-  padding: var(--space-32) 0;
-}
-
-.hero__title {
-  font-size: var(--font-size-4xl);
-  margin-bottom: var(--space-16);
-}
-
-.hero__subtitle {
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--space-24);
-  opacity: 0.9;
-}
-
-/* Page System */
-.page {
-  display: none;
-}
-
-.page.active {
-  display: block;
-}
-
-/* Section Titles */
-/* Sections */
-section {
-  margin-bottom: var(--space-32);
-  padding: var(--space-32) var(--space-16);
-  background-color: var(--color-background);
-}
-section.alt {
-  background-color: var(--color-surface);
-}
-
-/* Paragraphs */
-p {
-  line-height: var(--line-height-normal);
-}
-
-/* Section Titles */
-.section-title {
-  text-align: center;
-  margin-bottom: var(--space-32);
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-bold);
-}
-
-
-/* Products Grid */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-24);
-  margin-top: var(--space-24);
-}
-
-.product-card {
-  background:  white;
-  color: var(--color-text);
-  border: 1px solid #e5e5e5;
-  border-radius: 16px;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-  padding: var(--space-16);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-  transform: scale(1.02);
-  box-shadow: var(--shadow-md);
-  transition: all 0.3s ease;
-  transform: translateY(-3px);
-}
-.product-card.sold-out img {
-  filter: grayscale(100%) brightness(60%);
-}
-
-.product-card p {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-}
-
-.product-card .price {
-  font-weight: var(--font-weight-bold);
-  color: var(--color-success); /* teal price */
-}
-
-.product-card:hover .product-card__title {
-  color: var(--color-primary);
-}
-
-
-
-.product-card:hover img {
-  transform: scale(1.02);
-  transition: transform 0.3s ease-in-out;
-}
-.zoom-modal__content img {
-  transition: transform 0.3s ease-in-out;
-}
-.zoom-modal__content img:hover {
-  transform: scale(1.05);
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-
-.featured-products-grid {
-  display: grid;
-  gap: var(--space-24);
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: var(--space-32);
-}
-
-
-.product-card__image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  background: #f8f9fa;
-}
-
-.product-card__content {
-  padding: var(--space-16);
-}
-
-.product-card__title {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text);
-  font-size: 15px;
-  line-height: 1.2;
-  min-height: 38px;
-}
-
-.product-card__price {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
-  margin-bottom: var(--space-8);
-}
-
-.product-card__description {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  margin-bottom: var(--space-12);
-}
-
-.product-card__tags {
-  display: flex;
-  gap: var(--space-8);
-  margin-bottom: var(--space-16);
-}
-
-.product-tag {
-  background: var(--color-secondary);
-  color: var(--color-text);
-  padding: var(--space-4) var(--space-8);
-  border-radius: var(--radius-full);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  text-transform: capitalize;
-}
-
-.sold-out-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.6);
-  color: white;
-  font-size: 1.4rem;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Shop Filters */
-.shop-filters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-16);
-  margin-bottom: var(--space-32);
-  padding: var(--space-24);
-  background: var(--color-surface);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  background-color: #fff;
-}
-
-.filter-group {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Product Detail Page */
-.breadcrumb {
-  margin-bottom: var(--space-24);
-  font-size: var(--font-size-sm);
-}
-
-.breadcrumb a {
-  color: var(--color-text-secondary);
-  text-decoration: none;
-}
-
-.breadcrumb a:hover {
-  color: var(--color-primary);
-}
-
-.breadcrumb span {
-  color: var(--color-text-secondary);
-  margin: 0 var(--space-8);
-}
-
-.product-detail__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-32);
-  margin-bottom: var(--space-32);
-}
-
-/* Product Gallery */
-.product-gallery {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-16);
-}
-
-.gallery-main {
-  position: relative;
-  background: var(--color-surface);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  overflow: hidden;
-}
-
-.main-image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  background: #f8f9fa;
-}
-
-.zoom-btn {
-  position: absolute;
-  top: var(--space-16);
-  right: var(--space-16);
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  border: none;
-  border-radius: var(--radius-full);
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--font-size-lg);
-  transition: all var(--duration-fast) var(--ease-standard);
-  z-index: 10;
-  padding: 8px;
-  font-size: 18px;
-}
-
-.zoom-btn:hover {
-  background: rgba(0, 0, 0, 0.9);
-  transform: scale(1.1);
-}
-
-.gallery-thumbnails {
-  display: flex;
-  gap: var(--space-8);
-  overflow-x: auto;
-  padding: var(--space-4);
-}
-
-.thumbnail {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: var(--radius-base);
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all var(--duration-fast) var(--ease-standard);
-  flex-shrink: 0;
-}
-
-.thumbnail:hover,
-.thumbnail.active {
-  border-color: var(--color-primary);
-}
-
-/* Product Info */
-.product-info {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-16);
-}
-
-.product-title {
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-bold);
-  margin: 0;
-  font-family: var(--font-family-heading, 'Playfair Display', serif);
-  color: var(--color-text);
-  line-height: 1.4;
-  margin-bottom: 16px;
-}
-
-.product-price {
-  color: #777;
-  font-weight: 500;
-}
-
-.product-tags {
-  display: flex;
-  gap: var(--space-8);
-  flex-wrap: wrap;
-}
-
-.product-description h3,
-.product-specifications h3 {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--space-12);
-  color: var(--color-text);
-}
-
-.product-description p {
-  color: var(--color-text-secondary);
-  line-height: var(--line-height-normal);
-}
-
-.specs-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-}
-
-.spec-item {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--space-8);
-  background: var(--color-secondary);
-  border-radius: var(--radius-base);
-}
-
-.spec-label {
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text);
-}
-
-.spec-value {
-  color: var(--color-text-secondary);
-}
-
-.product-actions {
-  margin-top: var(--space-24);
-}
-.product-actions .btn {
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.product-image-wrapper {
-  position: relative;
-}
-
-.discount-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #e53935;
-  color: white;
-  font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.price-old {
-  text-decoration: line-through;
-  color: #888;
-  font-size: 15px;
-  margin-right: 10px;
-}
-
-.price-new {
-  color: #e53935;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.discount-percent {
-  color: #e53935;
-  font-weight: 500;
-  font-size: 14px;
-  margin-left: 6px;
-}
-
-
-/* Related Products */
-.related-products {
-  border-top: 1px solid var(--color-border);
-  padding-top: var(--space-32);
-}
-
-.product-actions .btn--primary {
-  background: linear-gradient(135deg, #c0c0c0, #f5f5f5);
-  color: #222;
-  border: 1px solid #cfcfcf;
-}
-.product-actions .btn--primary:hover {
-  background: linear-gradient(135deg, #f0f0f0, #ffffff);
-  transform: scale(1.02);
-}
-
-.related-products h3 {
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--space-24);
-  color: var(--color-text);
-}
-
-/* Zoom Modal */
-.zoom-modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.zoom-modal.active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.zoom-modal__content {
-  position: relative;
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.zoom-modal__close {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-.zoom-modal__close:hover {
-  opacity: 0.7;
-}
-
-#zoom-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-/* About Page */
-.about-content {
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: var(--line-height-normal);
-}
-
-.about-content h3 {
-  margin-top: var(--space-32);
-  margin-bottom: var(--space-16);
-  color: var(--color-text);
-}
-
-.business-hours {
-  background: var(--color-surface);
-  padding: var(--space-24);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  margin-top: var(--space-32);
-}
-
-.business-hours ul {
-  list-style: none;
-  padding: 0;
-  margin: var(--space-16) 0 0 0;
-}
-
-.business-hours li {
-  padding: var(--space-8) 0;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.business-hours li:last-child {
-  border-bottom: none;
-}
-
-/* Contact Page */
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-32);
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.contact-info h3,
-.contact-form h3 {
-  margin-bottom: var(--space-24);
-  color: var(--color-text);
-}
-
-.contact-item {
-  margin-bottom: var(--space-20);
-}
-
-.contact-item strong {
-  display: block;
-  margin-bottom: var(--space-8);
-  color: var(--color-text);
-}
-
-.contact-item p {
-  margin: 0;
-  color: var(--color-text-secondary);
-}
-
-.contact-form {
-  background: var(--color-surface);
-  padding: var(--space-24);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-}
-
-/* Footer */
-.footer {
-  background: var(--color-text);
-  color: var(--color-background);
-  margin-top: var(--space-32);
-  border-top: 1px solid #ccc;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-32);
-  padding: var(--space-32) 0;
-}
-
-.footer-section h3,
-.footer-section h4 {
-  margin-bottom: var(--space-16);
-  color: #333;
-  color: var(--color-background);
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: var(--space-8);
-}
-
-.footer-section a {
-  color: rgba(252, 252, 249, 0.8);
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  color: var(--color-background);
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(252, 252, 249, 0.2);
-  padding: var(--space-16) 0;
-  text-align: center;
-  color: rgba(252, 252, 249, 0.8);
-}
-
-.footer a {
-  color: var(--color-text-secondary);
-  text-decoration: none;
-}
-.footer a:hover {
-  color: var(--color-text);
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar__menu {
-    display: none;
-  }
+};
+
+scrollToTopBtn.onclick = function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+document.getElementById('zoom-btn').addEventListener('click', () => {
+  const modal = document.getElementById('zoom-modal');
+  const zoomImage = document.getElementById('zoom-image');
+  const mainImage = document.getElementById('main-product-image');
   
-  .navbar__mobile-toggle {
-    display: flex;
+  if (mainImage && zoomImage && modal) {
+    zoomImage.src = mainImage.src;
+    modal.style.display = 'flex';
   }
-  
-  .hero__title {
-    font-size: var(--font-size-3xl);
-  }
-  
-  .products-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-16);
-  }
-  
-  .shop-filters {
-    grid-template-columns: 1fr;
-    gap: var(--space-12);
-  }
-  
-  .product-detail__content {
-    grid-template-columns: 1fr;
-    gap: var(--space-24);
-  }
-  
-  .main-image {
-    height: 300px;
-  }
-  
-  .product-title {
-    font-size: var(--font-size-2xl);
-  }
-  
-  .product-price {
-    font-size: var(--font-size-3xl);
-  }
-  
-  .contact-content {
-    grid-template-columns: 1fr;
-    gap: var(--space-24);
-  }
-  
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: var(--space-24);
-  }
-  
-  .zoom-btn {
-    display: block;
-  }
-}
+});
 
-@media (max-width: 480px) {
-  .container {
-    padding-left: var(--space-12);
-    padding-right: var(--space-12);
-  }
-  
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .hero {
-    padding: var(--space-24) 0;
-  }
-  
-  .hero__title {
-    font-size: var(--font-size-2xl);
-  }
-  
-  .section-title {
-    font-size: var(--font-size-2xl);
-  }
-  
-  .gallery-thumbnails {
-    justify-content: center;
-  }
-}
-
-/* Loading States */
-.loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-32);
-  color: var(--color-text-secondary);
-}
-
-/* Transitions */
-.page {
-  opacity: 0;
-  transition: opacity var(--duration-normal) var(--ease-standard);
-}
-
-.page.active {
-  opacity: 1;
-}
-
-/* Enhanced button styles for WhatsApp */
-.btn--whatsapp {
-  background: #25D366;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-8);
-}
-
-.btn--whatsapp:hover {
-  background: #128C7E;
-  color: white;
-}
-
-.btn--whatsapp::before {
-  content: "💬";
-  font-size: var(--font-size-lg);
-}
-
-.gallery {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px;
-  justify-content: center;
-}
-
-.gallery img {
-  width: 200px;
-  height: auto;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  border-color: #d4af37; /* gold */
-}
+document.querySelector('.zoom-modal__close').addEventListener('click', () => {
+  document.getElementById('zoom-modal').style.display = 'none';
+});
 
 
-/* ========== RESPONSIVE DESIGN ========== */
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  .navbar__menu {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-    background-color: var(--color-surface);
-    padding: var(--space-16);
-    border-top: 1px solid var(--color-border);
-  }
-
-  .navbar__menu.active {
-    display: flex;
-  }
-
-  .navbar__mobile-toggle {
-    display: block;
-    margin-left: auto;
-    cursor: pointer;
-  }
-
-  .navbar__mobile-toggle span {
-    display: block;
-    height: 3px;
-    width: 25px;
-    margin: 5px 0;
-    background-color: var(--color-text);
-  }
-
-  .product-detail__content {
-    flex-direction: column;
-  }
-
-  .product-gallery,
-  .product-info {
-    width: 100%;
-  }
-
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .shop-filters {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    gap: var(--space-16);
-  }
-
-  .btn--full-width {
-    width: 100%;
-  }
-}
-
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 99; 
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: var(--color-primary);
-  color: white;
-  cursor: pointer;
-  padding: 12px 16px;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease;
-  opacity: 0;
-  pointer-events: none;
-}
-
-#scrollToTopBtn:hover {
-  background-color: var(--color-primary-hover);
-}
-
-#scrollToTopBtn.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.shop-search-filter {
-  margin-bottom: 24px;
-}
-
-#product-search {
-  width: 100%;
-  max-width: 320px;
-  padding: 10px 16px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.2s ease;
-}
-
-#product-search:focus {
-  border-color: var(--color-primary);
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(33, 128, 141, 0.2);
-}
-
+// Export for global access
+window.router = router;
