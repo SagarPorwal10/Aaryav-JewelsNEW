@@ -7,8 +7,9 @@ const products = [
     id: 1,
     name: "Silver Chain",
     price: 299,
+    discount: 20,
     category: "bracelets",
-    soldOut: false,
+    soldOut: true,
     gender: "male",
     description: "Sleek and minimal silver chain designed for everyday sophistication. Crafted from high-quality sterling silver with a modern oval-link pattern.",
     detailedDescription: "This elegant silver chain blends timeless design with contemporary style. Meticulously crafted from 777 silver, the chain features polished oval links and a secure lobster clasp, making it perfect for both casual wear and formal occasions. Its unisex design ensures it complements any outfit, for any gender.",
@@ -30,6 +31,7 @@ const products = [
     id: 2,
     name: "Silver male bracelets",
     price: 299,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "male",
@@ -52,6 +54,7 @@ const products = [
     id: 3,
     name: "Silver male bracelets - 2",
     price: 299,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -74,6 +77,7 @@ const products = [
     id: 4,
     name: "Elegant Pink Sapphire Marquise Bracelet",
     price: 299,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -96,6 +100,7 @@ const products = [
     id: 5,
     name: "Lustrous Marquise-Link Diamond Bracelet",
     price: 299,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -118,6 +123,7 @@ const products = [
     id: 6,
     name: "Om(ॐ) Diamond-Bar Spiritual Bracelet",
     price: 299,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -141,6 +147,7 @@ const products = [
     id: 7,
     name: "Titan Classic Curb Chain Bracelet",
     price: 299,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "male",
@@ -187,6 +194,7 @@ const products = [
     id: 9,
     name: "Elegant Pink Sapphire floral Bracelet",
     price: 299,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "female",
@@ -232,6 +240,7 @@ const products = [
     id: 11,
     name: "Celestial Blue & White Gemstone Ring",
     price: 299,
+    discount: 20,
     category: "rings",
     soldOut: false,
     gender: "female",
@@ -254,6 +263,7 @@ const products = [
     id: 12,
     name: "Sculpted Culture Pavé Band",
     price: 299,
+    discount: 20,
     category: "rings",
     soldOut: true,
     gender: "female",
@@ -276,6 +286,7 @@ const products = [
     id: 13,
     name: "Sculpted Band",
     price: 299,
+    discount: 20,
     category: "rings",
     soldOut: true,
     gender: "female",
@@ -299,6 +310,7 @@ const products = [
     id: 14,
     name: "Textured Rope-Link Silver Chain",
     price: 349,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "unisex",
@@ -320,6 +332,7 @@ const products = [
     id: 15,
     name: "Textured Oval-Link Silver Chain",
     price: 349,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "unisex",
@@ -342,6 +355,7 @@ const products = [
     id: 16,
     name: "Minimalist Silver Chain",
     price: 399,
+    discount: 20,
     category: "necklaces",
     soldOut: false,
     gender: "female",
@@ -365,6 +379,7 @@ const products = [
     id: 17,
     name: "Eternal Sparkle Slim Diamond Band",
     price: 289,
+    discount: 20,
     category: "rings",
     soldOut: true,
     gender: "female",
@@ -386,6 +401,7 @@ const products = [
     id: 18,
     name: "GeoPulse Unisex Patterned Band",
     price: 199,
+    discount: 20,
     category: "rings",
     soldOut: false,
     gender: "unisex",
@@ -406,6 +422,7 @@ const products = [
     id: 19,
     name: "Heart of Grace Slim Diamond Band",
     price: 899,
+    discount: 20,
     category: "rings",
     soldOut: true,
     gender: "female",
@@ -447,6 +464,7 @@ const products = [
     id: 21,
     name: "Textured Rope-Link Silver Chain",
     price: 349,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "unisex",
@@ -467,6 +485,7 @@ const products = [
     id: 22,
     name: "Ram Silver Ring",
     price: 499,
+    discount: 20,
     category: "rings",
     soldOut: false,
     gender: "unisex",
@@ -489,6 +508,7 @@ const products = [
     id: 23,
     name: "Minimalist Silver Chain",
     price: 399,
+    discount: 20,
     category: "necklaces",
     soldOut: false,
     gender: "Male",
@@ -510,6 +530,7 @@ const products = [
     id: 24,
     name: "Pure Form Minimalist Silver Band",
     price: 199,
+    discount: 20,
     category: "rings",
     soldOut: false,
     gender: "unisex",
@@ -553,6 +574,7 @@ const products = [
   id: 26,
   name: "Legacy Flat-Link Silver Chain",
   price: 449,
+  discount: 20,
   category: "necklaces",
   soldOut: false,
   gender: "male",
@@ -580,6 +602,7 @@ const products = [
     id: 27,
     name: "Dominion Cuban Link Bracelet",
     price: 349,
+    discount: 20,
     category: "bracelets",
     soldOut: false,
     gender: "unisex",
@@ -601,6 +624,7 @@ const products = [
   id: 28,
   name: "Om Divine Silver Pendant",
   price: 279,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "unisex",
@@ -621,6 +645,7 @@ const products = [
   id: 29,
   name: "Khatu Shyam Devotional Pendant",
   price: 299,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "unisex",
@@ -641,6 +666,7 @@ const products = [
   id: 30,
   name: "Sparkling Silver Diamond Necklace",
   price: 4000,
+  discount: 20,
   category: "necklaces",
   soldOut: false,
   gender: "female",
@@ -661,6 +687,7 @@ const products = [
   id: 31,
   name: "Sterling Silver Snake Idol for Puja",
   price: 200,
+  discount: 20,
   category: "puja-saman",
   soldOut: false,
   gender: "unisex",
@@ -681,6 +708,7 @@ const products = [
   id: 32,
   name: "Gold-Plated Italian Silver Goat Pendant",
   price: 1599,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "unisex",
@@ -701,6 +729,7 @@ const products = [
   id: 33,
   name: "Italian Silver Butterfly Pendant",
   price: 1299,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -721,6 +750,7 @@ const products = [
   id: 34,
   name: "Italian Silver Lock & Key Pendant Set",
   price: 1499,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -743,6 +773,7 @@ const products = [
   id: 35,
   name: "Italian Silver Star Duo Pendant Set",
   price: 1499,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "unisex",
@@ -766,6 +797,7 @@ const products = [
   id: 36,
   name: "Italian Silver Infinity Loop Pendant",
   price: 1399,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -810,6 +842,7 @@ const products = [
   id: 38,
   name: "Convertible Magnetic Silver Pendant",
   price: 1799,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "unisex",
@@ -836,6 +869,7 @@ const products = [
   id: 39,
   name: "Minimalist Silver Threader Earrings",
   price: 649,
+  discount: 20,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -858,6 +892,7 @@ const products = [
   id: 40,
   name: "Hamsa Sparkle Drop Earrings",
   price: 899,
+  discount: 20,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -882,6 +917,7 @@ const products = [
   id: 41,
   name: "Hamsa Heart Drop Earrings",
   price: 899,
+  discount: 20,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -905,6 +941,7 @@ const products = [
   id: 42,
   name: "Parisian Charm Eiffel Tower Earrings",
   price: 749,
+  discount: 20,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -925,6 +962,7 @@ const products = [
   id: 43,
   name: "Radiant Bloom Silver Stud Set",
   price: 1499,
+  discount: 20,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -947,6 +985,7 @@ const products = [
   id: 44,
   name: "Heartfelt Sparkle Silver Pendant",
   price: 1699,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -972,6 +1011,7 @@ const products = [
   id: 45,
   name: "Enchanted Fairy Silver Pendant",
   price: 1899,
+  discount: 20,
   category: "pendants",
   soldOut: false,
   gender: "female",
@@ -995,6 +1035,7 @@ const products = [
   id: 46,
   name: "Floral Radiance Silver Studs",
   price: 1599,
+  discount: 20,
   category: "earrings",
   soldOut: false,
   gender: "female",
@@ -1017,6 +1058,7 @@ const products = [
   id: 47,
   name: "Moonlit Pearl Silver Set",
   price: 2199,
+  discount: 20,
   category: "sets",
   gender: "female",
   soldOut: false,
@@ -1040,6 +1082,7 @@ const products = [
   id: 48,
   name: "Retro Pop Enamel Huggie Earrings",
   price: 1399,
+  discount: 20,
   category: "earrings",
   soldOut: false,
   gender: "unisex",
@@ -1064,6 +1107,7 @@ const products = [
   id: 49,
   name: "Mystic Bloom Silver Necklace",
   price: 1599,
+  discount: 20,
   category: "necklaces",
   soldOut: false,
   gender: "female",
@@ -1087,6 +1131,7 @@ const products = [
   id: 50,
   name: "Celeste Teardrop Solitaire Necklace",
   price: 1799,
+  discount: 20,
   category: "necklaces",
   gender: "female",
   soldOut: false,
@@ -1220,25 +1265,63 @@ class Router {
     grid.innerHTML = filteredProducts.map(product => this.createProductCard(product)).join('');
   }
   
-  createProductCard(product) {
-    return `
-      <div class="product-card" onclick="router.navigateToProduct(${product.id})">
+  // createProductCard(product) {
+  //   return `
+  //   <div class="product-card ${product.soldOut ? 'sold-out' : ''}" onclick="router.navigateToProduct(${product.id})">
+  //     <img src="${product.images?.[0] || 'assets/default.png'}" alt="${product.name}" class="product-card__image">
+  //     ${product.soldOut ? `<div class="sold-out-overlay">Sold Out</div>` : ''}
+  //     <div class="product-card__content">
+  //       <h3 class="product-card__title">${product.name}</h3>
+  //       <div class="product-card__price">${product.price ? `₹${product.price}` : '—'}</div>
+  //       <p class="product-card__description">${product.description}</p>
+  //       <div class="product-card__tags">
+  //         <span class="product-tag">${product.category}</span>
+  //         <span class="product-tag">${product.gender}</span>
+  //       </div>
+  //       ${product.soldOut 
+  //         ? `<button class="btn btn--secondary btn--sm" disabled>Sold Out</button>`
+  //         : `<button class="btn btn--primary btn--sm" onclick="event.stopPropagation(); router.navigateToProduct(${product.id})">View Details</button>`}
+  //     </div>
+  //   </div>
+  //   `;
+  // }
+createProductCard(product) {
+  const discountBadge = product.discount 
+    ? `<div class="discount-badge">-${product.discount}%</div>` 
+    : "";
+
+  const finalPrice = product.discount 
+    ? Math.round(product.price * (1 - product.discount / 100)) 
+    : product.price;
+
+  const priceHTML = product.discount
+    ? `<div class="product-card__price"><span class="price-old">₹${product.price}</span> <span class="price-new">₹${finalPrice}</span></div>`
+    : `<div class="product-card__price">₹${product.price}</div>`;
+
+  return `
+    <div class="product-card ${product.soldOut ? 'sold-out' : ''}" onclick="router.navigateToProduct(${product.id})">
+      <div class="product-image-wrapper">
         <img src="${product.images?.[0] || 'assets/default.png'}" alt="${product.name}" class="product-card__image">
-        <div class="product-card__content">
-          <h3 class="product-card__title">${product.name}</h3>
-          <div class="product-card__price">₹${product.price}</div>
-          <p class="product-card__description">${product.description}</p>
-          <div class="product-card__tags">
-            <span class="product-tag">${product.category}</span>
-            <span class="product-tag">${product.gender}</span>
-          </div>
-          <button class="btn btn--primary btn--sm" onclick="event.stopPropagation(); router.navigateToProduct(${product.id})">
-            View Details
-          </button>
-        </div>
+        ${product.soldOut ? `<div class="sold-out-overlay">Sold Out</div>` : ''}
+        ${discountBadge}
       </div>
-    `;
-  }
+      <div class="product-card__content">
+        <h3 class="product-card__title">${product.name}</h3>
+        ${priceHTML}
+        <p class="product-card__description">${product.description}</p>
+        <div class="product-card__tags">
+          <span class="product-tag">${product.category}</span>
+          <span class="product-tag">${product.gender}</span>
+        </div>
+        ${product.soldOut 
+          ? `<button class="btn btn--secondary btn--sm" disabled>Sold Out</button>`
+          : `<button class="btn btn--primary btn--sm" onclick="event.stopPropagation(); router.navigateToProduct(${product.id})">View Details</button>`}
+      </div>
+    </div>
+  `;
+}
+
+
   
   navigateToProduct(productId) {
   window.location.hash = `product/${productId}`;
