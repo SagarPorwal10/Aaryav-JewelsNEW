@@ -5,9 +5,10 @@ const products = [
 
   {
     id: 1,
-    name: "Elegant Gold Chain Female",
+    name: "Silver Chain",
     price: 299,
     category: "bracelets",
+    soldOut: false,
     gender: "male",
     description: "Sleek and minimal silver chain designed for everyday sophistication. Crafted from high-quality sterling silver with a modern oval-link pattern.",
     detailedDescription: "This elegant silver chain blends timeless design with contemporary style. Meticulously crafted from 777 silver, the chain features polished oval links and a secure lobster clasp, making it perfect for both casual wear and formal occasions. Its unisex design ensures it complements any outfit, for any gender.",
@@ -27,9 +28,10 @@ const products = [
 
   {
     id: 2,
-    name: "Elegant Gold Chain Female",
-    // price: 299,
+    name: "Silver male bracelets",
+    price: 299,
     category: "bracelets",
+    soldOut: false,
     gender: "male",
     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from silver.",
     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
@@ -48,9 +50,10 @@ const products = [
 
   {
     id: 3,
-    name: "Elegant Gold Chain Female",
+    name: "Silver male bracelets - 2",
     price: 299,
     category: "bracelets",
+    soldOut: false,
     gender: "female",
     description: "A refined silver bracelet adorned with brilliant-cut diamonds set in square links. Crafted for elegant evenings and timeless sophistication.",
     detailedDescription: "Elevate your jewelry collection with this stunning silver bracelet featuring five dazzling square-shaped links, each encrusted with radiant-cut diamonds. Meticulously set in sterling silver, the bracelet strikes a perfect balance between contemporary design and classic luxury. Its adjustable length and secure clasp offer both comfort and beauty, ideal for formal occasions or as a statement accessory.",
@@ -72,6 +75,7 @@ const products = [
     name: "Elegant Pink Sapphire Marquise Bracelet",
     price: 299,
     category: "bracelets",
+    soldOut: false,
     gender: "female",
     description: "A delicate silver bracelet featuring alternating marquise links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
     detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
@@ -91,8 +95,9 @@ const products = [
   {
     id: 5,
     name: "Lustrous Marquise-Link Diamond Bracelet",
-    // price: 299,
+    price: 299,
     category: "bracelets",
+    soldOut: false,
     gender: "female",
     description: "A luminous silver bracelet featuring a continuous design of diamond-studded marquise links. Pure elegance with a modern silhouette.",
     detailedDescription: "Radiating refined sophistication, this sterling silver bracelet showcases an elegant chain of open marquise-shaped links, each delicately encrusted with sparkling cubic zirconia. The design flows gracefully across the wrist, offering timeless charm with a hint of modern luxury. Its adjustable extension and secure lobster clasp ensure a flawless fit for any occasion—from casual elegance to formal glamour.",
@@ -114,6 +119,7 @@ const products = [
     name: "Om(ॐ) Diamond-Bar Spiritual Bracelet",
     price: 299,
     category: "bracelets",
+    soldOut: false,
     gender: "female",
     description: "A bold and spiritual bracelet featuring an 'Om' symbol at the center of a shimmering pavé diamond bar. Perfect harmony of style and meaning.",
     detailedDescription: "Channel spiritual energy and sophisticated style with this refined bracelet featuring a sleek bar design paved with rows of dazzling cubic zirconia. At the center lies a black enamel 'Om' symbol, symbolizing peace, protection, and cosmic power. The polished sterling silver frame is matched with an adjustable drawstring chain, ensuring comfort and a secure fit. A meaningful accessory that blends tradition with contemporary fashion—ideal for personal wear or a thoughtful gift.",
@@ -136,6 +142,7 @@ const products = [
     name: "Titan Classic Curb Chain Bracelet",
     price: 299,
     category: "bracelets",
+    soldOut: false,
     gender: "male",
     description: "A timeless silver curb chain bracelet that speaks of strength and subtle style. A staple accessory for the modern man.",
     detailedDescription: "Engineered for everyday elegance, this masculine bracelet features a bold, polished curb chain crafted from durable stainless steel. The sleek interlocking links provide a strong yet flexible feel, while the triangular-end clasp detail adds a distinctive modern touch. Whether worn solo or layered with a watch, the Titan Classic bracelet is a statement in simplicity and style—perfect for casual and formal ensembles alike.",
@@ -181,6 +188,7 @@ const products = [
     name: "Elegant Pink Sapphire floral Bracelet",
     price: 299,
     category: "bracelets",
+    soldOut: false,
     gender: "female",
     description: "A delicate silver bracelet featuring floral links and vibrant pink sapphires. Designed to embody grace and romantic charm.",
     detailedDescription: "Grace your wrist with this enchanting silver bracelet, beautifully set with luminous pink sapphire stones alternated between sparkling pavé marquise-shaped links. Crafted in high-quality sterling silver, each gemstone is precision-set to maximize brilliance and elegance. With a secure lobster clasp and adjustable chain, this bracelet is perfect for both everyday sophistication and special evening moments.",
@@ -225,6 +233,7 @@ const products = [
     name: "Celestial Blue & White Gemstone Ring",
     price: 299,
     category: "rings",
+    soldOut: false,
     gender: "female",
     description: "A graceful silver ring featuring alternating vivid blue and white stones. A symbol of elegance with a celestial touch.",
     detailedDescription: "Capture the night sky's allure with this delicate silver ring, showcasing a captivating sequence of alternating royal blue and brilliant white gemstones. The round-cut stones are prong-set for maximum sparkle, each one carefully selected for clarity and color balance. Ideal as a promise ring, anniversary gift, or stackable statement piece, this band embodies refined femininity and timeless charm.",
@@ -244,8 +253,9 @@ const products = [
   {
     id: 12,
     name: "Sculpted Culture Pavé Band",
-    // price: 299,
+    price: 299,
     category: "rings",
+    soldOut: true,
     gender: "female",
     description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
     detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
@@ -267,6 +277,7 @@ const products = [
     name: "Sculpted Band",
     price: 299,
     category: "rings",
+    soldOut: true,
     gender: "female",
     description: "A sleek silver band featuring a delicately carved design. Designed for bold elegance and modern refinement.",
     detailedDescription: "This stunning silver ring showcases a contemporary band design highlighted by the art of a silversmith. The precision-cut facets catch the light beautifully, offering a radiant shimmer from every angle. Crafted from high-quality sterling silver, this unisex piece delivers durability and sophisticated edge—ideal for special events or upscale daily wear.",
@@ -289,6 +300,7 @@ const products = [
     name: "Textured Rope-Link Silver Chain",
     price: 349,
     category: "bracelets",
+    soldOut: false,
     gender: "unisex",
     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
@@ -309,6 +321,7 @@ const products = [
     name: "Textured Oval-Link Silver Chain",
     price: 349,
     category: "bracelets",
+    soldOut: false,
     gender: "unisex",
     description: "Distinctive silver chain featuring Oval-style links for a bold and intricate look. Made from 777 silver.",
     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
@@ -330,6 +343,7 @@ const products = [
     name: "Minimalist Silver Chain",
     price: 399,
     category: "necklaces",
+    soldOut: false,
     gender: "female",
     description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
     detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
@@ -352,6 +366,7 @@ const products = [
     name: "Eternal Sparkle Slim Diamond Band",
     price: 289,
     category: "rings",
+    soldOut: true,
     gender: "female",
     description: "A sleek silver band featuring a single row of shimmering artificial diamonds at its center. Elegant, minimal, and radiant.",
     detailedDescription: "Add a touch of refined brilliance to your everyday look with this slender sterling silver ring. At the heart of the design lies a continuous line of high-grade artificial diamonds, precisely set to create a seamless circle of sparkle. Perfect as a promise ring, stacking band, or solo statement, this ring combines timeless style with modern simplicity. Lightweight yet dazzling, it’s crafted for lasting comfort and shine.",
@@ -372,6 +387,7 @@ const products = [
     name: "GeoPulse Unisex Patterned Band",
     price: 199,
     category: "rings",
+    soldOut: false,
     gender: "unisex",
     description: "A bold unisex ring featuring a continuous pattern engraved around a brushed silver band. Built for those who move with rhythm and intention.",
     detailedDescription: "The GeoPulse Band redefines minimalism with a modern industrial edge. Crafted from durable sterling silver, this unisex ring showcases a repeating motif, precision-etched along the center of a matte-finished surface. The clean, structured design evokes balance, rhythm, and purpose—making it a standout piece for everyday wear or meaningful gifting. Designed for comfort with a slightly curved inner edge.",
@@ -391,6 +407,7 @@ const products = [
     name: "Heart of Grace Slim Diamond Band",
     price: 899,
     category: "rings",
+    soldOut: true,
     gender: "female",
     description: "A delicate sterling silver ring adorned with a line of white artificial diamonds and a single red heart centerpiece—symbolizing love, strength, and elegance.",
     detailedDescription: "Celebrate timeless beauty and heartfelt sentiment with this finely crafted slim band. Designed in sterling silver, the ring features a continuous line of sparkling white diamond simulants, accented by a single radiant red heart-shaped stone at the center. The contrast of color draws the eye and adds emotional depth—perfect as a promise ring, anniversary token, or elegant daily wear. Lightweight, feminine, and full of meaning.",
@@ -431,6 +448,7 @@ const products = [
     name: "Textured Rope-Link Silver Chain",
     price: 349,
     category: "bracelets",
+    soldOut: false,
     gender: "unisex",
     description: "Distinctive silver chain featuring twisted rope-style links for a bold and intricate look. Made from premium sterling silver.",
     detailedDescription: "Crafted for those who appreciate statement pieces, this silver chain boasts twisted rope-style links that add texture and depth. The intricate design is both classic and contemporary, perfect for everyday wear or special occasions. With its secure lobster clasp and durable construction, it’s a versatile piece suitable for any gender.",
@@ -450,6 +468,7 @@ const products = [
     name: "Ram Silver Ring",
     price: 499,
     category: "rings",
+    soldOut: false,
     gender: "unisex",
     description: "A bold sterling silver Ram Challa ring engraved with sacred symbolism. A timeless expression of strength, devotion, and tradition.",
     detailedDescription: "Rooted in tradition and crafted with precision, the Ram Challa ring carries a powerful message of faith and inner strength. Made from solid sterling silver, the ring features a clean, polished surface with intricate engravings of the word 'राम' (Ram) across its band. Revered for its spiritual significance, this unisex ring is a tribute to the divine and a reflection of unwavering resolve. Perfect for daily wear, rituals, or as a meaningful gift.",
@@ -471,6 +490,7 @@ const products = [
     name: "Minimalist Silver Chain",
     price: 399,
     category: "necklaces",
+    soldOut: false,
     gender: "Male",
     description: "A sleek and timeless sterling silver chain designed for effortless everyday elegance.",
     detailedDescription: "Embrace understated sophistication with this minimalist sterling silver chain. Featuring a fine yet durable link construction, this necklace is ideal for layering or wearing solo as a subtle statement. Its polished finish and secure lobster clasp closure ensure both comfort and classic appeal. Perfect for both men and women, this piece transitions seamlessly from casual wear to more refined settings.",
@@ -491,6 +511,7 @@ const products = [
     name: "Pure Form Minimalist Silver Band",
     price: 199,
     category: "rings",
+    soldOut: false,
     gender: "unisex",
     description: "A sleek and minimal sterling silver ring designed for everyday elegance. Understated. Timeless. Essential.",
     detailedDescription: "Celebrate the beauty of simplicity with the Pure Form Minimalist Band. Crafted from high-quality 925 sterling silver, this ultra-slim ring features a smooth, polished surface with a low-profile silhouette. Whether worn solo, stacked, or paired with statement pieces, it effortlessly complements any style. Perfect for those who appreciate clean lines and quiet sophistication.",
@@ -533,6 +554,7 @@ const products = [
   name: "Legacy Flat-Link Silver Chain",
   price: 449,
   category: "necklaces",
+  soldOut: false,
   gender: "male",
   description: "A long flat-link chain crafted from silver. Bold, sleek, and designed for timeless confidence.",
   detailedDescription: "Crafted for those who appreciate understated luxury, the Legacy Flat-Link Chain combines length, weight, and clean design in one powerful accessory. Made from 777 silver, this long chain features flat, close-set links that drape comfortably across the chest. The smooth reflective surface and substantial feel make it a perfect standalone piece or ideal layering base. Built to last, made to stand out.",
@@ -557,8 +579,9 @@ const products = [
  {
     id: 27,
     name: "Dominion Cuban Link Bracelet",
-    // price: 349,
+    price: 349,
     category: "bracelets",
+    soldOut: false,
     gender: "unisex",
     description: "A bold Cuban link bracelet crafted from 777 silver. Rugged elegance with undeniable street style influence.",
     detailedDescription: "The Dominion Cuban Link Bracelet brings classic strength and style together in one iconic piece. Handcrafted from solid 777 silver, its tightly interlocked links offer a thick, heavy feel and unmistakable shine. The bracelet is finished with a secure box clasp, ensuring durability for everyday wear. Whether worn solo or stacked, this Cuban link delivers presence, power, and polish—ideal for men who move with confidence.",
@@ -579,6 +602,7 @@ const products = [
   name: "Om Divine Silver Pendant",
   price: 279,
   category: "pendants",
+  soldOut: false,
   gender: "unisex",
   description: "A spiritual Om pendant handcrafted in 925 silver. Symbolic serenity in a refined, radiant form.",
   detailedDescription: "Channel peace and purpose with the Om Divine Silver Pendant. Expertly crafted in 925 sterling silver, this pendant features a finely detailed Om symbol — representing universal energy and inner calm. Its smooth, high-polish surface adds a contemporary touch to this timeless spiritual icon. Whether worn close to the heart or gifted as a meaningful token, the Om Divine Pendant balances style with soulful significance.",
@@ -598,6 +622,7 @@ const products = [
   name: "Khatu Shyam Devotional Pendant",
   price: 299,
   category: "pendants",
+  soldOut: false,
   gender: "unisex",
   description: "A divine Khatu Shyam pendant in 925 silver. Crafted with reverence for spiritual devotion and timeless elegance.",
   detailedDescription: "Embrace divine blessings with the Khatu Shyam Devotional Pendant. Handcrafted from pure 925 sterling silver, this pendant features an intricately carved image of Lord Shyam, revered as the God of faith and sacrifice. The pendant is designed with a radiant finish that enhances its spiritual aura and visual appeal. Whether worn daily or on special religious occasions, this pendant serves as a constant source of strength, devotion, and grace.",
@@ -617,6 +642,7 @@ const products = [
   name: "Sparkling Silver Diamond Necklace",
   price: 4000,
   category: "necklaces",
+  soldOut: false,
   gender: "female",
   description: "Elegant sterling silver necklace adorned with shimmering artificial diamonds. Perfect for parties, weddings, or everyday glam.",
   detailedDescription: "This sparkling silver necklace features high-quality AAA-grade artificial diamonds intricately set in a 925 sterling silver base. With its delicate design and brilliant shine, it's an ideal accessory for women who love timeless beauty without the high cost. Lightweight, hypoallergenic, and beautifully finished, it’s perfect for gifting or adding a touch of luxury to any outfit.",
@@ -636,6 +662,7 @@ const products = [
   name: "Sterling Silver Snake Idol for Puja",
   price: 200,
   category: "puja-saman",
+  soldOut: false,
   gender: "unisex",
   description: "A finely crafted sterling silver snake idol, ideal for Nag Panchami, Shiva Puja, and other religious rituals.",
   detailedDescription: "This sacred snake idol is handcrafted from pure 925 sterling silver and symbolizes Nag Devta, often worshipped during Nag Panchami and other Hindu rituals. Designed with intricate detailing, this piece holds spiritual significance and is ideal for temple setups or home altars. It’s a perfect puja saman for devotees who value traditional worship with purity and elegance.",
@@ -655,6 +682,7 @@ const products = [
   name: "Gold-Plated Italian Silver Goat Pendant",
   price: 1599,
   category: "pendants",
+  soldOut: false,
   gender: "unisex",
   description: "Charming gold-plated goat pendant crafted from Italian 92.5 silver. A unique blend of tradition, symbolism, and style.",
   detailedDescription: "This handcrafted lightweight pendant showcases a tiny goat motif, symbolizing strength and determination. Made from premium 92.5 sterling silver with rich Italian craftsmanship and a high-quality gold plating, this piece stands out with its minimalist yet artistic design. Ideal for spiritual wearers, animal lovers, or those who appreciate unique symbolic jewelry. Can be paired with a silver or gold-plated chain.",
@@ -674,6 +702,7 @@ const products = [
   name: "Italian Silver Butterfly Pendant",
   price: 1299,
   category: "pendants",
+  soldOut: false,
   gender: "female",
   description: "Delicate butterfly pendant crafted in 92.5 sterling silver with fine silver plating. Lightweight, elegant, and full of grace.",
   detailedDescription: "This elegant pendant features a beautifully detailed butterfly, symbolizing transformation, hope, and beauty. Expertly crafted in Italy from 92.5 sterling silver and finished with high-polish silver plating, the design is lightweight yet eye-catching. Perfect for everyday wear or as a meaningful gift, this pendant is ideal for women who love subtle charm with symbolic depth.",
@@ -693,6 +722,7 @@ const products = [
   name: "Italian Silver Lock & Key Pendant Set",
   price: 1499,
   category: "pendants",
+  soldOut: false,
   gender: "female",
   description: "Stylish lock and key pendants crafted in 92.5 sterling silver with sleek silver plating. A modern symbol of connection and trust.",
   detailedDescription: "This Italian-crafted pendant set features a beautifully detailed lock and matching key, representing love, security, and hidden meanings. Made from lightweight 92.5 sterling silver with a polished silver-plated finish, this duo can be worn together or shared between two people. Perfect as a gift for couples, best friends, or anyone who values unique, meaningful jewelry.",
@@ -714,6 +744,7 @@ const products = [
   name: "Italian Silver Star Duo Pendant Set",
   price: 1499,
   category: "pendants",
+  soldOut: false,
   gender: "unisex",
   description: "Minimalist star pendant set crafted in 92.5 sterling silver with a refined Italian silver finish. A perfect symbol of dreams, guidance, and light.",
   detailedDescription: "This graceful pendant set features two interlinked star designs—one solid, one hollow—symbolizing hope and harmony. Crafted in lightweight 92.5 sterling silver with sleek silver plating, the pieces can be worn together as one or shared as matching symbols of connection. A beautiful gift for couples, close friends, or anyone who believes in following their inner light. Designed with Italian craftsmanship and delicate detailing.",
@@ -736,6 +767,7 @@ const products = [
   name: "Italian Silver Infinity Loop Pendant",
   price: 1399,
   category: "pendants",
+  soldOut: false,
   gender: "female",
   description: "Elegant infinity loop pendant made with 92.5 sterling silver and Italian silver plating. A timeless symbol of love, unity, and eternity.",
   detailedDescription: "This graceful pendant showcases the iconic infinity symbol, crafted with precision from 92.5 sterling silver and polished with a lustrous silver-plated finish. Lightweight and versatile, it embodies eternal love, endless possibilities, and inner balance. Perfect as a thoughtful gift or a daily reminder of meaningful bonds, this Italian-style design blends minimalism with deep symbolism.",
@@ -752,33 +784,34 @@ const products = [
   ]
 },
  {
-  "id": 37,
-  "name": "Crimson Elegance Drop Earrings",
-  "price": 799,
-  "category": "earrings",
-  "gender": "female",
-  "description": "Delicate long-drop earrings featuring a red crystal bead, silver bow accent, and minimalist oval hoop for a bold yet graceful statement.",
-  "detailedDescription": "These sophisticated drop earrings combine charm and modern design. Featuring a shimmering silver bow, vibrant red bead, and textured oval hoop with a sleek trailing chain, they’re perfect for both festive occasions and elegant evenings. Lightweight yet eye-catching, they offer a perfect balance of color and movement, making them a standout accessory for any wardrobe.",
-  "specifications": {
+  id: 37,
+  name: "Crimson Elegance Drop Earrings",
+  price: 799,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Delicate long-drop earrings featuring a red crystal bead, silver bow accent, and minimalist oval hoop for a bold yet graceful statement.",
+  detailedDescription: "These sophisticated drop earrings combine charm and modern design. Featuring a shimmering silver bow, vibrant red bead, and textured oval hoop with a sleek trailing chain, they’re perfect for both festive occasions and elegant evenings. Lightweight yet eye-catching, they offer a perfect balance of color and movement, making them a standout accessory for any wardrobe.",
+  specifications: {
     "Material": "Alloy with Silver Polish",
     "Accents": "Red Crystal Beads, Silver Bow",
     "Length": "3.8 inches",
     "Weight": "2.6g (each)",
     "Care": "Keep in dry storage; avoid moisture, perfumes, and chemicals"
   },
-  "images": [
+  images: [
     "assets/IMG20250621214227.jpg",
     "assets/image_15.png",
     "assets/image_16.png"
    
   ]
 },
-
 {
   id: 38,
   name: "Convertible Magnetic Silver Pendant",
   price: 1799,
   category: "pendants",
+  soldOut: false,
   gender: "unisex",
   description: "Innovative magnetic pendant crafted in 92.5 sterling silver with Italian-style silver plating. Wear it as one or share it as two.",
   detailedDescription: "This convertible magnetic pendant features a clever two-piece design that clicks together seamlessly using hidden magnets. Crafted from 92.5 sterling silver and plated with a high-gloss silver finish, it's perfect for expressing connection, love, or duality. Can be worn as a single statement piece or split into two for couples or close friends. Lightweight, modern, and meaningful — a perfect blend of art and sentiment.",
@@ -800,35 +833,37 @@ const products = [
   ]
 },
  {
-  "id": 39,
-  "name": "Minimalist Silver Threader Earrings",
-  "price": 649,
-  "category": "earrings",
-  "gender": "female",
-  "description": "Sleek and lightweight silver threader earrings crafted for a subtle, modern look. Perfect for everyday elegance.",
-  "detailedDescription": "These ultra-light silver threader earrings feature a fine beaded chain that offers graceful movement and understated sophistication. Designed for modern minimalists, they add a touch of elegance without overpowering your look. Whether worn solo or paired with layered accessories, these earrings blend seamlessly with both casual and formal styles.",
-  "specifications": {
+  id: 39,
+  name: "Minimalist Silver Threader Earrings",
+  price: 649,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Sleek and lightweight silver threader earrings crafted for a subtle, modern look. Perfect for everyday elegance.",
+  detailedDescription: "These ultra-light silver threader earrings feature a fine beaded chain that offers graceful movement and understated sophistication. Designed for modern minimalists, they add a touch of elegance without overpowering your look. Whether worn solo or paired with layered accessories, these earrings blend seamlessly with both casual and formal styles.",
+  specifications: {
     "Material": "Alloy with 92.5 Silver Polish",
     "Design": "Beaded Chain Threader",
     "Length": "4 inches",
     "Weight": "1.8g (each)",
     "Care": "Avoid moisture, perfume, and chemicals; store separately in a soft pouch"
   },
-  "images": [
+  images: [
     "assets/IMG20250621214110.jpg",
     "assets/image_35.png",
     "assets/image_36.png"
   ]
 },
  {
-  "id": 40,
-  "name": "Hamsa Sparkle Drop Earrings",
-  "price": 899,
-  "category": "earrings",
-  "gender": "female",
-  "description": "Protective Hamsa drop earrings embellished with cubic zirconia and sleek silver bars. A perfect fusion of charm and elegance.",
-  "detailedDescription": "Channel elegance and spiritual symbolism with these stunning Hamsa drop earrings. The intricately designed Hamsa hand, encrusted with dazzling cubic zirconia and a central black crystal, symbolizes protection and good fortune. A slender polished silver bar elegantly extends below, creating a modern silhouette that’s both refined and meaningful. Ideal for festive wear, gifting, or everyday glamour with a touch of mystique.",
-  "specifications": {
+  id: 40,
+  name: "Hamsa Sparkle Drop Earrings",
+  price: 899,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Protective Hamsa drop earrings embellished with cubic zirconia and sleek silver bars. A perfect fusion of charm and elegance.",
+  detailedDescription: "Channel elegance and spiritual symbolism with these stunning Hamsa drop earrings. The intricately designed Hamsa hand, encrusted with dazzling cubic zirconia and a central black crystal, symbolizes protection and good fortune. A slender polished silver bar elegantly extends below, creating a modern silhouette that’s both refined and meaningful. Ideal for festive wear, gifting, or everyday glamour with a touch of mystique.",
+  specifications: {
     "Material": "Alloy with 92.5 Silver Polish",
     "Accents": "Cubic Zirconia & Black Crystal",
     "Length": "3.5 inches",
@@ -836,7 +871,7 @@ const products = [
     "Symbolism": "Hamsa Hand – Protection, Strength, and Blessings",
     "Care": "Avoid contact with moisture, perfumes, and sharp objects; store in a dry pouch"
   },
-  "images": [
+  images: [
     "assets/IMG20250621214010.jpg",
     "assets/image_32.png",
     "assets/image_33.png"
@@ -844,14 +879,15 @@ const products = [
   ]
 },
  {
-  "id": 41,
-  "name": "Hamsa Heart Drop Earrings",
-  "price": 899,
-  "category": "earrings",
-  "gender": "female",
-  "description": "Elegant Hamsa drop earrings adorned with a heart-shaped crystal and cubic zirconia, finished with sleek silver bars. A blend of love and protection.",
-  "detailedDescription": "Infused with both charm and symbolism, these Hamsa drop earrings feature a heart-shaped center crystal in place of the traditional eye, representing love, care, and emotional strength. Surrounded by fine cubic zirconia and finished with a slender polished silver bar, the design exudes grace and modern spirituality. Perfect for romantic gifts or as a stylish talisman for self-love and balance.",
-  "specifications": {
+  id: 41,
+  name: "Hamsa Heart Drop Earrings",
+  price: 899,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Elegant Hamsa drop earrings adorned with a heart-shaped crystal and cubic zirconia, finished with sleek silver bars. A blend of love and protection.",
+  detailedDescription: "Infused with both charm and symbolism, these Hamsa drop earrings feature a heart-shaped center crystal in place of the traditional eye, representing love, care, and emotional strength. Surrounded by fine cubic zirconia and finished with a slender polished silver bar, the design exudes grace and modern spirituality. Perfect for romantic gifts or as a stylish talisman for self-love and balance.",
+  specifications: {
     "Material": "Alloy with 92.5 Silver Polish",
     "Accents": "Cubic Zirconia & Heart Crystal",
     "Length": "3.5 inches",
@@ -859,40 +895,42 @@ const products = [
     "Symbolism": "Hamsa Hand with Heart – Love, Protection, and Harmony",
     "Care": "Avoid contact with moisture, perfumes, and sharp objects; store in a dry pouch"
   },
-  "images": [
+  images: [
     "assets/IMG20250621213921.jpg",
     "assets/image_30.png",
     "assets/image_31.png"
   ]
 },
   {
-  "id": 42,
-  "name": "Parisian Charm Eiffel Tower Earrings",
-  "price": 749,
-  "category": "earrings",
-  "gender": "female",
-  "description": "Romantic drop earrings featuring the Eiffel Tower charm, symbolizing travel, love, and timeless elegance.",
-  "detailedDescription": "Embrace the spirit of Paris with these stylish Eiffel Tower earrings. Crafted with delicate detail and a polished silver finish, these drops capture the magic of love, dreams, and wanderlust. Lightweight and charming, they’re perfect for romantics at heart or as a token of your love for adventure. Whether for a travel lover or as a personal keepsake, these earrings bring a touch of Europe to every outfit.",
-  "specifications": {
+  id: 42,
+  name: "Parisian Charm Eiffel Tower Earrings",
+  price: 749,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Romantic drop earrings featuring the Eiffel Tower charm, symbolizing travel, love, and timeless elegance.",
+  detailedDescription: "Embrace the spirit of Paris with these stylish Eiffel Tower earrings. Crafted with delicate detail and a polished silver finish, these drops capture the magic of love, dreams, and wanderlust. Lightweight and charming, they’re perfect for romantics at heart or as a token of your love for adventure. Whether for a travel lover or as a personal keepsake, these earrings bring a touch of Europe to every outfit.",
+  specifications: {
     "Material": "Alloy with Silver Polish",
     "Charm": "Miniature Eiffel Tower",
     "Length": "2.8 inches",
     "Weight": "2.1g (each)",
     "Care": "Keep away from moisture and perfume; store in a dry, padded pouch"
   },
-  "images": [
-    "assets/image_34.jpg"
+  images: [
+    "assets/image_34.png"
   ]
 },
 {
-  "id": 43,
-  "name": "Radiant Bloom Silver Stud Set",
-  "price": 1499,
-  "category": "earrings",
-  "gender": "female",
-  "description": "Elegant floral-inspired stud set crafted in 92.5 sterling silver with pavé-set cubic zirconia. Three sizes, endless styling possibilities.",
-  "detailedDescription": "This beautifully designed stud set features three radiant flower/starburst-shaped earrings in varying sizes, each meticulously crafted from 92.5 sterling silver. Embellished with sparkling pavé-set cubic zirconia, these versatile studs are perfect for single, double, or triple lobe piercings. Whether you wear them as a matching set or mix and match for a layered look, they bring a touch of brilliance and charm to any ensemble. Lightweight, hypoallergenic, and ideal for everyday elegance or special occasions.",
-  "specifications": {
+  id: 43,
+  name: "Radiant Bloom Silver Stud Set",
+  price: 1499,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Elegant floral-inspired stud set crafted in 92.5 sterling silver with pavé-set cubic zirconia. Three sizes, endless styling possibilities.",
+  detailedDescription: "This beautifully designed stud set features three radiant flower/starburst-shaped earrings in varying sizes, each meticulously crafted from 92.5 sterling silver. Embellished with sparkling pavé-set cubic zirconia, these versatile studs are perfect for single, double, or triple lobe piercings. Whether you wear them as a matching set or mix and match for a layered look, they bring a touch of brilliance and charm to any ensemble. Lightweight, hypoallergenic, and ideal for everyday elegance or special occasions.",
+  specifications: {
     "Material": "92.5 Sterling Silver with Cubic Zirconia",
     "Finish": "High Polish with Pavé Detailing",
     "Weight": "3.2g (combined)",
@@ -900,20 +938,21 @@ const products = [
     "Back Type": "Butterfly Push-Back",
     "Care": "Store in a dry place; avoid contact with perfume or water; clean gently with a silver cloth"
   },
-  "images": [
+  images: [
     "assets/image_42.png",
     "assets/image_43.png"
   ]
 },
  {
-  "id": 44,
-  "name": "Heartfelt Sparkle Silver Pendant",
-  "price": 1699,
-  "category": "pendants",
-  "gender": "female",
-  "description": "A delicate heart-shaped pendant in 92.5 sterling silver with a shimmering white CZ finish and a single red heart accent. A symbol of love, forever.",
-  "detailedDescription": "Crafted with care and elegance, the Heartfelt Sparkle Pendant captures timeless love in a modern form. Made from premium 92.5 sterling silver and encrusted with white cubic zirconia stones, this dainty heart pendant stands out with a bold red heart centerpiece. Perfect as a gift or a personal keepsake, it represents affection, warmth, and enduring bonds. The fine Italian-style glossy silver plating enhances its brilliance, making it suitable for both everyday wear and special occasions.",
-  "specifications": {
+  id: 44,
+  name: "Heartfelt Sparkle Silver Pendant",
+  price: 1699,
+  category: "pendants",
+  soldOut: false,
+  gender: "female",
+  description: "A delicate heart-shaped pendant in 92.5 sterling silver with a shimmering white CZ finish and a single red heart accent. A symbol of love, forever.",
+  detailedDescription: "Crafted with care and elegance, the Heartfelt Sparkle Pendant captures timeless love in a modern form. Made from premium 92.5 sterling silver and encrusted with white cubic zirconia stones, this dainty heart pendant stands out with a bold red heart centerpiece. Perfect as a gift or a personal keepsake, it represents affection, warmth, and enduring bonds. The fine Italian-style glossy silver plating enhances its brilliance, making it suitable for both everyday wear and special occasions.",
+  specifications: {
     "Material": "92.5 Sterling Silver with Silver Plating",
     "Stones": "White and Red Cubic Zirconia",
     "Finish": "Glossy Italian Silver",
@@ -922,7 +961,7 @@ const products = [
     "Chain Compatibility": "Fits standard chains up to 3mm",
     "Care": "Avoid moisture and harsh chemicals; store in a dry, padded box; clean gently with soft cloth"
   },
-  "images": [
+  images: [
     "assets/image_40.png",
     "assets/image_41.png"
   ]
@@ -930,14 +969,15 @@ const products = [
 
 
 {
-  "id": 45,
-  "name": "Enchanted Fairy Silver Pendant",
-  "price": 1899,
-  "category": "pendants",
-  "gender": "female",
-  "description": "Whimsical fairy pendant crafted in 92.5 sterling silver with shimmering wings and magical detail. A symbol of wonder and grace.",
-  "detailedDescription": "Step into a world of fantasy with the Enchanted Fairy Pendant — a charming piece that captures the essence of dreams and magic. Handcrafted in 92.5 sterling silver and finished with a luminous Italian silver gloss, this pendant features a graceful fairy with outstretched, winged elegance. Delicate white CZ stones embellish her wings, reflecting light like morning dew. Ideal for dreamers, storytellers, or anyone drawn to the mystical, it’s a wearable reminder of belief in the beautiful and unseen.",
-  "specifications": {
+  id: 45,
+  name: "Enchanted Fairy Silver Pendant",
+  price: 1899,
+  category: "pendants",
+  soldOut: false,
+  gender: "female",
+  description: "Whimsical fairy pendant crafted in 92.5 sterling silver with shimmering wings and magical detail. A symbol of wonder and grace.",
+  detailedDescription: "Step into a world of fantasy with the Enchanted Fairy Pendant — a charming piece that captures the essence of dreams and magic. Handcrafted in 92.5 sterling silver and finished with a luminous Italian silver gloss, this pendant features a graceful fairy with outstretched, winged elegance. Delicate white CZ stones embellish her wings, reflecting light like morning dew. Ideal for dreamers, storytellers, or anyone drawn to the mystical, it’s a wearable reminder of belief in the beautiful and unseen.",
+  specifications: {
     "Material": "92.5 Sterling Silver",
     "Finish": "Glossy Italian Silver",
     "Stones": "White Cubic Zirconia on Wings",
@@ -946,20 +986,21 @@ const products = [
     "Chain Compatibility": "Fits chains up to 3mm",
     "Care": "Avoid water and chemicals; clean gently with a soft cloth; store in a cool, dry place"
   },
-  "images": [
+  images: [
     "assets/image_44.png",
     "assets/image_45.png"
   ]
 },
  {
-  "id": 46,
-  "name": "Floral Radiance Silver Studs",
-  "price": 1599,
-  "category": "earrings",
-  "gender": "female",
-  "description": "Elegant floral silver studs crafted in 92.5 sterling silver with glittering cubic zirconia petals. Nature’s grace, captured in shine.",
-  "detailedDescription": "Inspired by blooming daisies and sunbursts, the Floral Radiance Studs bring a touch of nature’s joy to your jewelry box. Crafted in high-quality 92.5 sterling silver, each earring features a radiant floral design with pavé-set white cubic zirconia on every petal, surrounding a smooth silver dome at the center. Lightweight yet striking, they’re perfect for everyday wear or a sparkling accent to elevate your look. A delicate expression of femininity and natural beauty.",
-  "specifications": {
+  id: 46,
+  name: "Floral Radiance Silver Studs",
+  price: 1599,
+  category: "earrings",
+  soldOut: false,
+  gender: "female",
+  description: "Elegant floral silver studs crafted in 92.5 sterling silver with glittering cubic zirconia petals. Nature’s grace, captured in shine.",
+  detailedDescription: "Inspired by blooming daisies and sunbursts, the Floral Radiance Studs bring a touch of nature’s joy to your jewelry box. Crafted in high-quality 92.5 sterling silver, each earring features a radiant floral design with pavé-set white cubic zirconia on every petal, surrounding a smooth silver dome at the center. Lightweight yet striking, they’re perfect for everyday wear or a sparkling accent to elevate your look. A delicate expression of femininity and natural beauty.",
+  specifications: {
     "Material": "92.5 Sterling Silver with Cubic Zirconia",
     "Finish": "Glossy Pavé Finish",
     "Weight": "3.5g (pair)",
@@ -967,20 +1008,21 @@ const products = [
     "Back Type": "Secure Butterfly Push-Back",
     "Care": "Store away from moisture and perfumes; clean with a soft silver cloth"
   },
-  "images": [
+  images: [
     "assets/image_50.png",
     "assets/image_52.png"
   ]
 },
  {
-  "id": 47,
-  "name": "Moonlit Pearl Silver Set",
-  "price": 2199,
-  "category": "sets",
-  "gender": "female",
-  "description": "Elegant pearl and silver jewelry set with crescent-shaped design and sparkling CZ stones. A timeless symbol of grace and serenity.",
-  "detailedDescription": "The Moonlit Pearl Silver Set blends classic elegance with celestial beauty. Featuring a matching pendant and stud earrings, each piece is crafted from 92.5 sterling silver and gracefully cradles a luminous white pearl in a crescent-like arc. Accented with brilliant cubic zirconia stones, the design evokes the peaceful radiance of the moon. Whether worn for special occasions or as everyday elegance, this set embodies sophistication, femininity, and poise.",
-  "specifications": {
+  id: 47,
+  name: "Moonlit Pearl Silver Set",
+  price: 2199,
+  category: "sets",
+  gender: "female",
+  soldOut: false,
+  description: "Elegant pearl and silver jewelry set with crescent-shaped design and sparkling CZ stones. A timeless symbol of grace and serenity.",
+  detailedDescription: "The Moonlit Pearl Silver Set blends classic elegance with celestial beauty. Featuring a matching pendant and stud earrings, each piece is crafted from 92.5 sterling silver and gracefully cradles a luminous white pearl in a crescent-like arc. Accented with brilliant cubic zirconia stones, the design evokes the peaceful radiance of the moon. Whether worn for special occasions or as everyday elegance, this set embodies sophistication, femininity, and poise.",
+  specifications: {
     "Material": "92.5 Sterling Silver",
     "Stones": "White Imitation Pearls & Cubic Zirconia",
     "Finish": "High-Gloss Italian Silver Plating",
@@ -989,20 +1031,21 @@ const products = [
     "Back Type": "Earrings: Butterfly Push-Back",
     "Care": "Avoid water, perfumes, and sprays; clean gently with a soft cloth; store separately to avoid scratches"
   },
-  "images": [
+  images: [
     "assets/image_55.png",
     "assets/image_56.png"
   ]
 },
  {
-  "id": 48,
-  "name": "Retro Pop Enamel Huggie Earrings",
-  "price": 1399,
-  "category": "earrings",
-  "gender": "unisex",
-  "description": "Bold and playful huggie earrings in orange enamel with mint green accents. A funky fusion of retro style and modern attitude.",
-  "detailedDescription": "Add a pop of personality to your everyday look with the Retro Pop Enamel Huggie Earrings. Featuring a smooth, chunky band in vibrant orange enamel, each earring is adorned with playful mint green shapes and dotted accents in earthy brown. Crafted from durable stainless steel with a glossy finish, these huggies are lightweight, bold, and comfortable for all-day wear. Ideal for unisex styling, festival outfits, or quirky fashion lovers who embrace bold accessories.",
-  "specifications": {
+  id: 48,
+  name: "Retro Pop Enamel Huggie Earrings",
+  price: 1399,
+  category: "earrings",
+  soldOut: false,
+  gender: "unisex",
+  description: "Bold and playful huggie earrings in orange enamel with mint green accents. A funky fusion of retro style and modern attitude.",
+  detailedDescription: "Add a pop of personality to your everyday look with the Retro Pop Enamel Huggie Earrings. Featuring a smooth, chunky band in vibrant orange enamel, each earring is adorned with playful mint green shapes and dotted accents in earthy brown. Crafted from durable stainless steel with a glossy finish, these huggies are lightweight, bold, and comfortable for all-day wear. Ideal for unisex styling, festival outfits, or quirky fashion lovers who embrace bold accessories.",
+  specifications: {
     "Material": "Stainless Steel with Hand-Applied Enamel",
     "Finish": "Glossy Color-Enamel Coating",
     "Weight": "5.5g (pair)",
@@ -1010,7 +1053,7 @@ const products = [
     "Closure Type": "Hinged Snap Closure",
     "Care": "Avoid water, perfumes, and abrasive surfaces; store separately to preserve enamel finish"
   },
-  "images": [
+  images: [
     "assets/image_57.png",
     "assets/image_58.png",
     "assets/image_59.png",
@@ -1018,14 +1061,15 @@ const products = [
   ]
 },
  {
-  "id": 49,
-  "name": "Mystic Bloom Silver Necklace",
-  "price": 1599,
-  "category": "necklaces",
-  "gender": "female",
-  "description": "Iridescent flower pendant on a dainty 92.5 sterling silver chain. Subtle, radiant, and full of charm.",
-  "detailedDescription": "The Mystic Bloom Necklace is a gentle yet striking piece that captures the essence of ethereal beauty. A finely crafted flower-shaped pendant glimmers with multicolor iridescence, subtly changing hues as it catches the light. Set on a slender 92.5 sterling silver chain with adjustable links, this necklace offers a minimalist silhouette with a magical twist. Perfect for layering or wearing solo, it’s a versatile piece for free spirits and dreamers.",
-  "specifications": {
+  id: 49,
+  name: "Mystic Bloom Silver Necklace",
+  price: 1599,
+  category: "necklaces",
+  soldOut: false,
+  gender: "female",
+  description: "Iridescent flower pendant on a dainty 92.5 sterling silver chain. Subtle, radiant, and full of charm.",
+  detailedDescription: "The Mystic Bloom Necklace is a gentle yet striking piece that captures the essence of ethereal beauty. A finely crafted flower-shaped pendant glimmers with multicolor iridescence, subtly changing hues as it catches the light. Set on a slender 92.5 sterling silver chain with adjustable links, this necklace offers a minimalist silhouette with a magical twist. Perfect for layering or wearing solo, it’s a versatile piece for free spirits and dreamers.",
+  specifications: {
     "Material": "92.5 Sterling Silver",
     "Pendant": "Iridescent Crystal in Flower Cut",
     "Finish": "High-Polish Silver",
@@ -1034,20 +1078,21 @@ const products = [
     "Clasp Type": "Spring Ring Clasp",
     "Care": "Keep away from water, perfumes, and cosmetics; store flat; clean gently with a soft cloth."
   },
-  "images": [
+  images: [
     "assets/image_77.png",
     "assets/image_78.png",
   ]
    },
    {
-  "id": 50,
-  "name": "Celeste Teardrop Solitaire Necklace",
-  "price": 1799,
-  "category": "necklaces",
-  "gender": "female",
-  "description": "Timeless teardrop solitaire pendant in 92.5 sterling silver with a dazzling CZ centerpiece. Pure elegance, always in style.",
-  "detailedDescription": "The Celeste Teardrop Necklace captures the essence of classic beauty with its minimal yet powerful design. A brilliant pear-cut cubic zirconia stone sits gracefully in a sleek 92.5 sterling silver setting, suspended from a fine, high-polish silver chain. This piece adds instant sophistication to any look — whether layered for trend-driven styling or worn solo for timeless grace. The clean silhouette and radiant sparkle make it a staple for both daily elegance and evening wear.",
-  "specifications": {
+  id: 50,
+  name: "Celeste Teardrop Solitaire Necklace",
+  price: 1799,
+  category: "necklaces",
+  gender: "female",
+  soldOut: false,
+  description: "Timeless teardrop solitaire pendant in 92.5 sterling silver with a dazzling CZ centerpiece. Pure elegance, always in style.",
+  detailedDescription: "The Celeste Teardrop Necklace captures the essence of classic beauty with its minimal yet powerful design. A brilliant pear-cut cubic zirconia stone sits gracefully in a sleek 92.5 sterling silver setting, suspended from a fine, high-polish silver chain. This piece adds instant sophistication to any look — whether layered for trend-driven styling or worn solo for timeless grace. The clean silhouette and radiant sparkle make it a staple for both daily elegance and evening wear.",
+  specifications: {
     "Material": "92.5 Sterling Silver",
     "Stone": "High-Grade Cubic Zirconia (Teardrop Cut)",
     "Finish": "Mirror Polish",
@@ -1057,7 +1102,7 @@ const products = [
     "Clasp Type": "Spring Ring Clasp",
     "Care": "Avoid chemicals and water; clean gently with a soft cloth; store separately to prevent scratching"
   },
-  "images": [
+  images: [
     "assets/image_79.png",
     "assets/image_80.png",
   ]
