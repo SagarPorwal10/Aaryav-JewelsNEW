@@ -1,4 +1,4 @@
-
+r
 
 const products = [
  
@@ -1001,7 +1001,7 @@ const products = [
   price: 1599,
   discount: 20,
   category: "earrings",
-  soldOut: false,
+  soldOut: true,
   gender: "female",
   description: "Elegant floral silver studs crafted in 92.5 sterling silver with glittering cubic zirconia petals. Nature’s grace, captured in shine.",
   detailedDescription: "Inspired by blooming daisies and sunbursts, the Floral Radiance Studs bring a touch of nature’s joy to your jewelry box. Crafted in high-quality 92.5 sterling silver, each earring features a radiant floral design with pavé-set white cubic zirconia on every petal, surrounding a smooth silver dome at the center. Lightweight yet striking, they’re perfect for everyday wear or a sparkling accent to elevate your look. A delicate expression of femininity and natural beauty.",
@@ -1013,7 +1013,7 @@ const products = [
     "Care": "Store away from moisture and perfumes; clean with a soft silver cloth"
   },
   images: [
-    "assets/image_50.png",
+    "assets/image_51.png",
     "assets/image_52.png"
   ]
 },
